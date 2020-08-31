@@ -1,8 +1,3 @@
----
-title: Liens utiles
-description: Une liste de liens utiles
----
-
 Ici sont des liens qui peuvent être intéressants.
 
 <!--
