@@ -1,7 +1,6 @@
 ---
 title: Liens utiles
 description: Une liste de liens utiles
-tags: link
 ---
 
 Ici sont des liens qui peuvent être intéressants.
