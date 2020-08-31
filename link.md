@@ -2,7 +2,6 @@
 title: Liens utiles
 description: Une liste de liens utiles
 published: true
-date: 2020-01-04T10:52:58.762Z
 tags: link
 ---
 
