@@ -1,11 +1,3 @@
----
-title: Capture The Flag
-description: Notes pour les CTF
-published: true
-date: 2019-12-28T17:43:14.210Z
-tags: ctf
----
-
 # Init 5
 Feu :
 - Commencer par brancher le câble réseau :wink:
