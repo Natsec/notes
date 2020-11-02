@@ -1,6 +1,11 @@
-## Welcome to GitHub Pages
+## Welcome to my kiwi
 
 yolo
+
+[un lien](https://natsec.github.io/wiki/ctf)
+
+et [a relative link](ctf.md)
+et [a folder link](code/python.md)
 
 ### Markdown
 
