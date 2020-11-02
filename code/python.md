@@ -5,14 +5,18 @@ published: true
 date: 2020-02-16T13:02:02.702Z
 tags: code, python
 ---
-
+- [Lire un fichier ligne par ligne](#lire-un-fichier-ligne-par-ligne)
+- [Regex](#regex)
+- [Ecrire un fichier](#ecrire-un-fichier)
+- [Distance de Levenshtein](#distance-de-levenshtein)
+- [Brute force](#brute-force)
 # Lire un fichier ligne par ligne
 Pour lire le fichier entier : `text = f.read()`
 ```python
 f = open("input.txt", "r", encoding='utf-8')
 for line in f.readlines():
 	line = line.strip()
-	
+
 	print(line)
 f.close
 ```
