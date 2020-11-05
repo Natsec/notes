@@ -1,14 +1,6 @@
-## Welcome to my kiwi
-
-yolo
-
-un lien [a relative link](https://natsec.github.io/wiki/ctf)
-
-### Général
-[CTF](ctf)
-
-### Wifi
-[Bettercap](wifi/bettercap)
-
-### Code
-[Python](code/python)
+[Bettercap](bettercap)
+[Capture The Flag](ctf)
+[Home](home)
+[Liens utiles](link)
+[Linux](linux)
+[Python](python)
