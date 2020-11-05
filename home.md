@@ -1,9 +1,5 @@
 ---
 title: Home
-description: Hic Sunt Dracones
-published: true
-date: 2020-02-22T10:27:20.631Z
-tags:
 ---
 
 # Sommaire

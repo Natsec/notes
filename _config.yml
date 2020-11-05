@@ -1,6 +1,10 @@
 theme: jekyll-theme-cayman
+
 title: Mon Wiki
 description: Here be my notes 😉
 
-show_downloads: yes
-# google_analytics: [Your Google Analytics tracking ID]
+show_downloads: no
+google_analytics: UA-107201783-1
+
+github:
+  repository_url: /wiki

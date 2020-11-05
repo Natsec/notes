@@ -1,9 +1,5 @@
 ---
 title: Bettercap
-description: Notes sur le couteau suisse du MITM
-published: true
-date: 2020-01-01T21:05:36.945Z
-tags: wifi, bettercap
 ---
 
 # Installation

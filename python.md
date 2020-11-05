@@ -1,9 +1,5 @@
 ---
 title: Python
-description: Morceaux de code Python
-published: true
-date: 2020-02-16T13:02:02.702Z
-tags: code, python
 ---
 - [Lire un fichier ligne par ligne](#lire-un-fichier-ligne-par-ligne)
 - [Regex](#regex)
