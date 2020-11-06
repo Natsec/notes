@@ -1,24 +1,20 @@
 # Linux
 
-## Server DNS
-On edite le fichier `/etc/resolv.conf` :
-
-```text
-#search sous-domaine.domain.tld
-nameserver 8.8.8.8
-nameserver 192.168.1.254
+## Keyboard
+```
+setxkbmap fr
 ```
 
-### Afficher les addresses IP (brief)
-Pour afficher la liste des interfaces, leur état (`up/down`) et l'adresse ip :
+## Network
+
+Liste des interfaces, et des routes :
 ```
-ip -br a
+ip -br a; echo; ip r
 ```
 
-### Afficher les routes
-Pour afficher les routes de la machine :
+Changer l'adresse ip :
 ```
-ip r
+nano /etc/network/interfaces; systemctl restart networking && ip -br a; echo; ip r
 ```
 
 ### Afficher les ports en écoute
@@ -33,15 +29,22 @@ ss -ltunp | column -t
 `-p` (process) pour afficher le processus qui écoute sur ce port
 `column -t` pour un affichage plus agréable
 
-On peut en faire un alias avec : `alias ss='ss -ltunp | column -t'`
-
-### Créer un utilisateur système
-Par exemple, pour créer l'utilisateur système `wiki`, on peut faire :
+### DNS
+On edite le fichier `/etc/resolv.conf` :
+```bash
+#search sous-domaine.domain.tld
+nameserver 8.8.8.8
+nameserver 192.168.1.254
 ```
-sudo useradd --system wiki -s /sbin/nologin
-```
 
-### Afficher les tentatives de connexion SSH échouées en temps réel
+## Logging
+Afficher les tentatives de connexion SSH échouées en temps réel :
 ```
 journalctl -f | grep -i "for invalid user"
+```
+
+## User
+Pour créer un utilisateur système `wiki`, on peut faire :
+```
+sudo useradd --system wiki -s /sbin/nologin
 ```
