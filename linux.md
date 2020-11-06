@@ -23,10 +23,15 @@ Pour afficher les ports en écoute, on peut faire :
 ss -ltunp | column -t
 ```
 `-l` (listen) pour afficher les ports en écoute
+
 `-t` (tcp) pour les ports TCP
+
 `-u` (udp) pour les ports UDP
+
 `-n` (no resolve) pour ne pas résoudre les noms de port. Par exemple, affichera `443` au lieu de `https`
+
 `-p` (process) pour afficher le processus qui écoute sur ce port
+
 `column -t` pour un affichage plus agréable
 
 ### DNS
