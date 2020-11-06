@@ -3,7 +3,7 @@
 Ici sont des liens qui peuvent être intéressants.
 
 ## Codage
-Testeur de regex : [https://regex101.com]
+Testeur de regex : https://regex101.com
 
 ## Traitement d'image
 Compression de PNG et JPG : https://tinypng.com et https://tinyjpg.com
@@ -11,6 +11,7 @@ Recadrement : https://www.iloveimg.com/crop-image
 
 ## Veille
 https://thehackernews.com
+https://bleepingcomputer.com
 https://www.cert.ssi.gouv.fr
 
 ## Divers
