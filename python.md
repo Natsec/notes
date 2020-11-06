@@ -6,6 +6,7 @@ title: Python
 - [Ecrire un fichier](#ecrire-un-fichier)
 - [Distance de Levenshtein](#distance-de-levenshtein)
 - [Brute force](#brute-force)
+
 # Lire un fichier ligne par ligne
 Pour lire le fichier entier : `text = f.read()`
 ```python

@@ -1,8 +1,5 @@
----
-title: Capture The Flag
----
+# Capture The Flag
 
-# Init 5
 Feu :
 - Commencer par brancher le câble réseau :wink:
 - Lancer Wireshark pour observer ce qu'il se passe sur la ligne
@@ -16,7 +13,7 @@ Si on a trouvé un serveur DNS :
 `echo 'nameserver <ip>' >> /etc/resolv.conf`
 
 # DNS
-dnsdumpster.com
+(dnsdumpster.com)
 
 Pour faire un transfert de zone :
 ```
