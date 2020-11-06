@@ -1,6 +1,6 @@
 # Linux
 
-# Server DNS
+## Server DNS
 On edite le fichier `/etc/resolv.conf` :
 
 ```text
@@ -9,19 +9,19 @@ nameserver 8.8.8.8
 nameserver 192.168.1.254
 ```
 
-## Afficher les addresses IP (brief)
+### Afficher les addresses IP (brief)
 Pour afficher la liste des interfaces, leur état (`up/down`) et l'adresse ip :
 ```
 ip -br a
 ```
 
-## Afficher les routes
+### Afficher les routes
 Pour afficher les routes de la machine :
 ```
 ip r
 ```
 
-## Afficher les ports en écoute
+### Afficher les ports en écoute
 Pour afficher les ports en écoute, on peut faire :
 ```
 ss -ltunp | column -t
@@ -35,13 +35,13 @@ ss -ltunp | column -t
 
 On peut en faire un alias avec : `alias ss='ss -ltunp | column -t'`
 
-## Créer un utilisateur système
+### Créer un utilisateur système
 Par exemple, pour créer l'utilisateur système `wiki`, on peut faire :
 ```
 sudo useradd --system wiki -s /sbin/nologin
 ```
 
-## Afficher les tentatives de connexion SSH échouées en temps réel
+### Afficher les tentatives de connexion SSH échouées en temps réel
 ```
 journalctl -f | grep -i "for invalid user"
 ```
