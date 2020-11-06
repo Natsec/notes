@@ -1,39 +1,35 @@
----
-title: Liens utiles
----
+# Liens utiles
 
 Ici sont des liens qui peuvent être intéressants.
 
-<!--
-# Codage
+## Codage
 Testeur de regex : https://regex101.com
 
-# Traitement d'image
+## Traitement d'image
 Compression de PNG et JPG : https://tinypng.com et https://tinyjpg.com
 Recadrement : https://www.iloveimg.com/crop-image
 
-# Veille
+## Veille
 https://thehackernews.com
 https://www.cert.ssi.gouv.fr
 
-# Divers
+## Divers
 Adresse mail temporaire : https://temp-mail.org
 
-# Autre
+## Autre
 
-## Histoire naturelle
+### Histoire naturelle
 Nomenclature des couleurs de Werner (a permis à Charles Darwin de décrire la couleur de ce qu'il observait): https://www.c82.net/werner/#colors
 
-## Sciences
+### Sciences
 https://www.sciencealert.com
 
-## Documentaires
+### Documentaires
 Sciences : https://www.arte.tv/fr/videos/sciences
 Histoire naturelle : https://www.arte.tv/fr/videos/voyages-et-decouvertes
 
-## Art
+### Art
 http://www.laboiteverte.fr
 
-## Musique
+### Musique
 https://www.patatap.com
--->

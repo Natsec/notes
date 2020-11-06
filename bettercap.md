@@ -1,25 +1,27 @@
----
-title: Bettercap
----
+# Bettercap
 
-# Installation
+## Installation
 ```
 apt update
 apt install bettercap bettercap-ui
 ```
-# Utilisation
+
+## Utilisation
 Pour lancer un caplet :
 ```
 bettercap -caplet mon_script.cap
 ```
-# Caplets
-## Afficher les machines du réseau local
+
+## Caplets
+
+### Afficher les machines du réseau local
 ```shell
-#df
+# com
 bettercap -caplet mon_script.cap
 ```
-## Afficher les equipements bluetooth autour de soi
+
+### Afficher les equipements bluetooth autour de soi
 ```shell
-#df
+# com
 bettercap -caplet mon_script.cap
 ```

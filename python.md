@@ -1,13 +1,13 @@
----
-title: Python
----
-- [Lire un fichier ligne par ligne](#lire-un-fichier-ligne-par-ligne)
-- [Regex](#regex)
-- [Ecrire un fichier](#ecrire-un-fichier)
-- [Distance de Levenshtein](#distance-de-levenshtein)
-- [Brute force](#brute-force)
+- [Python](#python)
+	- [Lire un fichier ligne par ligne](#lire-un-fichier-ligne-par-ligne)
+	- [Regex](#regex)
+	- [Ecrire un fichier](#ecrire-un-fichier)
+	- [Distance de Levenshtein](#distance-de-levenshtein)
+	- [Brute force](#brute-force)
 
-# Lire un fichier ligne par ligne
+# Python
+
+## Lire un fichier ligne par ligne
 Pour lire le fichier entier : `text = f.read()`
 ```python
 f = open("input.txt", "r", encoding='utf-8')
@@ -18,7 +18,7 @@ for line in f.readlines():
 f.close
 ```
 
-# Regex
+## Regex
 Pour tester : https://regex101.com
 ```python
 match = re.findall('@>(.*?)<@', line)
@@ -29,14 +29,14 @@ if match:
 		print(m)
 ```
 
-# Ecrire un fichier
+## Ecrire un fichier
 ```python
 f = open("output.txt", "w")
 f.write("Mon texte")
 f.close
 ```
 
-# Distance de Levenshtein
+## Distance de Levenshtein
 https://rosettacode.org/wiki/Levenshtein_distance#Python :
 ```python
 def levenshtein(s1,s2):
@@ -54,7 +54,7 @@ def levenshtein(s1,s2):
 	return distances[-1]
 ```
 
-# Brute force
+## Brute force
 Code Python pour générer une wordlist :
 ```python
 import itertools

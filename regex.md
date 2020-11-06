@@ -1,0 +1,3 @@
+# Regex
+
+Balises HTML : `<\/*(\w+).*?>`
