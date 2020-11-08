@@ -29,6 +29,14 @@ Pour faire un transfert de zone :
 dig @<?> AXFR <fqdn ?>
 ```
 
+## Vulnérabilités
+
+Pour chercher des vulnérabilités :
+- https://www.exploit-db.com
+- https://nvd.nist.gov/vuln/search
+
+ou la commande `searchsploit`
+
 ## Participations
 L'important c'est de participer hein ? Du coup :
 - Rejeu du [RedHack CTF](https://redhack.eu/) 2019
