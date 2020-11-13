@@ -1,11 +1,11 @@
+# Python
+
 - [Python](#python)
 	- [Lire un fichier ligne par ligne](#lire-un-fichier-ligne-par-ligne)
 	- [Regex](#regex)
 	- [Ecrire un fichier](#ecrire-un-fichier)
 	- [Distance de Levenshtein](#distance-de-levenshtein)
 	- [Brute force](#brute-force)
-
-# Python
 
 ## Lire un fichier ligne par ligne
 Pour lire le fichier entier : `text = f.read()`

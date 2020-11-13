@@ -1,5 +1,14 @@
 # Capture The Flag
 
+- [Capture The Flag](#capture-the-flag)
+	- [Liens](#liens)
+	- [Départ](#départ)
+	- [Reconnaissance](#reconnaissance)
+	- [Pivot](#pivot)
+	- [DNS](#dns)
+	- [Vulnérabilités](#vulnérabilités)
+	- [Participations](#participations)
+
 ## Liens
 https://www.thehacker.recipes/
 
@@ -13,6 +22,12 @@ Si on a ferré une bonne info (genre l'IP d'un bon poisson) :
 ## Reconnaissance
 ```
 nmap -T4 -sV --script vulners -oN scan1.txt <net>
+```
+
+## Pivot
+Regarder les routes de la machine :
+```
+ip r
 ```
 
 ## DNS
