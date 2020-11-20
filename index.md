@@ -5,5 +5,7 @@
 ## [Linux](linux)
 ## [Python](python)
 ## [Regex](regex)
+## [Tools](tools)
 ## [Virtualisation](virtu)
+## [Web](web)
 ## [Windows](windows)
