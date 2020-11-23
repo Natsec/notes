@@ -20,8 +20,17 @@ Si on a ferré une bonne info (genre l'IP d'un bon poisson) :
 - s'assigner une IP sur le même réseau
 
 ## Reconnaissance
-```
+```bash
+# sur les well known services
 nmap -T4 -sV --script vulners -oN scan1.txt <net>
+# sur tous les ports
+nmap -T4 -sV --script vulners -oN scan1.txt <net> -p-
+```
+
+Si t'obtiens un accès sur un linux :
+```bash
+history
+ip -br a; echo; ip r
 ```
 
 ## Pivot
