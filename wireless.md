@@ -1,18 +1,24 @@
-# Bettercap
+# Wireless
 
-## Installation
+## Bettercap
+
 ```
-apt update
 apt install bettercap bettercap-ui
 ```
 
-## Utilisation
 Pour lancer un caplet :
 ```
 bettercap -caplet mon_script.cap
 ```
 
-## Caplets
+TODO Man in the middle :
+```shell
+bettercap
+	net.prob
+	net.show
+```
+
+## Caplets TODO
 
 ### Afficher les machines du réseau local
 ```shell
