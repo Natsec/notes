@@ -1,4 +1,4 @@
-[tools]
+[Tools](tools)
 
 [Capture The Flag](ctf)
 
