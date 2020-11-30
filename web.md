@@ -26,3 +26,19 @@ document.body.appendChild(script);
 ## Injection SQL
 
 https://www.netsparker.com/blog/web-security/sql-injection-cheat-sheet/
+
+## TLS
+
+`testssl.sh` permet de tester :
+- versions de SSL/TLS
+- suites de chiffrement
+- ordre de chiffrement
+- certificat
+- vulnérabilités connues
+
+Pour lancer :
+```bash
+git clone --depth 1 https://github.com/drwetter/testssl.sh.git
+cd testssl.sh
+./testssl.sh --html 172.17.0.2:50051
+```

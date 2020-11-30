@@ -7,6 +7,10 @@
 	padding: 0;
 }
 
-.center, footer{
+.menu, footer{
 	text-align: center;
+}
+
+.menu>a{
+	display: block;
 }
