@@ -6,5 +6,5 @@
 
 ```powershell
 # afficher en arborescence
-tree /F
+tree /f
 ```
