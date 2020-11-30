@@ -1,3 +1,4 @@
+<div class="center">
 [Tools](tools)
 
 [Capture The Flag](ctf)
@@ -15,3 +16,4 @@
 [Web](web)
 
 [Wireless](wireless)
+</div>
