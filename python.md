@@ -8,7 +8,9 @@
 	- [Brute force](#brute-force)
 
 ## Lire un fichier ligne par ligne
+
 Pour lire le fichier entier : `text = f.read()`
+
 ```python
 f = open("input.txt", "r", encoding='utf-8')
 for line in f.readlines():
@@ -19,7 +21,9 @@ f.close
 ```
 
 ## Regex
+
 Pour tester : https://regex101.com
+
 ```python
 match = re.findall('@>(.*?)<@', line)
 if match:
@@ -30,6 +34,7 @@ if match:
 ```
 
 ## Ecrire un fichier
+
 ```python
 f = open("output.txt", "w")
 f.write("Mon texte")
@@ -37,6 +42,7 @@ f.close
 ```
 
 ## Distance de Levenshtein
+
 https://rosettacode.org/wiki/Levenshtein_distance#Python :
 ```python
 def levenshtein(s1,s2):
@@ -55,7 +61,8 @@ def levenshtein(s1,s2):
 ```
 
 ## Brute force
-Code Python pour générer une wordlist :
+
+Pour générer une wordlist :
 ```python
 import itertools
 
