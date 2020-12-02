@@ -8,4 +8,5 @@ google_analytics: UA-107201783-1
 
 github:
   repository_url: /wiki
-  owner_url: https://natsec.fr
+  # owner_url: https://natsec.fr
+  owner_url: repository_url

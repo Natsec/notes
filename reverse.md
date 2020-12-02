@@ -2,5 +2,40 @@
 
 ## Android
 
-Pour décompiler un apk :
-- jadx-gui
+Pour décompiler :
+- un apk : [JADX](https://github.com/skylot/jadx) (existe en gui)
+- un jar : [Java Decompiler](http://java-decompiler.github.io/) (existe en gui)
+
+## Debugger
+
+Pour lancer :
+```bash
+gdb [binaire]
+```
+
+| Commande                                               | Description                                                                 |
+| ------------------------------------------------------ | --------------------------------------------------------------------------- |
+| [p](https://visualgdb.com/gdbreference/commands/print) | Prints the value of a given expression.                                     |
+| p/x                                                    | affiche en hexadécimal                                                      |
+| [x](https://visualgdb.com/gdbreference/commands/x)     | Displays the memory contents at a given address using the specified format. |
+| x/8x                                                   | affiche 8 octets en hexadecimal                                             |
+| x/8i                                                   | affiche 8 instructions en assembleur                                        |
+| macro define offsetof(t, f) &((t *) 0)->f              | définit une macro nommée offsetof                                           |
+
+```gdb
+# afficher l'adresse d'une fonction/variable
+(gdb) p [fonction/&variable]
+
+# afficher le contenu d'une fonction en hexadécimal
+(gbd) x/8x [fonction]
+
+# afficher le contenu d'une fonction en assembleur
+(gbd) x/4i [fonction]
+
+# afficher les champs d'une structure S
+(gdb) pt struct S
+(gdb) pt/o struct S
+
+# afficher l'offset d'un champ F dans une structure S
+(gdb) p offsetof(struct S, F)
+```
