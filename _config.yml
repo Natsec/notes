@@ -1,5 +1,7 @@
 theme: jekyll-theme-cayman
 
+title: Mes Notes
+
 github:
   repository_url: /notes
   owner_url: https://natsec.fr
