@@ -14,8 +14,8 @@ bettercap -caplet mon_script.cap
 TODO Man in the middle :
 ```bash
 bettercap
-	net.prob
-	net.show
+    net.prob
+    net.show
 ```
 
 ## Caplets TODO

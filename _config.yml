@@ -1,7 +1,5 @@
 theme: jekyll-theme-cayman
 
-title: Mon Wiki
-
 github:
-  repository_url: /wiki
+  repository_url: /notes
   owner_url: https://natsec.fr

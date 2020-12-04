@@ -2,6 +2,14 @@
 
 Ici sont des liens qui peuvent être intéressants.
 
+## Codage
+
+Transcodage et chiffrement : https://gchq.github.io/CyberChef
+
+Testeur de regex : https://regex101.com
+
+Cassage de hash : https://hashes.org/
+
 ## Méthodes
 
 https://attack.mitre.org/matrices/
@@ -11,12 +19,6 @@ https://attack.mitre.org/matrices/
 Compression de PNG/JPG : https://tinypng.com
 
 Recadrement : https://www.iloveimg.com/crop-image
-
-## Codage
-
-Transcodage et chiffrement : https://gchq.github.io/CyberChef
-
-Testeur de regex : https://regex101.com
 
 ## Divers
 
