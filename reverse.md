@@ -6,11 +6,23 @@ Pour décompiler :
 - un apk : [JADX](https://github.com/skylot/jadx) (existe en gui)
 - un jar : [Java Decompiler](http://java-decompiler.github.io/) (existe en gui)
 
+Emulateur Android :
+```shell
+# lister les images d'émulateurs existants
+emulator -list-avds
+
+# lancer l'image avec le noyau original
+emulator -avd Pixel_4_API_29
+
+# lancer l'image à froid avec un autre noyau
+emulator -avd Pixel_4_API_29 -kernel bzImage -wipe-data
+```
+
 ## Debugger
 
 Pour lancer :
 ```bash
-gdb [binaire]
+gdb <binaire>
 ```
 
 | Commande                                               | Description                                                                 |
