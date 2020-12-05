@@ -9,6 +9,6 @@
     <a href="reverse"       >🙃 Reverse</a>
     <a href="virtualisation">🎮 Virtualisation</a>
     <a href="web"           >🕸 Web</a>
-    <a href="windows"       >Windows</a>
+    <a href="windows"       >🪟 Windows</a>
     <a href="wireless"      >📡 Wireless</a>
 </div>

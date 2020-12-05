@@ -1,10 +1,5 @@
 # Linux
 
-```bash
-# répéter une commande
-watch <commande>
-```
-
 ## Clavier
 
 ```bash
