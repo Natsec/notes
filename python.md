@@ -22,8 +22,6 @@ f.close
 
 ## Regex
 
-Pour tester : https://regex101.com
-
 ```python
 match = re.findall('@>(.*?)<@', line)
 if match:

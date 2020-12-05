@@ -1,42 +1,38 @@
 # Capture The Flag
 
 - [Capture The Flag](#capture-the-flag)
-    - [Liens](#liens)
-    - [Départ](#départ)
-    - [Reconnaissance](#reconnaissance)
-    - [Pivot](#pivot)
-    - [DNS](#dns)
-    - [Vulnérabilités](#vulnérabilités)
-    - [Participations](#participations)
+  - [Reconnaissance](#reconnaissance)
+  - [DNS](#dns)
+  - [Vulnérabilités](#vulnérabilités)
+  - [Participations](#participations)
 
-## Liens
-https://www.thehacker.recipes/
+Liens :
+- https://www.thehacker.recipes/
+- https://nicolasb.fr/blog/dghack-my-second-ctf/
 
-## Départ
-- Commencer par brancher le câble réseau 😉
-- Lancer Wireshark pour observer ce qu'il se passe sur la ligne
-
-Si on a ferré une bonne info (genre l'IP d'un bon poisson) :
+Départ :
+- commencer par brancher le câble réseau 😉
+- lancer Wireshark pour observer ce qu'il se passe sur la ligne
 - s'assigner une IP sur le même réseau
 
 ## Reconnaissance
-```bash
-# sur les well known services
-nmap -T4 -sV --script vulners -oN scan1.txt <net>
-# sur tous les ports
-nmap -T4 -sV --script vulners -oN scan1.txt <net> -p-
-```
+
+De manière génreale :
+- remarquer les versions
 
 Si t'obtiens un accès sur un linux :
+- regarder l'historique des différents utilisateurs
+- regarder les routes pour trouver d'autres réseaux
 ```bash
 history
 ip -br a; echo; ip r
 ```
 
-## Pivot
-Regarder les routes de la machine :
-```
-ip r
+```bash
+# sur les well known services
+nmap -T4 -sV --script vulners -oN scan1.txt <net>
+# sur tous les ports
+nmap -T4 -sV --script vulners -oN scan1.txt <net> -p-
 ```
 
 ## DNS
@@ -62,7 +58,8 @@ Pour chercher des vulnérabilités :
 ou la commande `searchsploit`
 
 ## Participations
-L'important c'est de participer hein ? Du coup :
+
+L'important c'est de participer, du coup :
 - Rejeu du [RedHack CTF](https://redhack.eu) 2019
 - Rejeu du [Norzh CTF](https://norzh-ctf.fr) 2020
 - Qualifications du CTF de l'[European Cyber Week](https://www.european-cyber-week.eu) 2020 : 162/249

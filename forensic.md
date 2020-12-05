@@ -1,19 +1,60 @@
 # Forensic
 
-## Autopsy
+## Investigation : Autopsy
+
 >Autopsy c'est la vie !
 
-## Volatility
+## Data recovery
 
-Identifier le profil de mémoire :
+`file` permet d'identifier le type d'un fichier.
+
+`photorec` est un outil de récupération de fichiers.
+
+`testdisk` est un outil de récupération de partition, il permet entre autre de parcourir des partitions sans avoir à les monter :
 ```bash
-# 2.6
-volatility -f memory.raw imageinfo
+testdisk found_in_server_room.img
+# Advanced > List
 ```
 
-Tester les différents profils :
+## Memory analysis : Volatility
+
+### Profil de mémoire
+
 ```bash
-# 2.6
+# identifier le profil de mémoire
+volatility -f memory.raw imageinfo
+
+# tester et utiliser celui qui trouve le plus de process
 volatility -f memory.raw imageinfo --profile=PROFILE pslist
 ```
-Utiliser celui qui trouve le plus de process.
+
+Si le profil n'est pas reconnu, on va le créer :
+1. identifier la version `strings dump.raw | grep -i "linux version"`
+2. installer une VM avec l'OS identifié
+   1. créer le profile de mémoire
+3. copier le zip dans `plugins/overlays/linux/`
+4. trouver le profile avec `volatility --info`, et l'utiliser
+
+<!-- Le script :
+```bash
+#!/bin/bash
+git clone https://github.com/volatilityfoundation/volatility.git
+cd volatility/tools/linux/ && make
+cd ../../../
+zip $(lsb_release -i -s)_$(uname -r)_profile.zip ./volatility/tools/linux/module.dwarf /boot/System.map-$(uname -r)
+``` -->
+
+### Plugins
+
+Plugins intéréssants :
+```bash
+# linux_mount
+ramfs		/mnt/confidential		ramfs		rw,relatime
+
+# linux_enumerate_files | grep "/mnt/confidential"
+0xffff95a89ac72260		22114		/mnt/confidential/flag.txt
+
+# linux_find_file -i 0xffff95a89ac72260 -O flag.txt
+# cat flag.txt
+C0D3N4M34P011011
+```

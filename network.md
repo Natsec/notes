@@ -2,6 +2,11 @@
 
 ## Wireshark
 
+tshark :
+```bash
+# afficher les champs d'une capture réseau
+tshark -r data.pcap -T fields -e frame.time_delta
+```
 Pour reconstituer une conversation téléphonique à partir d'une capture réseau :
 ```wireshark
 Telephony > RTP > RTP stream
