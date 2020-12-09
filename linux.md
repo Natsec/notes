@@ -1,5 +1,10 @@
 # Linux
 
+Pour reset un mot de passe root oublié :
+1. faire `e` dans le menu grub
+2. ajouter `rw init=/bin/bash` à la fin de la ligne `linux`
+3. faire `^x` ou `F10` pour démarrer l'image
+
 ## Clavier
 
 ```bash
