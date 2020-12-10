@@ -14,8 +14,17 @@ setxkbmap fr
 
 ## SSH
 
+Pour monter un répertoire distant avec ssh :
 ```bash
-# rebond
+apt install sshfs
+# monter
+sshfs user@host:/remote_dir /mnt
+# démonter
+fusermount -u /mnt
+```
+
+Rebond :
+```bash
 ssh -J host1 host2 ...
 ```
 
