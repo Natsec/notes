@@ -31,9 +31,9 @@ ssh -J host1 host2 ...
 Configuration du client ssh dans `~/.ssh/config` :
 ```
 Host alias 192.168.1.2
-	HostName 192.168.1.2
-	IdentityFile ~/.ssh/id_rsa_alias
-	User remoteuser
+    HostName 192.168.1.2
+    IdentityFile ~/.ssh/id_rsa_alias
+    User remoteuser
 ```
 
 ## Network
