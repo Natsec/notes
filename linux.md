@@ -12,6 +12,12 @@ Pour reset un mot de passe root oublié :
 setxkbmap fr
 ```
 
+## SSH
+
+```bash
+ssh -J host1 host2 ...
+```
+
 ## Network
 
 ```bash
