@@ -15,6 +15,7 @@ setxkbmap fr
 ## SSH
 
 ```bash
+# rebond
 ssh -J host1 host2 ...
 ```
 
