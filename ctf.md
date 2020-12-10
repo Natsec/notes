@@ -22,7 +22,9 @@ De manière génreale :
 - remarquer les versions
 
 Si t'obtiens un accès sur un linux :
-- regarder l'historique des différents utilisateurs
+- pour les différents utilisateurs :
+  - regarder l'historique des commandes
+  - regarder dans `.ssh/`
 - regarder les routes pour trouver d'autres réseaux
 
 ```bash
