@@ -11,7 +11,12 @@
     text-align: center;
 }
 
-.menu>a{
+.menu > a{
     display: block;
     font-size: 1.4em;
+}
+
+.menu > a:hover{
+    text-decoration: none;
+    background-image: radial-gradient(circle, rgba(170,187,238,0.4) 0%, rgba(255,255,255,0) 100%);
 }
