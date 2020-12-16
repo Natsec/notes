@@ -12,6 +12,13 @@ Pour reset un mot de passe root oublié :
 setxkbmap fr
 ```
 
+## Bash
+
+Pour lancer une commande sur chaque ligne d'un retour :
+```bash
+find /etc -name php.ini | xargs -L1 less
+```
+
 ## SSH
 
 Pour monter un répertoire distant avec ssh :
