@@ -42,14 +42,19 @@ nmap -T4 -sV --script vulners -oN scan1.txt <net> -p-
 ## DNS
 
 Si on a trouvé un serveur DNS :
-```
+```bash
 echo 'nameserver <ip>' >> /etc/resolv.conf
+```
+
+Voir tous les enregistrements d'un domaine :
+```bash
+host -a example.com
 ```
 
 Mapper un domaine : https://dnsdumpster.com
 
 Pour faire un transfert de zone :
-```
+```bash
 dig @<?> AXFR <fqdn ?>
 ```
 
