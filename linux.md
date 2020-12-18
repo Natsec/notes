@@ -30,6 +30,11 @@ sshfs user@host:/remote_dir /mnt
 fusermount -u /mnt
 ```
 
+Se connecter dès qu'un hôte est disponible :
+```bash
+host=192.168.1.2; until nc -z -w1 $host 22; do sleep 1; echo wait; done; ssh $host
+```
+
 Rebond :
 ```bash
 ssh -J host1 host2 ...
