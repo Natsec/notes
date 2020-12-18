@@ -13,7 +13,6 @@ Cassage de hash : https://hashes.org/
 ## Traitement d'image
 
 Compression de PNG/JPG : https://tinypng.com
-
 Recadrement : https://www.iloveimg.com/crop-image
 
 ## Divers
