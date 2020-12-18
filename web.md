@@ -2,13 +2,13 @@
 
 ## Obfuscation Javascript
 
-Outil pour obfusquer du Javascript : http://dean.edwards.name/packer/
+Outil pour obfusquer du Javascript : http://dean.edwards.name/packer
 
-Outil pour dé-obfusquer du Javascript : https://lelinhtinh.github.io/de4js/
+Outil pour dé-obfusquer du Javascript : https://lelinhtinh.github.io/de4js
 
 ## API
 
-Outil pour requêter une API : https://reqbin.com/
+Outil pour requêter une API : https://reqbin.com
 
 ## XSS
 
@@ -20,7 +20,7 @@ document.getElementById("p1").innerHTML = "Life found a way !";
 </script>
 ```
 
-Webhook : https://busterbaxter.requestcatcher.com/
+Webhook : https://busterbaxter.requestcatcher.com
 ```html
 // Pour exploiter
 <script>
@@ -35,7 +35,7 @@ document.body.appendChild(script);
 
 ## Injection SQL
 
-https://www.netsparker.com/blog/web-security/sql-injection-cheat-sheet/
+https://www.netsparker.com/blog/web-security/sql-injection-cheat-sheet
 
 ## TLS
 
