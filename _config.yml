@@ -6,7 +6,8 @@ github:
   repository_url: /notes
   owner_url: https://natsec.fr
 
-#markdown: GFM
 kramdown:
   #gfm_quirks: true
   hard_wrap: true
+
+markdown: GFM
