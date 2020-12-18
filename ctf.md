@@ -7,9 +7,9 @@
   - [Participations](#participations)
 
 Liens :
-- https://attack.mitre.org/matrices/
-- https://www.thehacker.recipes/
-- https://nicolasb.fr/blog/dghack-my-second-ctf/
+- https://attack.mitre.org/matrices
+- https://www.thehacker.recipes
+- https://nicolasb.fr/blog/dghack-my-second-ctf
 
 Départ :
 - commencer par brancher le câble réseau 😉
