@@ -7,7 +7,7 @@ github:
   owner_url: https://natsec.fr
 
 kramdown:
-  #gfm_quirks: true
+  input: GFM
   hard_wrap: true
 
-markdown: GFM
+#markdown: GFM
