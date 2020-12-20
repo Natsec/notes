@@ -3,6 +3,8 @@
 - [Capture The Flag](#capture-the-flag)
   - [Reconnaissance](#reconnaissance)
   - [DNS](#dns)
+  - [Cassage de mot de passe](#cassage-de-mot-de-passe)
+  - [SQLite](#sqlite)
   - [Vulnérabilités](#vulnérabilités)
   - [Participations](#participations)
 
@@ -56,6 +58,20 @@ Mapper un domaine : https://dnsdumpster.com
 Pour faire un transfert de zone :
 ```bash
 dig @<?> AXFR <fqdn ?>
+```
+
+## Cassage de mot de passe
+
+Pour extraire le hash du mot de passe d'un zip : `zip2john file.zip > hash.txt`
+
+```bash
+john --wordlist=/usr/share/wordlists/rockyou.txt hash.txt
+```
+
+## SQLite
+
+```bash
+sqlitebrowser fichier.sqlite
 ```
 
 ## Vulnérabilités

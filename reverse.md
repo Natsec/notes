@@ -2,6 +2,12 @@
 
 ## Android
 
+Pour décompresser une sauvegarde Android non chiffrée :
+```bash
+# ajoute un header tar pour pouvoir extraire l'archive
+(printf "\x1f\x8b\x08\x00\x00\x00\x00\x00"; tail -c +25 backup.ab) | tar -xzvf -
+```
+
 Pour décompiler :
 - un apk : [JADX](https://github.com/skylot/jadx) (existe en gui)
 - un jar : [Java Decompiler](http://java-decompiler.github.io/) (existe en gui)
