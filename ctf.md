@@ -23,17 +23,31 @@ Départ :
 De manière génreale :
 - remarquer les versions
 
-Si t'obtiens un accès sur un linux :
-- pour les différents utilisateurs :
-  - regarder l'historique des commandes
-  - regarder dans `.ssh/`
-- regarder les routes pour trouver d'autres réseaux
+Si t'obtiens un accès sur un linux/windows :
+- regarder l'historique des commandes
+- regarder dans `$HOME/.ssh/`
+- regarder la table ARP (pour découvrir des hôtes sans faire de scan) 
+- regarder les routes pour découvrir d'autres réseaux
 
+Sur Linux :
 ```bash
 history
+find /root /home -name *history*
+
+find {/root,/home/*}/.ssh
+
+ip n
 ip -br a; echo; ip r
 ```
 
+Sur Windows :
+```powershell
+ipconfig -all
+arp -a
+route
+```
+
+Pour faire un scan :
 ```bash
 # sur les well known services
 nmap -T4 -sV --script vulners -oN scan1.txt <net>
