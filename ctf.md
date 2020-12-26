@@ -2,6 +2,8 @@
 
 - [Capture The Flag](#capture-the-flag)
   - [Reconnaissance](#reconnaissance)
+    - [Scan de port](#scan-de-port)
+    - [Enumération SMB](#enumération-smb)
   - [DNS](#dns)
   - [Cassage de mot de passe](#cassage-de-mot-de-passe)
   - [SQLite](#sqlite)
@@ -20,13 +22,13 @@ Départ :
 
 ## Reconnaissance
 
-De manière génreale :
+De manière générale :
 - remarquer les versions
 
 Si t'obtiens un accès sur un linux/windows :
 - regarder l'historique des commandes
 - regarder dans `$HOME/.ssh/`
-- regarder la table ARP (pour découvrir des hôtes sans faire de scan) 
+- regarder la table ARP (pour découvrir des hôtes sans faire de scan)
 - regarder les routes pour découvrir d'autres réseaux
 
 Sur Linux :
@@ -47,12 +49,29 @@ arp -a
 route
 ```
 
-Pour faire un scan :
+### Scan de port
+
 ```bash
-# sur les well known services
-nmap -T4 -sV --script vulners -oN scan1.txt <net>
+# pinguer tout les hôtes d'un réseau (port 80 + ICMP echo-request)
+nmap -T4 -sP 192.168.0.0/24
+
+# scan discret (n'envoi que des TCP SYN, moins de chance que les connexions soient loggés)
+nmap -T4 -sS <ip>
+
+# OS + info sur les services
+nmap -T4 -A -oN scan1.txt <ip>
+# scan de vuln
+nmap -T4 -sV --script vulners -oN scan1.txt <ip>
 # sur tous les ports
-nmap -T4 -sV --script vulners -oN scan1.txt <net> -p-
+nmap -T4 -sV --script vulners -oN scan1.txt <ip> -p-
+```
+
+### Enumération SMB
+
+Si les ports `139` et `445` sont ouverts, il y a des chances que SMB tourne sur la machine.
+
+```bash
+enum4linux -U <ip>
 ```
 
 ## DNS
