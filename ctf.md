@@ -3,7 +3,7 @@
 - [Capture The Flag](#capture-the-flag)
   - [Reconnaissance](#reconnaissance)
     - [Scan de port](#scan-de-port)
-    - [Enumération SMB](#enumération-smb)
+    - [TODO Enumération SMB](#todo-enumération-smb)
   - [DNS](#dns)
   - [Cassage de mot de passe](#cassage-de-mot-de-passe)
   - [SQLite](#sqlite)
@@ -66,7 +66,7 @@ nmap -T4 -sV --script vulners -oN scan1.txt <ip>
 nmap -T4 -sV --script vulners -oN scan1.txt <ip> -p-
 ```
 
-### Enumération SMB
+### TODO Enumération SMB
 
 Si les ports `139` et `445` sont ouverts, il y a des chances que SMB tourne sur la machine.
 
@@ -122,4 +122,4 @@ L'important c'est de participer, du coup :
 - Rejeu du [Norzh CTF](https://norzh-ctf.fr) 2020
 - Qualifications du CTF de l'[European Cyber Week](https://www.european-cyber-week.eu) 2020 : 162/249
 - CTF [Brigitte Friang](https://www.challengecybersec.fr) 2020 de la DGSE
-- CTF [DG'hAck](https://www.dghack.fr) 2020 de la DGA : 343/2063
+- CTF [DG'hAck](https://www.dghack.fr) 2020 de la DGA : 343/2082

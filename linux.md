@@ -14,6 +14,8 @@ setxkbmap fr
 
 ## Bash
 
+Utiliser tmux : https://www.howtogeek.com/671422/how-to-use-tmux-on-linux-and-why-its-better-than-screen/
+
 Pour lancer une commande sur chaque ligne d'un retour :
 ```bash
 find /etc -name php.ini | xargs -L1 less

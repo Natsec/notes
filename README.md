@@ -12,3 +12,10 @@
     <a href="windows"       >🪟 Windows</a>
     <a href="wireless"      >📡 Wireless</a>
 </div>
+
+Participations :
+- Rejeu du [RedHack CTF](https://redhack.eu) 2019
+- Rejeu du [Norzh CTF](https://norzh-ctf.fr) 2020
+- Qualifications du CTF de l'[European Cyber Week](https://www.european-cyber-week.eu) 2020 : 162/249
+- CTF [Brigitte Friang](https://www.challengecybersec.fr) 2020 de la DGSE
+- CTF [DG'hAck](https://www.dghack.fr) 2020 de la DGA : 343/2082
