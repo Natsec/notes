@@ -1,15 +1,22 @@
 # Web
 
-## API
+## Outils
 
-Outil pour requêter une API : https://reqbin.com
-
-## Curl
-
+Curl :
 ```bash
 # ajouter un header à la requête
 curl http://10.10.10.215 -H host:academy.htb
 ```
+
+Pour obtenir la version hors-ligne d'un site :
+```bash
+# version courte
+wget -r -l1 --page-requisite --convert-links --html-extension --timestamping [url]
+# version longue
+wget -r -l1 -p -k -E -N [url]
+```
+
+Pour requêter une API : https://reqbin.com
 
 ## Obfuscation Javascript
 
