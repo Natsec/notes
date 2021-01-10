@@ -9,4 +9,4 @@ wget https://raw.githubusercontent.com/Natsec/notes/master/dotfiles/~/.config/au
 wget https://raw.githubusercontent.com/Natsec/notes/master/dotfiles/etc/tmux.conf -O /etc/tmux.conf
 
 ## XFCE4 Terminal
-wget https://github.com/Natsec/notes/blob/master/dotfiles/~/.config/xfce4/terminal/terminalrc -O ~/.config/xfce4/terminal/terminalrc
+wget https://raw.githubusercontent.com/Natsec/notes/master/dotfiles/~/.config/xfce4/terminal/terminalrc -O ~/.config/xfce4/terminal/terminalrc
