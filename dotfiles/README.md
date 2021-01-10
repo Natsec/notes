@@ -1,8 +1,10 @@
 # Dotfiles
-A repo containing my dotfiles.
+
+Here be my configuration files and how to retrive them.
 
 ## Restore
+
 ```
-git clone https://github.com/Natsec/dotfiles.git
-cp -rv dotfiles/.config/ ~
+# Compton Kawase Blur
+wget {https://raw.githubusercontent.com/Natsec/notes/master/dotfiles,-O\ ~}/.config/autostart/compton.desktop
 ```
