@@ -4,7 +4,7 @@ Here be my configuration files and how to retrieve them.
 
 ## Retrieve
 
-```
+```bash
 # Compton Kawase Blur
 wget https://raw.githubusercontent.com/Natsec/notes/master/dotfiles/~/.config/autostart/compton.desktop -O ~/.config/autostart/compton.desktop
 
