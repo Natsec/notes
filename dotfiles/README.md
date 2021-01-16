@@ -1,12 +1,12 @@
 # Dotfiles
 
-Here be my configuration files and how to retrieve them.
+curl -s https://raw.githubusercontent.com/Natsec/notes/master/dotfiles/dotfiles.sh | bash
 
 ## Compton Kawase Blur
-wget https://raw.githubusercontent.com/Natsec/notes/master/dotfiles/~/.config/autostart/compton.desktop -O ~/.config/autostart/compton.desktop
+[~/.config/autostart/compton.desktop](https://raw.githubusercontent.com/Natsec/notes/master/dotfiles/~/.config/autostart/compton.desktop)
 
 ## Tmux
-wget https://raw.githubusercontent.com/Natsec/notes/master/dotfiles/etc/tmux.conf -O /etc/tmux.conf
+[/etc/tmux.conf](https://raw.githubusercontent.com/Natsec/notes/master/dotfiles/etc/tmux.conf)
 
 ## XFCE4 Terminal
-wget https://raw.githubusercontent.com/Natsec/notes/master/dotfiles/~/.config/xfce4/terminal/terminalrc -O ~/.config/xfce4/terminal/terminalrc
+[~/.config/xfce4/terminal/terminalrc](https://raw.githubusercontent.com/Natsec/notes/master/dotfiles/~/.config/xfce4/terminal/terminalrc)
