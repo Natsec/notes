@@ -15,5 +15,5 @@ get(){
 
 
 get /etc/tmux.conf
-get /~/.config/autostart/compton.desktop
 get /~/.config/xfce4/terminal/terminalrc
+get /~/.config/autostart/compton.desktop

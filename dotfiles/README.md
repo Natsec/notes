@@ -1,6 +1,6 @@
 # Dotfiles
 
-curl -s https://raw.githubusercontent.com/Natsec/notes/master/dotfiles/dotfiles.sh | bash
+curl https://raw.githubusercontent.com/Natsec/notes/master/dotfiles/dotfiles.sh | bash
 
 ## Tmux
 [/etc/tmux.conf](https://raw.githubusercontent.com/Natsec/notes/master/dotfiles/etc/tmux.conf)
