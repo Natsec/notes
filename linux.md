@@ -1,5 +1,16 @@
 # Linux
 
+- [Linux](#linux)
+  - [Clavier](#clavier)
+  - [Bash](#bash)
+  - [Backup](#backup)
+  - [SSH](#ssh)
+  - [Network](#network)
+    - [DNS](#dns)
+  - [Services](#services)
+  - [Logging](#logging)
+  - [User](#user)
+
 Pour reset un mot de passe root oublié :
 1. faire `e` dans le menu grub
 2. ajouter `rw init=/bin/bash` à la fin de la ligne `linux`
@@ -14,13 +25,16 @@ setxkbmap fr
 
 ## Bash
 
-Utiliser tmux :
-- https://www.howtogeek.com/671422/how-to-use-tmux-on-linux-and-why-its-better-than-screen/
-- https://www.sitepoint.com/10-killer-tmux-tips/
-
 Pour lancer une commande sur chaque ligne d'un retour :
 ```bash
 find /etc -name php.ini | xargs -L1 less
+```
+
+## Backup
+
+Backup avec rsync (local/distant) :
+```bash
+rsync --delete -avu /home/user/dossier remote@192.168.1.2:/home/remote/dossier
 ```
 
 ## SSH
@@ -46,9 +60,9 @@ ssh -J host1 host2 ...
 
 Configuration du client ssh dans `~/.ssh/config` :
 ```
-Host alias 192.168.1.2
+Host alias1 alias2
     HostName 192.168.1.2
-    IdentityFile ~/.ssh/id_rsa_alias
+    IdentityFile ~/.ssh/id_rsa_alias1
     User remoteuser
 ```
 
