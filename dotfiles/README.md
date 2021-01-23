@@ -5,7 +5,7 @@ curl https://raw.githubusercontent.com/Natsec/notes/master/dotfiles/dotfiles.sh 
 ## Tmux
 [/etc/tmux.conf](https://raw.githubusercontent.com/Natsec/notes/master/dotfiles/etc/tmux.conf)
 
-## XFCE4 Terminal
+## Xfce4 Terminal
 [~/.config/xfce4/terminal/terminalrc](https://raw.githubusercontent.com/Natsec/notes/master/dotfiles/~/.config/xfce4/terminal/terminalrc)
 
 ## Compton Kawase Blur
