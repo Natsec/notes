@@ -64,6 +64,7 @@ Host alias1 alias2
     HostName 192.168.1.2
     IdentityFile ~/.ssh/id_rsa_alias1
     User remoteuser
+    #ProxyJump jumphost
 ```
 
 ## Network
