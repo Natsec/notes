@@ -23,6 +23,15 @@ Pour reset un mot de passe root oublié :
 setxkbmap fr
 ```
 
+## Aléatoire
+
+Pour générer de l'aléatoire (pas pour de la crypto) :
+```bash
+cat /dev/urandom | head | sha1sum
+cat /dev/urandom | head -c32 | base64
+cat /dev/urandom | tr -dc a-zA-Z0-9 | head -c32; echo
+```
+
 ## Bash
 
 Pour lancer une commande sur chaque ligne d'un retour :
