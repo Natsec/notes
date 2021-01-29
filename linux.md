@@ -39,6 +39,14 @@ Pour lancer une commande sur chaque ligne d'un retour :
 find /etc -name php.ini | xargs -L1 less
 ```
 
+Reproduire une arborescence locale sur une machine distante (Ansible) :
+```bash
+cd `dirname $0`
+for h in `ls -1 files`; do
+    rsync -rvu files/$h/ $h:/
+done
+```
+
 ## Backup
 
 Backup avec rsync (local/distant) :
