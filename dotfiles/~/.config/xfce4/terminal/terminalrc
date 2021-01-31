@@ -1,5 +1,5 @@
 [Configuration]
-FontName=Monospace 16
+FontName=Monospace 14
 MiscAlwaysShowTabs=FALSE
 MiscBell=TRUE
 MiscBellUrgent=TRUE
