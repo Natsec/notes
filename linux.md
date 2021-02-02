@@ -47,7 +47,7 @@ for host in `ls -1 files`; do
 done
 ```
 
-Télécharger un paquet en local (check https://pkjs.org pour les dependances) :
+Télécharger un paquet en local (check [pkgs.org](https://pkgs.org) pour les dependances) :
 ```bash
 apt reinstall -d -o=dir::cache=/tmp openssh-server openssh-client
 cd /tmp/archives
