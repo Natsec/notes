@@ -67,7 +67,7 @@ fusermount -u /mnt
 
 Se connecter dès qu'un hôte est disponible :
 ```bash
-host=192.168.1.2; until nc -z -w1 $host 22; do sleep 1; echo wait; done; ssh $host
+h=192.168.1.2; until nc -z -w1 $h 22; do sleep 1; echo waiting $h; done; ssh $h
 ```
 
 Rebond :
