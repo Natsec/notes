@@ -42,8 +42,12 @@ find /etc -name php.ini | xargs -L1 less
 Reproduire une arborescence locale sur une machine distante (Ansible like) :
 ```bash
 cd `dirname $0`
-for host in `ls -1 files`; do
-    rsync -rvu files/$host/ $host:/
+for local_file in `find files/$host -type f`; do
+    remote_file=${local_file##*$host}
+    remote_dir=`dirname $remote_file`
+
+    ssh $host "mkdir -p $remote_dir"
+    echo $remote_file; scp -q $local_file $host:$remote_file
 done
 ```
 
