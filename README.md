@@ -13,7 +13,7 @@
     <a href="windows"       >🪟 Windows</a>
     <a href="wireless"      >📡 Wireless</a>
     <br>
-    <a href="dotfiles"      >⚙️ Dotfiles</a>:shell:
+    <a href="dotfiles"      >⚙️ Dotfiles</a>
 </div>
 
 Participations :
