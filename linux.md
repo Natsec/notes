@@ -11,6 +11,11 @@
   - [Logging](#logging)
   - [User](#user)
 
+Cheatsheet :
+- https://devhints.io/bash
+
+## Root
+
 Pour reset un mot de passe root oublié :
 1. faire `e` dans le menu grub
 2. ajouter `rw init=/bin/bash` à la fin de la ligne `linux`
@@ -52,7 +57,7 @@ for local_file in `find files/$host -mindepth 1`; do
 done
 ```
 
-Télécharger un paquet en local (check [pkgs.org](https://pkgs.org) pour les dependances) :
+Télécharger un paquet en local (check https://pkgs.org pour les dependances) :
 ```bash
 apt reinstall -d -o=dir::cache=/tmp openssh-server openssh-client
 cd /tmp/archives
