@@ -13,7 +13,7 @@
     <a href="windows"       >🪟 Windows</a>
     <a href="wireless"      >📡 Wireless</a>
     <br>
-    <a href="dotfiles"      >⚙️ Dotfiles</a>
+    <a href="dotfiles"      >⚙️ Dotfiles</a>:spiral_shell:
 </div>
 
 Participations :
