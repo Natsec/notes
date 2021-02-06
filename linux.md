@@ -1,7 +1,9 @@
 # Linux
 
 - [Linux](#linux)
+  - [Root](#root)
   - [Clavier](#clavier)
+  - [Aléatoire](#aléatoire)
   - [Bash](#bash)
   - [Backup](#backup)
   - [SSH](#ssh)

@@ -15,6 +15,8 @@ Compression de PNG/JPG : https://tinypng.com
 
 Recadrement : https://iloveimg.com/crop-image
 
+Nuances de couleur : https://mdigi.tools/color-shades/#ddeeaa
+
 ## Divers
 
 Adresse mail temporaire : https://temp-mail.org
