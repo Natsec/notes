@@ -1,15 +1,14 @@
 # Capture The Flag
 
-- [Capture The Flag](#capture-the-flag)
-  - [Reconnaissance](#reconnaissance)
-    - [Scan de port](#scan-de-port)
-    - [TODO Enumération SMB](#todo-enumération-smb)
-  - [Metasploit](#metasploit)
-  - [DNS](#dns)
-  - [Vulnérabilités](#vulnérabilités)
-  - [Local Privilege Escalation](#local-privilege-escalation)
-  - [Cassage de mot de passe](#cassage-de-mot-de-passe)
-  - [SQLite](#sqlite)
+- [Reconnaissance](#reconnaissance)
+  - [Scan de port](#scan-de-port)
+  - [TODO Enumération SMB](#todo-enumération-smb)
+- [Metasploit](#metasploit)
+- [DNS](#dns)
+- [Vulnérabilités](#vulnérabilités)
+- [Local Privilege Escalation](#local-privilege-escalation)
+- [Cassage de mot de passe](#cassage-de-mot-de-passe)
+- [SQLite](#sqlite)
 
 Liens :
 - https://attack.mitre.org/matrices

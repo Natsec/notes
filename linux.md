@@ -1,17 +1,16 @@
 # Linux
 
-- [Linux](#linux)
-  - [Root](#root)
-  - [Clavier](#clavier)
-  - [Aléatoire](#aléatoire)
-  - [Bash](#bash)
-  - [Backup](#backup)
-  - [SSH](#ssh)
-  - [Network](#network)
-    - [DNS](#dns)
-  - [Services](#services)
-  - [Logging](#logging)
-  - [User](#user)
+- [Root](#root)
+- [Clavier](#clavier)
+- [Aléatoire](#aléatoire)
+- [Bash](#bash)
+- [Backup](#backup)
+- [SSH](#ssh)
+- [Network](#network)
+  - [DNS](#dns)
+- [Services](#services)
+- [Logging](#logging)
+- [User](#user)
 
 Cheatsheet :
 - https://devhints.io/bash

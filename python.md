@@ -1,11 +1,10 @@
 # Python
 
-- [Python](#python)
-  - [Lire un fichier ligne par ligne](#lire-un-fichier-ligne-par-ligne)
-  - [Regex](#regex)
-  - [Ecrire un fichier](#ecrire-un-fichier)
-  - [Distance de Levenshtein](#distance-de-levenshtein)
-  - [Brute force](#brute-force)
+- [Lire un fichier ligne par ligne](#lire-un-fichier-ligne-par-ligne)
+- [Regex](#regex)
+- [Ecrire un fichier](#ecrire-un-fichier)
+- [Distance de Levenshtein](#distance-de-levenshtein)
+- [Brute force](#brute-force)
 
 ## Lire un fichier ligne par ligne
 
