@@ -1,15 +1,16 @@
 # Web
 
-- [Outils](#outils)
+- [Curl](#curl)
+- [JWT (Json Web Token)](#jwt-json-web-token)
+- [API](#api)
 - [Obfuscation Javascript](#obfuscation-javascript)
-- [XSS](#xss)
+- [XSS (Cross Site Scripting)](#xss-cross-site-scripting)
 - [Scan d'URL web](#scan-durl-web)
 - [Injection SQL](#injection-sql)
 - [TLS](#tls)
 
-## Outils
+## Curl
 
-Curl :
 ```bash
 # ajouter un header à la requête
 curl http://10.10.10.215 -H host:academy.htb
@@ -23,6 +24,12 @@ wget -r -l1 --page-requisite --convert-links --html-extension --timestamping url
 wget -r -l1 -p -k -E -N url
 ```
 
+## JWT (Json Web Token)
+
+Pour décoder un JWT : https://jwt.io/
+
+## API
+
 Pour requêter une API : https://reqbin.com
 
 ## Obfuscation Javascript
@@ -31,7 +38,7 @@ Outil pour obfusquer du Javascript : http://dean.edwards.name/packer
 
 Outil pour dé-obfusquer du Javascript : https://lelinhtinh.github.io/de4js
 
-## XSS
+## XSS (Cross Site Scripting)
 
 ```html
 // Pour tester
