@@ -33,16 +33,21 @@ setxkbmap fr
 
 Pour générer de l'aléatoire (pas pour de la crypto) :
 ```bash
-cat /dev/urandom | head | sha1sum
-cat /dev/urandom | head -c32 | base64
-cat /dev/urandom | tr -dc a-zA-Z0-9 | head -c32; echo
+head /dev/urandom | sha1sum
+head /dev/urandom | tr -dc a-zA-Z0-9 | head -c32; echo
+head /dev/urandom -c32 | base64
 ```
 
 ## Bash
 
+Trouver les fichiers contenants des motifs :
+```bash
+grep -Pil "mot1|mot2" *
+```
+
 Pour lancer une commande sur chaque ligne d'un retour :
 ```bash
-find /etc -name php.ini | xargs -L1 less
+find /etc -name *.txt | xargs -L1 -I% echo cp % /tmp
 ```
 
 Reproduire une arborescence locale sur une machine distante (Ansible like) :
