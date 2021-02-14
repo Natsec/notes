@@ -3,9 +3,10 @@
     <br>
     <a href="ctf"           >🏁 Capture The Flag</a>
     <a href="firewall"      >🔥 Firewall</a>
-    <a href="forensic"      >🕵 Forensic</a>
+    <a href="forensic"      >🔎 Forensic</a>
     <a href="linux"         >🐧 Linux</a>
     <a href="network"       >🌍 Network</a>
+    <a href="osint"         >🕵 OSINT</a>
     <a href="python"        >🐍 Python</a>
     <a href="reverse"       >🙃 Reverse</a>
     <a href="virtualisation">🎮 Virtualisation</a>
