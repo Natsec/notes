@@ -1,41 +1,57 @@
 # Python
 
-- [Lire un fichier ligne par ligne](#lire-un-fichier-ligne-par-ligne)
+- [Lire/Ecrire un fichier](#lireecrire-un-fichier)
+- [Requêtes](#requêtes)
 - [Regex](#regex)
-- [Ecrire un fichier](#ecrire-un-fichier)
 - [Distance de Levenshtein](#distance-de-levenshtein)
 - [Brute force](#brute-force)
 
-## Lire un fichier ligne par ligne
-
-Pour lire le fichier entier : `text = f.read()`
+## Lire/Ecrire un fichier
 
 ```python
+# lire
 f = open("input.txt", "r", encoding='utf-8')
+# ligne par ligne
 for line in f.readlines():
     line = line.strip()
-
     print(line)
+# texte entier
+text = f.read()
 f.close
+
+# ecrire
+f = open("output.txt", "w")
+f.write("Mon texte")
+f.close
+# OU
+with open("output.txt", "w") as f:
+    f.write("Mon texte")
+```
+
+## Requêtes
+
+https://realpython.com/python-requests/
+
+https://blog.bearer.sh/making-api-requests-with-python/
+
+```python
+import requests
+
+response = requests.get("http://web.cryptohack.org/jwt-secrets/create_session/kamil/")
+print(response.text)
+
+jwt = response.json()["session"]
 ```
 
 ## Regex
 
 ```python
-match = re.findall('@>(.*?)<@', line)
+match = re.findall('motif(.+)', line)
 if match:
     print(match)
     print(match[0])
     for m in match:
         print(m)
-```
-
-## Ecrire un fichier
-
-```python
-f = open("output.txt", "w")
-f.write("Mon texte")
-f.close
 ```
 
 ## Distance de Levenshtein

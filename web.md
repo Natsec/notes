@@ -26,7 +26,9 @@ wget -r -l1 -p -k -E -N url
 
 ## JWT (Json Web Token)
 
-Pour décoder un JWT : https://jwt.io/
+Pour manipuler un JWT en ligne : https://jwt.io/
+
+Pour manipuler un JWT en python : https://pyjwt.readthedocs.io/en/latest/
 
 ## API
 
