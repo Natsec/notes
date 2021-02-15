@@ -69,6 +69,12 @@ apt reinstall -d -o=dir::cache=/tmp openssh-server openssh-client
 cd /tmp/archives
 ```
 
+ncdu (ncurses disk usage) :
+```bash
+ncdu --si <--color dark>
+    gg t ss c
+```
+
 ## Backup
 
 Backup avec rsync (local/distant) :
