@@ -9,7 +9,7 @@
 - [Injection SQL](#injection-sql)
 - [TLS](#tls)
 
-## Curl
+## Curl / Wget
 
 ```bash
 # ajouter un header à la requête
@@ -19,9 +19,9 @@ curl http://10.10.10.215 -H host:academy.htb
 Pour obtenir la version hors-ligne d'un site :
 ```bash
 # version longue
-wget -r -l1 --page-requisite --convert-links --adjust-extension --timestamping url
+wget -r -l1 --page-requisite --convert-links --adjust-extension --timestamping <--span-hosts> url
 # version courte
-wget -r -l1 -p -k -E -N url
+wget -r -l1 -p -k -E -N <-H> url
 ```
 
 ## JWT (Json Web Token)
