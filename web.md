@@ -1,6 +1,6 @@
 # Web
 
-- [Curl](#curl)
+- [Curl / Wget](#curl--wget)
 - [JWT (Json Web Token)](#jwt-json-web-token)
 - [API](#api)
 - [Obfuscation Javascript](#obfuscation-javascript)

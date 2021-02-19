@@ -6,6 +6,7 @@
 - [Bash](#bash)
 - [Backup](#backup)
 - [SSH](#ssh)
+- [Clé bootable](#clé-bootable)
 - [Network](#network)
   - [DNS](#dns)
 - [Services](#services)
@@ -110,6 +111,14 @@ Host alias1 alias2
     IdentityFile ~/.ssh/id_rsa_alias1
     User remoteuser
     #ProxyJump jumphost
+```
+
+## Clé bootable
+
+Pour rendre une clé bootable :
+```bash
+lsblk
+dd if=file.iso of=/dev/sdb bs=16M conv=fsync status=progress
 ```
 
 ## Network
