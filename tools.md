@@ -5,6 +5,7 @@
 Transcodage et chiffrement : https://gchq.github.io/CyberChef
 
 Testeur de regex https://regex101.com :
+- matcher le motif1 mais pas mot2 : `(?!.*mot2)motif1`
 - Balises HTML : `<\/*(\w+).*?>`
 
 Cassage de hash : https://hashes.org
