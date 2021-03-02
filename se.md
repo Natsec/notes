@@ -1,6 +1,9 @@
-# Social Engineering
+# Social Engineering (Work in progress)
+
+> [Social Engineering: The Science of Human Hacking, 2nd Edition](https://www.chasse-aux-livres.fr/prix/111943338X/social-engineering-hadnagy), Christopher Hadnagy.
 
 - [Principes](#principes)
+  - [La pyramide du Social Engineering](#la-pyramide-du-social-engineering)
 - [OSINT (Open Source Intelligence)](#osint-open-source-intelligence)
   - [Non-Technical OSINT](#non-technical-osint)
   - [Technical OSINT](#technical-osint)
@@ -9,11 +12,16 @@
 
 ## Principes
 
+### La pyramide du Social Engineering
+
+1. La recherche en source ouverte
+2. Le pretexte
+3. L'éxécution
+
 ## OSINT (Open Source Intelligence)
 
 ### Non-Technical OSINT
 
-[Social Engineering: The Science of Human Hacking, 2nd Edition](https://www.chasse-aux-livres.fr/prix/111943338X/social-engineering-hadnagy), Christopher Hadnagy.
 
 ### Technical OSINT
 
