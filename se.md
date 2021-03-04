@@ -1,6 +1,4 @@
-# Social Engineering (Work in progress)
-
-> [Social Engineering: The Science of Human Hacking, 2nd Edition](https://www.chasse-aux-livres.fr/prix/111943338X/social-engineering-hadnagy), Christopher Hadnagy.
+# Social Engineering (Under construction)
 
 - [Principes](#principes)
   - [La pyramide du Social Engineering](#la-pyramide-du-social-engineering)
@@ -9,6 +7,8 @@
   - [Technical OSINT](#technical-osint)
     - [Google Dork](#google-dork)
 - [Communication](#communication)
+
+> [Social Engineering: The Science of Human Hacking, 2nd Edition](https://www.chasse-aux-livres.fr/prix/111943338X/social-engineering-hadnagy), Christopher Hadnagy.
 
 ## Principes
 

@@ -3,6 +3,7 @@
 - [Lire/Ecrire un fichier](#lireecrire-un-fichier)
 - [Requêtes](#requêtes)
 - [Regex](#regex)
+- [Color print](#color-print)
 - [Distance de Levenshtein](#distance-de-levenshtein)
 - [Brute force](#brute-force)
 
@@ -52,6 +53,21 @@ if match:
     print(match[0])
     for m in match:
         print(m)
+```
+
+## Color print
+```python
+def print(*args):
+    """Override of the builtin print function.
+
+    This function prints text in color for better visibility.
+
+    Args:
+        *args (obj): Variable number of argument without keywords.
+    """
+    builtins.print("\033[34m[INFO] ", end="")
+    builtins.print(*args)
+    builtins.print("\033[0m", end="")
 ```
 
 ## Distance de Levenshtein

@@ -13,7 +13,14 @@ get(){
     echo
 }
 
-
+# --------------------
+# Dotfiles
+# --------------------
 get /etc/tmux.conf
 get /~/.config/xfce4/terminal/terminalrc
 get /~/.config/autostart/compton.desktop
+
+# --------------------
+# Paquets
+# --------------------
+sudo apt install tmux htop ncdu
