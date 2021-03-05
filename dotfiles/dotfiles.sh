@@ -23,4 +23,8 @@ get /~/.config/autostart/compton.desktop
 # --------------------
 # Paquets
 # --------------------
-sudo apt install tmux htop ncdu
+apt install tmux htop ncdu
+
+# --------------------
+# A E S T H E T I C
+# --------------------

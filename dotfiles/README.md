@@ -1,6 +1,6 @@
 # Dotfiles
 
-curl https://raw.githubusercontent.com/Natsec/notes/master/dotfiles/dotfiles.sh | bash
+wget https://raw.githubusercontent.com/Natsec/notes/master/dotfiles/dotfiles.sh && sudo bash dotfiles.sh
 
 ## Tmux
 [/etc/tmux.conf](https://raw.githubusercontent.com/Natsec/notes/master/dotfiles/etc/tmux.conf)
