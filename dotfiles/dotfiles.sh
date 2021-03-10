@@ -7,8 +7,8 @@ get(){
         mkdir -p $(dirname $HOME${1:2})
         wget --no-verbose $base$1 -O $HOME${1:2}
     else
-        mkdir -p $(dirname $1)
-        wget --no-verbose $base$1 -O $1
+        sudo mkdir -p $(dirname $1)
+        sudo wget --no-verbose $base$1 -O $1
     fi
     echo
 }
@@ -16,7 +16,7 @@ get(){
 # --------------------
 # Dotfiles
 # --------------------
-get /~/.bash_aliases
+get /~/.bash_aliases && source .bash_aliases
 get /~/.config/xfce4/terminal/terminalrc
 get /etc/tmux.conf
 get /~/.config/autostart/compton.desktop
@@ -24,7 +24,7 @@ get /~/.config/autostart/compton.desktop
 # --------------------
 # Paquets
 # --------------------
-apt install tmux htop ncdu tree
+sudo apt install tmux htop ncdu tree
 
 # --------------------
 # A E S T H E T I C

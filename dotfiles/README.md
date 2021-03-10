@@ -10,4 +10,4 @@ Compton Kawase Blur : [~/.config/autostart/compton.desktop](https://raw.githubus
 
 ## All Systems Go
 
-wget https://raw.githubusercontent.com/Natsec/notes/master/dotfiles/dotfiles.sh && sudo bash dotfiles.sh
+rm dotfiles.sh ; wget https://raw.githubusercontent.com/Natsec/notes/master/dotfiles/dotfiles.sh && bash dotfiles.sh
