@@ -18,6 +18,13 @@ Recadrement : https://iloveimg.com/crop-image
 
 Nuances de couleur : https://mdigi.tools/color-shades/#ddeeaa
 
+### Steganographie
+
+LSB en ligne : https://stylesuxx.github.io/steganography/
+LSB dans image/son et détection : https://github.com/ragibson/Steganography
+
 ## Divers
 
 Adresse mail temporaire : https://temp-mail.org
+
+Générateur de qrcode : https://q-r-code.fr/

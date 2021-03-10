@@ -16,14 +16,15 @@ get(){
 # --------------------
 # Dotfiles
 # --------------------
-get /etc/tmux.conf
+get /~/.bash_aliases
 get /~/.config/xfce4/terminal/terminalrc
+get /etc/tmux.conf
 get /~/.config/autostart/compton.desktop
 
 # --------------------
 # Paquets
 # --------------------
-apt install tmux htop ncdu
+apt install tmux htop ncdu tree
 
 # --------------------
 # A E S T H E T I C
