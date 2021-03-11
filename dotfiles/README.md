@@ -8,6 +8,6 @@ tmux : [/etc/tmux.conf](https://raw.githubusercontent.com/Natsec/notes/master/do
 
 Compton Kawase Blur : [~/.config/autostart/compton.desktop](https://raw.githubusercontent.com/Natsec/notes/master/dotfiles/~/.config/autostart/compton.desktop)
 
-## All Systems Go
+## All Systems Are Go, and Lift Off 🚀
 
 rm dotfiles.sh ; wget https://raw.githubusercontent.com/Natsec/notes/master/dotfiles/dotfiles.sh && bash dotfiles.sh
