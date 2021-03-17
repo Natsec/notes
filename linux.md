@@ -2,6 +2,7 @@
 
 - [Root](#root)
 - [Clavier](#clavier)
+- [GPG](#gpg)
 - [Aléatoire](#aléatoire)
 - [Bash](#bash)
 - [Backup](#backup)
@@ -28,6 +29,18 @@ Pour reset un mot de passe root oublié :
 ```bash
 # passer en français
 setxkbmap fr
+```
+
+## GPG
+
+https://www.hacksanity.com/kb/gnupg-create-manage-keys/
+
+Pour générer une clé GPG, l'afficher, et l'exporter :
+```bash
+# sudo apt install gnupg
+gpg --full-generate-key
+gpg --list-keys
+gpg --armor --export 3AA5C34371567BD2 | tee key.asc
 ```
 
 ## Aléatoire

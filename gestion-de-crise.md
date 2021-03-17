@@ -33,7 +33,7 @@ Exemple de crise : catastrophe naturelle, [pandémie](https://isthevirusover.com
 ## Comment éviter la crise
 
 Anticiper, Planifier :
-- Connaître son système (comment il fonctionne, quelle menaces pèsent sur lui -> analyse de risque)
+- Connaître son système (comment il fonctionne, quelles menaces pèsent sur lui -> analyse de risque)
 - Armer une cellule de crise (qui gère quand ça tourne mal, qui on informe, comment on informe)
 - Préparer des procédures d'urgence ()
 
@@ -44,11 +44,42 @@ Tester :
 
 ## Comment gérer la crise
 
-1. Bien communiquer !
+Communiquer ! Plus précisement :
+- informer
+- rassurer
 
 ### Plan de continuité de l'activité (PCA)
 
-- Comment je continue de fonctionner malgré la crise ?
+Comment je continue de fonctionner malgré la crise ?
+
+Les 3 piliers d'un dispositif de gestion de crise :
+1. **Une organisation de crise**
+   - Des cellules de crise avec des rôles et des responsabilités bien définies
+   - Un processus de veille, d’alerte et de mobilisation
+   - Des outils et des moyens de gestion de crise (remontée des alertes/notifications, moyens de communications)
+2. **Des capacités de continuité d’activité et de reprise d’activités**
+   - Un système de management de la continuité d’activité (SMCA) articulé à partir du Plan de continuité d’activité (PCA)
+   - Un plan de défense rodé
+3. **Des ressources humaines formées à la gestion de crise**
+   - Importance des formations et des exercices de gestion de crise
+
+Norme ISO 22301 : comment mettre en place un SMCA (Système de Management de Continuité d'Activité)
+
+La gestion de crise repose sur :
+- 50% de planification
+- 25% d'implication de la direction
+- 25% d'adhésion du personnel
+
+Notre outil de gestion de crise est composé d'une capacité de :
+- **Continuité d'activité**, avec le PCA composé de :
+  - PCO : plan de continuité opérationnel
+  - PSI : plan de secours informatique (analyse de risque)
+  - PGC : plan de gestion de crise
+  - PCOM : plan de gestion de communication
+- **Reprise d'activité**, avec le PRA
+- **Défense**, pour se préparer aux attaques
+
+Le PCA est un processus itératif
 
 ## Préparation à la gestion de crise
 

@@ -14,6 +14,7 @@ Regnata Animalia:
 - Ledumahadi Kylocera
 - Ctenophora Galaxia
 - Megastaria
+- Deepstaria
 
 Dinosaures :
 - Kosmoceratops

@@ -28,3 +28,9 @@ LSB dans image/son et détection : https://github.com/ragibson/Steganography
 Adresse mail temporaire : https://temp-mail.org
 
 Générateur de qrcode : https://q-r-code.fr/
+
+Infos sur une IP publique : https://db-ip.com/192.168.1.1
+
+Dé-raccourciceur de lien :
+- https://unshorten.me/
+- https://unshorten.it/

