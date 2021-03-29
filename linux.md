@@ -6,9 +6,8 @@
 - [Aléatoire](#aléatoire)
 - [Bash](#bash)
 - [Backup](#backup)
-  - [SSH Key Based Authentication](#ssh-key-based-authentication)
-- [Audit de conformité](#audit-de-conformité)
 - [SSH](#ssh)
+  - [Key Based Authentication](#key-based-authentication)
 - [Clé bootable](#clé-bootable)
 - [LDAP](#ldap)
 - [Network](#network)
@@ -16,6 +15,10 @@
 - [Services](#services)
 - [Logging](#logging)
 - [User](#user)
+- [Debian](#debian)
+  - [Téléchargement de l'image](#téléchargement-de-limage)
+  - [Vérification de la signature du fichier d'empreinte](#vérification-de-la-signature-du-fichier-dempreinte)
+  - [Vérification de l'empreinte](#vérification-de-lempreinte)
 
 Cheatsheet :
 - https://devhints.io/bash
@@ -101,11 +104,31 @@ Backup avec rsync (local/distant) :
 rsync --delete -avu /home/user/dossier remote@192.168.1.2:/home/remote/dossier
 ```
 
-### SSH Key Based Authentication
+## SSH
+
+Rebond :
+```bash
+ssh -J host1 host2 ...
+```
+
+Pour monter un répertoire distant avec ssh :
+```bash
+apt install sshfs
+# monter
+sshfs user@host:/remote_dir /mnt
+# démonter
+fusermount -u /mnt
+```
+
+Se connecter dès qu'un hôte est disponible :
+```bash
+h=192.168.1.2; until nc -z -w1 $h 22; do sleep 1; echo waiting $h; done; ssh $h
+```
+
+### Key Based Authentication
 
 Générer une paire de clé sur la machine cliente :
 ```bash
-# la base
 ssh-keygen -f ~/.ssh/id_projet2a -C "serveur calcul projet2A" -t rsa -b 4096
 # le future
 ssh-keygen -f ~/.ssh/id_projet2a -C "serveur calcul projet2A" -t ed25519
@@ -133,46 +156,8 @@ Pour éviter de retaper trop souvent la passphrase de la clé privée, on peut u
 eval `ssh-agent`
 # lister les identités
 ssh-add -l
-# ajouter la clé à l'agent
+# ajouter la clé aux identités
 ssh-add ~/.ssh/id_projet2a
-```
-
-## Audit de conformité
-
-Pour mettre à jour les paquets concerné :
-```bash
-sudo apt update; debsecan --suite $(lsb_release --codename --short) --only-fixed --format packages | xargs -L1 sudo apt install
-```
-```bash
-# installation
-sudo apt install lynis
-
-# audit basique du système
-lynis audit system
-
-# exporter le rapport au format HTML
-lynis audit system | ansi2html -la > report.html
-```
-
-## SSH
-
-Rebond :
-```bash
-ssh -J host1 host2 ...
-```
-
-Pour monter un répertoire distant avec ssh :
-```bash
-apt install sshfs
-# monter
-sshfs user@host:/remote_dir /mnt
-# démonter
-fusermount -u /mnt
-```
-
-Se connecter dès qu'un hôte est disponible :
-```bash
-h=192.168.1.2; until nc -z -w1 $h 22; do sleep 1; echo waiting $h; done; ssh $h
 ```
 
 ## Clé bootable
@@ -184,6 +169,7 @@ dd if=file.iso of=/dev/sdb bs=16M conv=fsync status=progress
 ```
 
 ## LDAP
+
 ```bash
 ldapsearch -x -H ldap://192.168.43.231:390 -b "ou=Employees,ou=Company,dc=ilex-si,dc=com" "(&(|(title=Dir*)(title=Ing*)(title=Resp*))(description=F))"
 ```
@@ -236,4 +222,53 @@ sudo useradd --system wiki -s /sbin/nologin
 Pour ajouter un utilisateur au groupe `sudo` :
 ```bash
 usermod -a -G sudo utilisateur
+```
+
+## Debian
+
+### Téléchargement de l'image
+
+Il est préférable d'utiliser la version `netinst`, qui ne contient que les paquets essentiels, ce qui permet de respecter le principe de minimisation.
+
+Pour obtenir l'image d'installation Debian, on se rend sur https://www.debian.org/CD/netinst/. Le fichier téléchargé est un `.torrent`, qui nous permet de télécharger l'image iso via le protocole BitTorrent.
+
+Pour s'assurer que l'image n'a pas été modifiée, à cause d'une erreur de copie, ou par malveillance, on va vérifier l'empreinte de l'image. On se rend sur le répertoire https://cdimage.debian.org/debian-cd/current/amd64/bt-cd/, et on récupère les deux fichiers `SHA512SUMS` et `SHA512SUMS.sign`.
+
+### Vérification de la signature du fichier d'empreinte
+
+On commence par vérifier que le fichier contenant l'empreinte de l'image a bien été généré par l'équipe Debian, et n'a pas été modidié depuis. Pour cela on vérifie la signature du fichier `SHA512SUMS`.
+
+On récupère la clé publique de Debian en allant sur https://www.debian.org/CD/verify. Idéalement, il faudrait le faire avec une connection Internet différente de celle utilisée pour récupérer l'image. On regarde la dernière clé utilisée par l'équipe, et on note son identifiant :
+```
+pub                    4096R/6294BE9B 2011-01-05
+Empreinte de la clef = DF9B 9C49 EAA9 2984 3258  9D76 DA87 E80D 6294 BE9B
+uid                    Debian CD signing key <debian-cd@lists.debian.org>
+sub                    4096R/11CD9819 2011-01-05
+```
+
+Pour récupérer la clé, on fait :
+```bash
+gpg --keyserver keyring.debian.org --recv 6294BE9B
+```
+
+On vérifie la signature du fichier :
+```
+user@debian: share $ gpg --verify SHA512SUMS.sign
+gpg: les données signées sont supposées être dans « SHA512SUMS »
+gpg: Signature faite le sam. 06 févr. 2021 20:38:14 CET
+gpg: avec la clef RSA DF9B9C49EAA9298432589D76DA87E80D6294BE9B
+gpg: Bonne signature de « Debian CD signing key <debian-cd@lists.debian.org> » [inconnu]
+gpg: Attention : cette clef n'est pas certifiée avec une signature de confiance.
+gpg:             Rien n'indique que la signature appartient à son propriétaire.
+Empreinte de clef principale : DF9B 9C49 EAA9 2984 3258  9D76 DA87 E80D 6294 BE9B
+```
+
+Si les deux empreintes commencent bien par `DF9B 9C49 EAA9 2984`, c'est bien l'équipe Debian qui a signé le fichier `SHA512SUMS`.
+
+### Vérification de l'empreinte
+
+On peut maintenant comparer l'empreinte de l'image iso avec celle donnée par Debian avec :
+```bash
+sha512sum -c SHA512SUMS --ignore-missing
+debian-10.8.0-amd64-netinst.iso: Réussi
 ```
