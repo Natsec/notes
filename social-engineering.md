@@ -8,6 +8,7 @@
     - [Google Dork](#google-dork)
 - [Communication](#communication)
 - [Cours ENSIBS](#cours-ensibs)
+- [Tools](#tools)
 
 > [Social Engineering: The Science of Human Hacking, 2nd Edition](https://www.chasse-aux-livres.fr/prix/111943338X/social-engineering-hadnagy), Christopher Hadnagy.
 
@@ -39,3 +40,9 @@ https://www.sans.org/security-resources/GoogleCheatSheet.pdf
 
 
 ## Cours ENSIBS
+
+L'habit fait le moine
+
+## Tools
+
+https://www.social-engineer.org/framework/

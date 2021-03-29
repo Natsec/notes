@@ -81,6 +81,22 @@ Notre outil de gestion de crise est composé d'une capacité de :
 
 Le PCA est un processus itératif
 
+Les 4 principales ressources critiques sur lesquels on va assurer la continuité d'activité :
+- Le personnel
+- L'infrastructure (les bâtiments)
+- Le système d'information
+- Les fournisseurs
+
+On crée un plan de continuité opérationnel par processus essentiel de l'organisation.
+
+![image-20210323170908158](gestion-de-crise.assets/image-20210323170908158.png)
+
+Délais :
+- PDMA : **p**erte de **d**onnée **m**aximale **a**cceptable
+- DMIA : **d**urée **m**aximale d'**i**nterruption de fonctionnement **a**cceptable
+- DIMA : **d**urée d'**i**ndisponibilité **m**aximale **a**cceptable
+- DMRP : **d**élai **m**aximal de **r**eprise technique **p**révue (durée max de fonctionnement en mode dégradé acceptable)
+
 ## Préparation à la gestion de crise
 
 ## Pendant la crise

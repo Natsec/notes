@@ -62,8 +62,8 @@ nmap -T4 -sS <ip>
 nmap -T4 -A -oN scan1.txt <ip>
 # scan de vuln
 nmap -T4 -sV --script vulners -oN scan1.txt <ip>
-# sur tous les ports
-nmap -T4 -sV --script vulners -oN scan1.txt <ip> -p-
+# sur une plage de port
+nmap -T4 -sV --script vulners -oN scan1.txt <ip> -p 1023-10000
 ```
 
 ### TODO Enumération SMB

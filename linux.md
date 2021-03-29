@@ -1,13 +1,16 @@
 # Linux
 
-- [Root](#root)
 - [Clavier](#clavier)
+- [Root](#root)
 - [GPG](#gpg)
 - [Aléatoire](#aléatoire)
 - [Bash](#bash)
 - [Backup](#backup)
+  - [SSH Key Based Authentication](#ssh-key-based-authentication)
+- [Audit de conformité](#audit-de-conformité)
 - [SSH](#ssh)
 - [Clé bootable](#clé-bootable)
+- [LDAP](#ldap)
 - [Network](#network)
   - [DNS](#dns)
 - [Services](#services)
@@ -17,19 +20,21 @@
 Cheatsheet :
 - https://devhints.io/bash
 
-## Root
-
-Pour reset un mot de passe root oublié :
-1. faire `e` dans le menu grub
-2. ajouter `rw init=/bin/bash` à la fin de la ligne `linux`
-3. faire `^x` ou `F10` pour démarrer l'image
-
 ## Clavier
 
 ```bash
 # passer en français
 setxkbmap fr
 ```
+
+Pour désactiver le 🔔 : décommenter `# set bell-style none` dans `/etc/inputrc`.
+
+## Root
+
+Pour reset un mot de passe root oublié :
+1. faire `e` dans le menu grub
+2. ajouter `rw init=/bin/bash` à la fin de la ligne `linux`
+3. faire `^x` ou `F10` pour démarrer l'image
 
 ## GPG
 
@@ -96,7 +101,65 @@ Backup avec rsync (local/distant) :
 rsync --delete -avu /home/user/dossier remote@192.168.1.2:/home/remote/dossier
 ```
 
+### SSH Key Based Authentication
+
+Générer une paire de clé sur la machine cliente :
+```bash
+# la base
+ssh-keygen -f ~/.ssh/id_projet2a -C "serveur calcul projet2A" -t rsa -b 4096
+# le future
+ssh-keygen -f ~/.ssh/id_projet2a -C "serveur calcul projet2A" -t ed25519
+```
+
+Copier la clé publique vers le serveur :
+```bash
+ssh-copy-id -i ~/.ssh/id_projet2a.pub natsec@172.16.22.1
+# OU
+# copier la clé publique dans le fichier /home/natsec/.ssh/authorized_keys du serveur
+```
+
+Editer le fichier `~/.ssh/config` :
+```
+Host s serveur_de_calcul
+    HostName 172.16.22.1
+    IdentityFile ~/.ssh/id_projet2a
+    User natsec
+    #ProxyJump jumphost
+```
+
+Pour éviter de retaper trop souvent la passphrase de la clé privée, on peut utiliser `ssh-agent` qui va la stocker en mémoire temporairement :
+```bash
+# lancer l'agent de gestion des clés
+eval `ssh-agent`
+# lister les identités
+ssh-add -l
+# ajouter la clé à l'agent
+ssh-add ~/.ssh/id_projet2a
+```
+
+## Audit de conformité
+
+Pour mettre à jour les paquets concerné :
+```bash
+sudo apt update; debsecan --suite $(lsb_release --codename --short) --only-fixed --format packages | xargs -L1 sudo apt install
+```
+```bash
+# installation
+sudo apt install lynis
+
+# audit basique du système
+lynis audit system
+
+# exporter le rapport au format HTML
+lynis audit system | ansi2html -la > report.html
+```
+
 ## SSH
+
+Rebond :
+```bash
+ssh -J host1 host2 ...
+```
 
 Pour monter un répertoire distant avec ssh :
 ```bash
@@ -112,20 +175,6 @@ Se connecter dès qu'un hôte est disponible :
 h=192.168.1.2; until nc -z -w1 $h 22; do sleep 1; echo waiting $h; done; ssh $h
 ```
 
-Rebond :
-```bash
-ssh -J host1 host2 ...
-```
-
-Configuration du client ssh dans `~/.ssh/config` :
-```
-Host alias1 alias2
-    HostName 192.168.1.2
-    IdentityFile ~/.ssh/id_rsa_alias1
-    User remoteuser
-    #ProxyJump jumphost
-```
-
 ## Clé bootable
 
 Pour rendre une clé bootable :
@@ -134,6 +183,10 @@ lsblk
 dd if=file.iso of=/dev/sdb bs=16M conv=fsync status=progress
 ```
 
+## LDAP
+```bash
+ldapsearch -x -H ldap://192.168.43.231:390 -b "ou=Employees,ou=Company,dc=ilex-si,dc=com" "(&(|(title=Dir*)(title=Ing*)(title=Resp*))(description=F))"
+```
 ## Network
 
 ```bash
@@ -178,4 +231,9 @@ journalctl -uf <service>
 Pour créer un utilisateur système `wiki`, on peut faire :
 ```
 sudo useradd --system wiki -s /sbin/nologin
+```
+
+Pour ajouter un utilisateur au groupe `sudo` :
+```bash
+usermod -a -G sudo utilisateur
 ```

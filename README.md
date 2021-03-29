@@ -6,6 +6,7 @@
     <a href="firewall"          >🔥 Firewall</a>
     <a href="forensic"          >🔎 Forensic</a>
     <a href="linux"             >🐧 Linux</a>
+    <a href="hardening"         >⚔️ Hardening</a>
     <a href="network"           >🌍 Network</a>
     <a href="social-engineering">🕵 Social Engineering</a>
     <a href="python"            >🐍 Python</a>
