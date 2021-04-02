@@ -57,6 +57,7 @@ if match:
 
 ## Color print
 ```python
+import builtins
 def print(*args):
     """Override of the builtin print function.
 

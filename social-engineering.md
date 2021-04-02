@@ -1,4 +1,4 @@
-# Social Engineering (Under construction)
+# Social Engineering
 
 - [Principes](#principes)
   - [La pyramide du Social Engineering](#la-pyramide-du-social-engineering)
@@ -14,7 +14,22 @@
 
 ## Principes
 
+Christopher Hadnagy définit l'ingénierie sociale comme *tout acte qui influence une personne à faire une action, qui pourrait ou ne pas être, dans son intérêt*.
+
+Les utilisations mal intentionnées de l'ingénierie sociale peuvent être classées en 3 vecteurs d'attaque :
+- Texte : Interaction minimale, comprend le [phishing](https://en.wikipedia.org/wiki/Phishing) et leurs variantes.
+- Voix : Interaction en temps réel avec la cible. Il faut pouvoir s'adapter à l'interlocuteur
+- Impersonation : l'attaquant se fait passer physiquement pour quelqu'un qu'il n'est pas. Requiert le plus de compétence, de moyens (humains/financiers), et de préparation.
+
+L'être humain est un être vivant social, et c'est dans notre instinct d'aider notre semblable.
+
+L'ingénierie social tire profit du fait qu'il existe dans la société des biais
+
 ### La pyramide du Social Engineering
+
+Cette représentation permet de comprendre l'ordre et l'importance des différentes étape de la réalisation d'une attaque, sous l'angle d'un professionel dont le but est de faire réaliser au client ses vulnérabilités, et lui permettre de comprendre ce qui peut être amélioré, pour mieux se protéger.
+
+![The SE Pyramid](assets\se-pyramid.jpg)
 
 1. La recherche en source ouverte
 2. Le pretexte
@@ -43,6 +58,10 @@ https://www.sans.org/security-resources/GoogleCheatSheet.pdf
 
 L'habit fait le moine
 
+Notre cerveau a évolué en s'adaptant à un monde (environnement, société) qui existe depuis des centaines de milliers d'année, en très peu de temps, ce monde a changé, et notre cerveau est resté le même.
+
 ## Tools
 
 https://www.social-engineer.org/framework/
+
+theHarvester

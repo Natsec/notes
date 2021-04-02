@@ -41,6 +41,8 @@ Espèces :
 - Gastéropode écailleux (Crysomallon squamiferum)
 - Python émeraude
 - plantes revivescantes
+- Régalec (Regalecus glesne)
+- Deepstaria Enigmatica
 
 Voitures :
 - Mazda 6 sedan
