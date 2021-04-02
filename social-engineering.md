@@ -29,7 +29,7 @@ L'ingénierie social tire profit du fait qu'il existe dans la société des biai
 
 Cette représentation permet de comprendre l'ordre et l'importance des différentes étape de la réalisation d'une attaque, sous l'angle d'un professionel dont le but est de faire réaliser au client ses vulnérabilités, et lui permettre de comprendre ce qui peut être amélioré, pour mieux se protéger.
 
-![The SE Pyramid](assets\se-pyramid.jpg)
+![The SE Pyramid](assets/se-pyramid.jpg)
 
 1. La recherche en source ouverte
 2. Le pretexte
@@ -44,8 +44,9 @@ Cette représentation permet de comprendre l'ordre et l'importance des différen
 
 https://www.lemondeinformatique.fr/actualites/lire-8-outils-osint-pour-le-cyber-renseignement-80484.html
 
-Moteur de recherche des fuites d'information : https://intelx.io/
-Moteur de recherche de l'internet des objets : https://www.shodan.io/
+Outils :
+- Moteur de recherche des fuites d'information : https://intelx.io/
+- Moteur de recherche de l'internet des objets : https://www.shodan.io/
 
 #### Google Dork
 
