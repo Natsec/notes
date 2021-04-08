@@ -2,13 +2,8 @@
 
 - [Principes](#principes)
   - [La pyramide du Social Engineering](#la-pyramide-du-social-engineering)
-- [OSINT (Open Source Intelligence)](#osint-open-source-intelligence)
-  - [Non-Technical OSINT](#non-technical-osint)
-  - [Technical OSINT](#technical-osint)
-    - [Google Dork](#google-dork)
-- [Communication](#communication)
-- [Cours ENSIBS](#cours-ensibs)
-- [Tools](#tools)
+    - [OSINT (Open Source Intelligence)](#osint-open-source-intelligence)
+- [Se protéger](#se-protéger)
 
 > [Social Engineering: The Science of Human Hacking, 2nd Edition](https://www.chasse-aux-livres.fr/prix/111943338X/social-engineering-hadnagy), Christopher Hadnagy.
 
@@ -35,12 +30,13 @@ Cette représentation permet de comprendre l'ordre et l'importance des différen
 2. Le pretexte
 3. L'éxécution
 
-## OSINT (Open Source Intelligence)
+#### OSINT (Open Source Intelligence)
 
-### Non-Technical OSINT
+##### Non-Technical OSINT
 
+###### Communication
 
-### Technical OSINT
+##### Technical OSINT
 
 https://www.lemondeinformatique.fr/actualites/lire-8-outils-osint-pour-le-cyber-renseignement-80484.html
 
@@ -48,21 +44,28 @@ Outils :
 - Moteur de recherche des fuites d'information : https://intelx.io/
 - Moteur de recherche de l'internet des objets : https://www.shodan.io/
 
-#### Google Dork
+###### Google Dork
 
 https://www.sans.org/security-resources/GoogleCheatSheet.pdf
 
-## Communication
+
+###### Tools
+
+https://www.social-engineer.org/framework/
+
+Acronymes :
+- https://www.acronymfinder.com/
+- https://acronyms.thefreedictionary.com/
+
+theHarvester
 
 
-## Cours ENSIBS
+## Se protéger
+
+Tout l'enjeu pour se protéger est de reste dans le fonctionneme Beta, pour cela:
+- s'assurer de l'identité de la personne
+-
 
 L'habit fait le moine
 
 Notre cerveau a évolué en s'adaptant à un monde (environnement, société) qui existe depuis des centaines de milliers d'année, en très peu de temps, ce monde a changé, et notre cerveau est resté le même.
-
-## Tools
-
-https://www.social-engineer.org/framework/
-
-theHarvester

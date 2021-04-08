@@ -1,7 +1,9 @@
-alias ll='ls -Alh'
+alias ll='ls -hAlt'
+
 alias tree='tree -FC'
 alias nano='nano -Pl'
 alias ncdu='ncdu --si'
+
 alias vmshare='vmhgfs-fuse .host:partage ./share'
 alias maj='clear; apt update && apt upgrade'
 

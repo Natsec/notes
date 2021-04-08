@@ -8,8 +8,7 @@
 - [Backup](#backup)
 - [SSH](#ssh)
   - [Key Based Authentication](#key-based-authentication)
-- [Clé bootable](#clé-bootable)
-- [LDAP](#ldap)
+- [Fichier ISO](#fichier-iso)
 - [Network](#network)
   - [DNS](#dns)
 - [Services](#services)
@@ -19,6 +18,7 @@
   - [Téléchargement de l'image](#téléchargement-de-limage)
   - [Vérification de la signature du fichier d'empreinte](#vérification-de-la-signature-du-fichier-dempreinte)
   - [Vérification de l'empreinte](#vérification-de-lempreinte)
+- [LDAP](#ldap)
 
 Cheatsheet :
 - https://devhints.io/bash
@@ -160,7 +160,7 @@ ssh-add -l
 ssh-add ~/.ssh/id_projet2a
 ```
 
-## Clé bootable
+## Fichier ISO
 
 Pour rendre une clé bootable :
 ```bash
@@ -168,11 +168,11 @@ lsblk
 dd if=file.iso of=/dev/sdb bs=16M conv=fsync status=progress
 ```
 
-## LDAP
-
+Pour monter une image ISO :
 ```bash
-ldapsearch -x -H ldap://192.168.43.231:390 -b "ou=Employees,ou=Company,dc=ilex-si,dc=com" "(&(|(title=Dir*)(title=Ing*)(title=Resp*))(description=F))"
+mount -o loop debian-10.9.0-amd64-DVD-1.iso /media/cdrom
 ```
+
 ## Network
 
 ```bash
@@ -271,4 +271,10 @@ On peut maintenant comparer l'empreinte de l'image iso avec celle donnée par De
 ```bash
 sha512sum -c SHA512SUMS --ignore-missing
 debian-10.8.0-amd64-netinst.iso: Réussi
+```
+
+## LDAP
+
+```bash
+ldapsearch -x -H ldap://192.168.43.231:390 -b "ou=employees,ou=company,dc=nasa,dc=com" "(&(|(title=Dir*)(title=Ing*)(title=Resp*))(description=F))"
 ```
