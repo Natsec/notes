@@ -11,6 +11,7 @@
 - [Fichier ISO](#fichier-iso)
 - [Network](#network)
   - [DNS](#dns)
+  - [LDAP](#ldap)
 - [Services](#services)
 - [Logging](#logging)
 - [User](#user)
@@ -18,7 +19,6 @@
   - [Téléchargement de l'image](#téléchargement-de-limage)
   - [Vérification de la signature du fichier d'empreinte](#vérification-de-la-signature-du-fichier-dempreinte)
   - [Vérification de l'empreinte](#vérification-de-lempreinte)
-- [LDAP](#ldap)
 
 Cheatsheet :
 - https://devhints.io/bash
@@ -192,6 +192,12 @@ nameserver 8.8.8.8
 nameserver 192.168.1.254
 ```
 
+### LDAP
+
+```bash
+ldapsearch -x -H ldap://192.168.43.231:390 -b "ou=employees,ou=company,dc=nasa,dc=com" "(&(|(title=Dir*)(title=Ing*)(title=Resp*))(description=F))"
+```
+
 ## Services
 
 ```bash
@@ -271,10 +277,4 @@ On peut maintenant comparer l'empreinte de l'image iso avec celle donnée par De
 ```bash
 sha512sum -c SHA512SUMS --ignore-missing
 debian-10.8.0-amd64-netinst.iso: Réussi
-```
-
-## LDAP
-
-```bash
-ldapsearch -x -H ldap://192.168.43.231:390 -b "ou=employees,ou=company,dc=nasa,dc=com" "(&(|(title=Dir*)(title=Ing*)(title=Resp*))(description=F))"
 ```

@@ -20,8 +20,8 @@ Nuances de couleur : https://mdigi.tools/color-shades/#ddeeaa
 
 ### Steganographie
 
-LSB en ligne : https://stylesuxx.github.io/steganography/
-LSB dans image/son et détection : https://github.com/ragibson/Steganography
+- LSB en ligne : https://stylesuxx.github.io/steganography/
+- LSB dans image/son et détection : https://github.com/ragibson/Steganography
 
 ## Divers
 

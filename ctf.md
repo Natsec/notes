@@ -10,6 +10,8 @@
 - [Cassage de mot de passe](#cassage-de-mot-de-passe)
 - [SQLite](#sqlite)
 
+---
+
 Liens :
 - https://attack.mitre.org/matrices
 - https://www.thehacker.recipes
