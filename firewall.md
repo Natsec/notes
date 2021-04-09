@@ -5,6 +5,8 @@
 - [FortiGate (Fortinet)](#fortigate-fortinet)
 - [VPN IPsec](#vpn-ipsec)
 
+---
+
 ## nftables
 
 ```bash

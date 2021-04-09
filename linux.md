@@ -5,6 +5,7 @@
 - [GPG](#gpg)
 - [Aléatoire](#aléatoire)
 - [Bash](#bash)
+- [Intégrité, diff et patch](#intégrité-diff-et-patch)
 - [Backup](#backup)
 - [SSH](#ssh)
   - [Key Based Authentication](#key-based-authentication)
@@ -19,6 +20,8 @@
   - [Téléchargement de l'image](#téléchargement-de-limage)
   - [Vérification de la signature du fichier d'empreinte](#vérification-de-la-signature-du-fichier-dempreinte)
   - [Vérification de l'empreinte](#vérification-de-lempreinte)
+
+---
 
 Cheatsheet :
 - https://devhints.io/bash
@@ -93,8 +96,27 @@ cd /tmp/archives
 
 ncdu (ncurses disk usage) :
 ```bash
-ncdu --si <--color dark>
+ncdu --si
     gg t ss c
+```
+
+## Intégrité, diff et patch
+
+Enregistrer et vérifier les empreintes récursivement :
+```bash
+find | xargs -L1 sha512sum | sort -k2 > hash.txt
+diff hash.txt <(find | xargs -L1 sha512sum | sort -k2)
+```
+
+Différences entre 2 répertoires :
+```bash
+diff -qr dossier1 dossier2
+```
+
+Pour prendre en compte les mises à jours d'un fichier, tout en conservant les modifications personnelles :
+```bash
+diff -u base1 base2 > update.patch
+patch mod1 update.patch -o mod2
 ```
 
 ## Backup

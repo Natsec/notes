@@ -7,6 +7,8 @@
 - [Distance de Levenshtein](#distance-de-levenshtein)
 - [Brute force](#brute-force)
 
+---
+
 ## Lire/Ecrire un fichier
 
 ```python

@@ -5,6 +5,8 @@
     - [OSINT (Open Source Intelligence)](#osint-open-source-intelligence)
 - [Se protéger](#se-protéger)
 
+---
+
 > [Social Engineering: The Science of Human Hacking, 2nd Edition](https://www.chasse-aux-livres.fr/prix/111943338X/social-engineering-hadnagy), Christopher Hadnagy.
 
 ## Principes
