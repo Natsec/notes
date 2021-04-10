@@ -151,9 +151,9 @@ h=192.168.1.2; until nc -z -w1 $h 22; do sleep 1; echo waiting $h; done; ssh $h
 
 Générer une paire de clé sur la machine cliente :
 ```bash
-ssh-keygen -f ~/.ssh/id_projet2a -C "serveur calcul projet2A" -t rsa -b 4096
-# le future
-ssh-keygen -f ~/.ssh/id_projet2a -C "serveur calcul projet2A" -t ed25519
+h=projet2a ; ssh-keygen -f "~/.ssh/id_$h" -C "$h" -t ed25519
+# afficher l'empreinte d'une clé
+ssh-keygen -lv -f ~/.ssh/id_projet2a
 ```
 
 Copier la clé publique vers le serveur :
@@ -169,6 +169,7 @@ Host s serveur_de_calcul
     HostName 172.16.22.1
     IdentityFile ~/.ssh/id_projet2a
     User natsec
+    #Port 22
     #ProxyJump jumphost
 ```
 
