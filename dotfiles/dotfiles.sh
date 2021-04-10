@@ -16,7 +16,7 @@ get(){
 # --------------------
 # Dotfiles
 # --------------------
-get /~/.bash_aliases && source .bash_aliases
+get /~/.bash_aliases && source ~/.bash_aliases
 get /~/.config/xfce4/terminal/terminalrc
 get /etc/tmux.conf
 get /~/.config/autostart/compton.desktop
@@ -24,7 +24,7 @@ get /~/.config/autostart/compton.desktop
 # --------------------
 # Paquets
 # --------------------
-sudo apt install tmux htop ncdu tree
+sudo apt install tmux htop tree ncdu
 
 # --------------------
 # A E S T H E T I C
