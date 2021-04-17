@@ -15,6 +15,7 @@
     <a href="web"               >🕸 Web</a>
     <a href="windows"           >🪟 Windows</a>
     <a href="wireless"          >📡 Wireless</a>
+    <a href="auditd"            >📜 Auditd</a>
     <br>
     <a href="https://natsec.fr" >natsec.fr</a>
 </div>

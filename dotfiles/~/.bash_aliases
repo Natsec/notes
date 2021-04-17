@@ -4,6 +4,8 @@ alias ll='ls -hAlt'
 alias tree='tree -FC'
 alias nano='nano -Pl'
 alias ncdu='ncdu --si'
+alias grep='grep --color'
+alias diff='diff --color'
 
 alias maj='clear; apt update && apt upgrade'
 alias vmshare='vmhgfs-fuse .host:partage ./share'

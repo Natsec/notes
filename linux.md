@@ -31,6 +31,8 @@ Cheatsheet :
 ```bash
 # passer en français
 setxkbmap fr
+# réparer un terminal cassé
+reset
 ```
 
 Pour désactiver le 🔔 : décommenter `# set bell-style none` dans `/etc/inputrc`.
@@ -123,7 +125,7 @@ patch mod1 update.patch -o mod2
 
 Backup avec rsync (local/distant) :
 ```bash
-rsync --delete -avu /home/user/dossier remote@192.168.1.2:/home/remote/dossier
+rsync --delete -avu --exclude dossier /home/user/dossier remote@192.168.1.2:/home/remote/dossier
 ```
 
 ## SSH
