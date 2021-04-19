@@ -49,7 +49,7 @@ Pour déchiffrer le cpassword d'un compte défini dans une GPO sur un partage :
 - utiliser la recette [CyberChef](https://gchq.github.io/CyberChef/#recipe=From_Base64('A-Za-z0-9%2B/%3D',true)AES_Decrypt(%7B'option':'Hex','string':'4e9906e8fcb66cc9faf49310620ffee8f496e806cc057990209b09a433b66c1b'%7D,%7B'option':'Hex','string':'00000000000000000000000000000000'%7D,'CBC','Raw','Raw',%7B'option':'Hex','string':''%7D,%7B'option':'Hex','string':''%7D))
 - ou [gpp-decrypt](https://github.com/t0thkr1s/gpp-decrypt) si besoin offline
 
-Clé AES256 donnée gentiement par [Microsoft](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-gppref/2c15cbf0-f086-4c74-8b70-1f2fa45dd4be) :
+Clé AES256 donnée par [Microsoft](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-gppref/2c15cbf0-f086-4c74-8b70-1f2fa45dd4be) :
 ```bash
 # AES256 cipher key
 4e 99 06 e8 fc b6 6c c9 fa f4 93 10 62 0f fe e8 f4 96 e8 06 cc 05 79 90 20 9b 09 a4 33 b6 6c 1b

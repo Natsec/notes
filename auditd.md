@@ -127,7 +127,7 @@ Les règles de surveillance du système de fichier (ou watch) sont de la forme s
 
 - `-S` syscall : Nom ou numéro de l'appel système à intercepter. Pour gagner en performance, on peut en mettre plusieurs dans une règle en répétant l'option `-S`. Si la machine à superviser comporte des programmes en 32 bit et 64 bit, il faut dupliquer la règle en mettant les filtres `-F arch=b32` et `-F arch=b64` AVANT le -S. Pour optimiser les performances, c'est mieux de mettre la règle 64 bit avant 32 bit.
 
-- `-F` field : Permet d'affiner la recherche. On peut en mettre plusieurs, la règle matchera si tous les champs matchent (ET logique). Il faut mettre le champs `-F arch=` avant les `-S`, et les autres `-F` après. La documentation des champs possible se trouve dans la page de manuel de `auditctl`, ou https://man.cx/auditctl.
+- `-F` field : Permet d'affiner la recherche. On peut en mettre plusieurs, la règle matchera si tous les champs matchent (ET logique). Il faut mettre le champs `-F arch=` avant les `-S`, et les autres `-F` après. La documentation des champs possible se trouve dans la page de manuel de [auditctl](https://man.cx/auditctl).
 
 Les valeurs de champ `-F` importantes à comprendre sont :
 - `auid`: permet de suivre l'uid original d'un utilisateur lorsqu'il lance un processus en changant d'identité. Lors de la connexion initiale d'un utilisateur, auditd enregistre l'uid de celui, si au cours de la session, l'utilisateur change d'identité pour faire une action, l'`auid` permet d'attribuer l'auteur initial. Un `auid` avec la valeur `-1` ou [4294967295](https://en.wikipedia.org/wiki/4,294,967,295#In_computing) indique un utilisateur pour lequel l'`auid` n'est pas défini.
