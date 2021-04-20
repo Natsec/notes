@@ -35,9 +35,8 @@ En quelques milliers d'années, nos civilisations ont évoluées [extrêmement r
 Alors que notre cerveau évolue, sur [une autre échelle de temps](https://en.wikipedia.org/wiki/Geologic_time_scale).
 
 Ainsi, un bon attaquant tirera profit de la multitude de [biais cognitifs](https://fr.wikipedia.org/wiki/Biais_cognitif) auxquels nous sommes sujet :
-![codex-biais-cognitifs](https://upload.wikimedia.org/wikipedia/commons/1/16/The_Cognitive_Bias_Codex_(French)_-_John_Manoogian_III_(jm3).svg)
-![Cognitive_bias_codex](https://upload.wikimedia.org/wikipedia/commons/6/65/Cognitive_bias_codex_en.svg)
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/65/Cognitive_bias_codex_en.svg" alt="codex"/>
+
+[![Cognitive_bias_codex](https://upload.wikimedia.org/wikipedia/commons/6/65/Cognitive_bias_codex_en.svg)](https://upload.wikimedia.org/wikipedia/commons/6/65/Cognitive_bias_codex_en.svg)
 
 Nous aurions [deux modes de pensée](https://fr.wikipedia.org/wiki/Système_1_/_Système_2_:_Les_deux_vitesses_de_la_pensée#Deux_systèmes_de_pensée), tout l'enjeu pour l'attaquant est de nous faire rester dans le système 1, en exploitant nos biais cognitifs.
 
@@ -171,4 +170,5 @@ Dans un mail, un appel ou une discussion **que vous initiez**, il est toujours b
 3. Pour votre interlocuteur, ça lui permet d'augmenter la confiance que c'est bien vous, en lui donnant des informations de contexte qu'un attaquant n'aura peut-être pas.
 
 Dans tous les cas, la meilleure solution pour ne pas se faire arnaquer sur l'Internet reste de s'offrir les services d'un chien anti-bamboozle :
-[![bamboozle-guarantee-dog](https://i.redd.it/gvw5xy2if16z.jpg)](https://www.reddit.com/r/rarepuppers/comments/6jn6p6/bamboozle_guarantee_dog/)
+
+![bamboozle-guarantee-dog](https://i.redd.it/gvw5xy2if16z.jpg)
