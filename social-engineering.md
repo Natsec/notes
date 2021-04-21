@@ -27,8 +27,8 @@ Avec cette définition, on comprend que la finalité de l'ingénierie sociale d�
 
 L'ingénierie sociale consiste à utiliser les mécanismes humains et leurs limites pour influencer la prise de décision d'un individu. Les applications sont nombreuses : escroquerie, marketing, séduction, politique, renseignement, etc.
 
-*Je pense que nous nous faisons avoir, parce que notre cerveau est héritée de [millions d'années d'évolution](https://en.wikipedia.org/wiki/History_of_life).<br>
-Pendant longtemps, il était vital de prendre une décision rapidement, sur la base de peu d'informations,<br>
+*Je pense qu'on se fait avoir parce que notre cerveau est héritée de [millions d'années d'évolution](https://en.wikipedia.org/wiki/History_of_life).<br>
+Pendant longtemps, il était vital de décider rapidement, sur la base de peu d'informations,<br>
 Ces préjugés sont [encore indispensables](https://fr.wikipedia.org/wiki/Préjugé#Nécessité) de nos jours,<br>
 Mais ils peuvent maintenant nous jouer des tours.<br>
 En quelques milliers d'années, nos civilisations ont évoluées [extrêmement rapidement](https://www.youtube.com/watch?v=yNLdblFQqsw),<br>
