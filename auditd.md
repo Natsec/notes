@@ -136,8 +136,8 @@ Les valeurs de champ `-F` importantes à comprendre sont :
 
 ## Sources
 
-- Page de manuel de la commande [auditctl](https://man.cx/auditctl)
+- Page de manuel de la commande [auditctl](https://man.cx/auditctl(8))
 - Page de manuel du fichier [audit.rules](https://man.cx/audit.rules)
 - [Documentation de SUSE Linux Enterprise](https://documentation.suse.com/sles/15-SP2/html/SLES-all/cha-audit-comp.html#sec-audit-rules)
-- [Documentation de Red Hat](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/security_guide/sec-understanding_audit_log_file)
-- [Article du MISC](https://connect.ed-diamond.com/GNU-Linux-Magazine/GLMFHS-093/Journalisez-les-actions-de-vos-utilisateurs-avec-Auditd.html)
+- [Documentation de Red Hat](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/security_guide/sec-understanding_audit_log_files)
+- [Article du MISC](https://connect.ed-diamond.com/GNU-Linux-Magazine/GLMFHS-093/Journalisez-les-actions-de-vos-utilisateurs-avec-Auditd)

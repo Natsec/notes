@@ -38,6 +38,8 @@ Ainsi, un bon attaquant tirera profit de la multitude de [biais cognitifs](https
 
 [![cognitive-bias-codex](https://upload.wikimedia.org/wikipedia/commons/6/65/Cognitive_bias_codex_en.svg)](https://upload.wikimedia.org/wikipedia/commons/6/65/Cognitive_bias_codex_en.svg)
 
+> cliquez sur l'image pour voir la carte interactive
+
 Nous aurions [deux modes de pensée](https://fr.wikipedia.org/wiki/Système_1_/_Système_2_:_Les_deux_vitesses_de_la_pensée#Deux_systèmes_de_pensée), tout l'enjeu pour l'attaquant est de nous faire rester dans le système 1, en exploitant nos biais cognitifs, pour que nous agissions sans remise en question.
 
 L'ingénierie sociale tire aussi partie d'une propriété de l'être humain : **nous sommes des êtres vivants sociaux**, et c'est dans notre instinct d'aider notre semblable lorsqu'il nous sollicite. C'est ~~pour l'argent~~ par empathie qu'on vient en aide au [prince nigérian](https://www.franceculture.fr/histoire/avant-les-mails-de-princes-nigerians-au-xviiieme-siecle-larnaque-aux-lettres-de-jerusalem).
@@ -128,7 +130,7 @@ Dans cette situation, l'habit fait le moine, car simplement avec son apparence, 
 
 ### Le modèle DISC
 
-Plutôt que d'établir le profil psychologique d'un individu rapidement, ce qui peut conduire à des erreurs d'interprétation, le modèle DISC de [William Moulton Marston](https://fr.wikipedia.org/wiki/William_Moulton_Marston) se concentre sur la compréhension du profil de communication d'une personne. Cette compréhension permet de mieux s'adapter à l'interlocuteur lors de l'approche initiale, et de construire une relation de confiance.
+Plutôt que d'établir le profil psychologique d'un individu rapidement, ce qui peut conduire à des erreurs d'interprétation, le modèle DISC de [William Moulton Marston](https://fr.wikipedia.org/wiki/William_Moulton_Marston) se concentre sur la compréhension du **profil de communication** d'une personne. Cette compréhension permet de mieux s'adapter à l'interlocuteur lors de l'approche initiale, et de construire une relation de confiance.
 
 Il existe différentes descriptions de l'acronyme DISC, mais Chris.H utilise :
 - **D**irect
