@@ -28,7 +28,7 @@ Avec cette définition, on comprend que la finalité de l'ingénierie sociale d�
 L'ingénierie sociale consiste à utiliser les mécanismes humains et leurs limites pour influencer la prise de décision d'un individu. Les applications sont nombreuses : escroquerie, marketing, séduction, politique, renseignement, etc.
 
 *Je pense qu'on se fait avoir parce que notre cerveau est héritée de [millions d'années d'évolution](https://en.wikipedia.org/wiki/History_of_life).<br>
-Pendant longtemps, il était vital de décider rapidement, sur la base de peu d'informations,<br>
+Pendant longtemps, il était vital de décider rapidement, sur la base de peu d'informations.<br>
 Ces préjugés sont [encore indispensables](https://fr.wikipedia.org/wiki/Préjugé#Nécessité) de nos jours,<br>
 Mais ils peuvent maintenant nous jouer des tours.<br>
 En quelques milliers d'années, nos civilisations ont évoluées [extrêmement rapidement](https://www.youtube.com/watch?v=yNLdblFQqsw),<br>
@@ -99,14 +99,14 @@ Base de connaissances :
 
 ## 2. Développement du prétexte
 
-Cette partie consiste à trouver une raison valable de rentrer en contact avec la cible. Partie cruciale qui peut grandement faciliter la tâche de l'attaquant s'il s'est bien renseigné. C'est aussi ici que l'attaquant détermine s'il aura besoin d'équipements, car bien équipé, [on peut rentrer presque partout](https://www.youtube.com/watch?v=GyvRamX1VyA).
+Cette partie consiste à trouver une raison valable de rentrer en contact avec la cible. Partie cruciale qui peut grandement faciliter la tâche de l'attaquant s'il s'est bien renseigné. C'est aussi ici que l'attaquant détermine s'il aura besoin d'équipements, car bien équipé, [on peut entrer presque partout](https://www.youtube.com/watch?v=GyvRamX1VyA).
 
 En fonction de ses compétences, et du niveau d'accès qu'il veut obtenir, l'attaquant utilisera des moyens plus ou moins avancés pour parvenir à ses fins.
 
 Ainsi, les utilisations mal intentionnées de l'ingénierie sociale peuvent être classées en 3 vecteurs d'attaque :
-- Texte : Interaction minimale, comprend le [phishing](https://en.wikipedia.org/wiki/Phishing) et ses variantes.
-- Voix : Interaction par téléphone en temps réel avec la cible. Il faut pouvoir s'adapter à l'interlocuteur.
-- Impersonation : l'attaquant se fait passer physiquement pour quelqu'un qu'il n'est pas. Requiert le plus de compétence, de moyens (humains/financiers), et de préparation.
+- **Texte** : Interaction minimale, comprend le [phishing](https://en.wikipedia.org/wiki/Phishing) et ses variantes.
+- **Voix** : Interaction par téléphone en temps réel avec la cible. Il faut pouvoir s'adapter à l'interlocuteur.
+- **Impersonation** : L'attaquant se fait passer physiquement pour quelqu'un qu'il n'est pas. Requiert le plus de compétence, de moyens (humains/financiers), et de préparation.
 
 ### L'approche
 
@@ -171,9 +171,9 @@ Tout l'enjeu pour se protéger de l'utilisation malveillante de l'ingénierie so
 - Ne pas céder à la panique losqu'on reçoit un message d'urgence, rester le plus calme possible, et évaluer la situation avant d'agir ;
 - Si c'est trop beau pour être vrai, c'est trop beau pour être vrai, et non tu n'as pas gagné un iPhone 🙃
 - Eviter d'exposer trop d'informations publiquement, comme sur les réseaux sociaux.
-- Ecouter votre intuition quand elle vous met en garde, il vaut mieux ne rien gagner que de perdre quelque chose ;
-- Utilisez un [bloqueur de pub](https://ublockorigin.com/), c'est moins de pollution visuelle, moins d'énergie consommée, et moins de perte d'attention. Pensez quand même à autoriser les sites que vous voulez soutenir 🙂.
-- Ne pas lancer un `.exe` si on ne fait pas confiance à son origine ;
+- Ecouter votre intuition quand elle vous met en garde, sur Internet, il vaut mieux ne rien gagner que de perdre quelque chose ;
+- Utilisez un [bloqueur de pub](https://ublockorigin.com/), c'est moins de pollution visuelle, moins d'énergie consommée, et moins de perte d'attention. Pensez quand même à autoriser les sites que vous voulez soutenir 🙂 ;
+- Comme un plat qu'on ne mange pas quand on ne connait pas son origine, on ne lance pas un `.exe` si on ne fait pas confiance à son origine.
 
 Dans un mail, un appel ou une discussion **que vous initiez**, il est toujours bon de rappeler le contexte à votre interlocuteur (comme demandé, suite à votre appel, suite à notre discussion, j'ai vu ton mail, etc) pour plusieurs raisons :
 1. C'est sympa ;
