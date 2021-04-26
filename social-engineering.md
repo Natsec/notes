@@ -25,7 +25,9 @@ Christopher Hadnagy définit l'ingénierie sociale comme ***tout acte qui influe
 
 Avec cette définition, on comprend que la finalité de l'ingénierie sociale dépend de l'intention de la personne qui l'utilise.
 
-L'ingénierie sociale consiste à utiliser les mécanismes humains et leurs limites pour influencer la prise de décision d'un individu. Les applications sont nombreuses : escroquerie, marketing, séduction, politique, renseignement, etc.
+L'ingénierie sociale consiste à utiliser les mécanismes humains et leurs limites pour influencer la prise de décision d'un individu. Par exemple, l'escroquerie, le marketing, la politique, le renseignement sont des applications possibles.
+
+Pour se protéger de ces utilisations qui peuvent être malveillantes, il est important de comprendre comment ça fonctionne, pour pouvoir se protéger.
 
 *Je pense qu'on se fait avoir parce que notre cerveau est héritée de [millions d'années d'évolution](https://en.wikipedia.org/wiki/History_of_life).<br>
 Pendant longtemps, il était vital de décider rapidement, sur la base de peu d'informations.<br>
@@ -69,6 +71,8 @@ Par l'**observation**, un attaquant peut obtenir des informations utiles :
 - Sécurité du périmètre : y'a-t-il des caméras ?
 - Personnel de sécurité : Combien de personnes ? Sont-il attentifs ?
 - Equipements : y'a-t-il un ordinateur sur lequel faire du [shoulder surfing](https://fr.wikipedia.org/wiki/Shoulder_surfing) ?
+
+<!-- [Paul Ekman](https://en.wikipedia.org/wiki/Paul_Ekman) a montré que l'expression de nos émotions est universelle et indépendante de nos cultures. Il a aussi inspiré la série [Lie to Me](https://www.youtube.com/watch?v=ZTgoi8fmSx4). -->
 
 ### Technical OSINT
 

@@ -21,7 +21,7 @@ Il est le plus synthétique/pratique possible. Pour plus de détails, les source
 
 **règle d'audit** : Condition pour qu'auditd génère un évènement lors d'une interception.
 
-**évènement** : Message généré par auditd et qui donne des informations sur ce qu'il s'est passé. Auditd génère plusieurs évènements pour une action (ex: à l'exécution d'un programme, auditd pourra générer une log pour la commande, et une autre pour indique le répertoire de la commande).
+**évènement** : Message généré par auditd et qui donne des informations sur ce qu'il s'est passé. Auditd génère plusieurs évènements pour une action (ex: à l'exécution d'un programme, auditd pourra générer une log pour la commande, et une autre pour indiquer le répertoire de la commande).
 
 ## Principe des règles d'audit
 

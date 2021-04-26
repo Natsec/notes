@@ -16,6 +16,7 @@
 - [Services](#services)
 - [Logging](#logging)
 - [User](#user)
+- [SELinux](#selinux)
 - [Debian](#debian)
   - [Téléchargement de l'image](#téléchargement-de-limage)
   - [Vérification de la signature du fichier d'empreinte](#vérification-de-la-signature-du-fichier-dempreinte)
@@ -253,6 +254,16 @@ sudo useradd --system wiki -s /sbin/nologin
 Pour ajouter un utilisateur au groupe `sudo` :
 ```bash
 usermod -a -G sudo utilisateur
+```
+
+## SELinux
+
+Pour désactiver SELinux :
+```bash
+# en live
+setenforce 0
+# persistant
+sed -i 's/SELINUX=.+/SELINUX=permissive/' /etc/selinux/sysconfig
 ```
 
 ## Debian
