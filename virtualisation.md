@@ -7,7 +7,9 @@
 ```bash
 # manipuler les VM
 qm list
-qm start|stop 101
+qm start|shutdown|stop 101
+
+# les backup sont dans /var/lib/vz/dump
 
 # si il y a un lock
 rm /run/lock/101
