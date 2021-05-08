@@ -75,7 +75,7 @@ def print(*args):
 
 ## Distance de Levenshtein
 
-https://rosettacode.org/wiki/Levenshtein_distance#Python :
+Sur [rosettacode](https://rosettacode.org/wiki/Levenshtein_distance#Python) (aussi dispo dans le module [jellyfish](https://pypi.org/project/jellyfish/)) :
 ```python
 def levenshtein(s1,s2):
     if len(s1) > len(s2):

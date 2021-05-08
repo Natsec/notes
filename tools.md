@@ -2,6 +2,8 @@
 
 ## Codage
 
+Apprendre le [code morse](https://fr.wikipedia.org/wiki/Code_Morse_international) : https://morse.withgoogle.com/learn/
+
 Transcodage et chiffrement : https://gchq.github.io/CyberChef
 
 Testeur de regex https://regex101.com :

@@ -137,6 +137,10 @@ Pour annuler le dernier commit :
 git reset --soft HEAD~1
 ```
 
+Pour ignorer un file/dir qui a déjà été commit :
+1. Le mettre dans `.gitignore`
+2. Faire `git rm --cached <filename>` pour le supprimer du repo (n'est pas supprimé en local)
+
 ## SSH
 
 Rebond :
