@@ -7,6 +7,7 @@
 - [Bash](#bash)
 - [Intégrité, diff et patch](#intégrité-diff-et-patch)
 - [Backup](#backup)
+- [Git](#git)
 - [SSH](#ssh)
   - [Key Based Authentication](#key-based-authentication)
 - [Fichier ISO](#fichier-iso)
@@ -127,6 +128,13 @@ patch mod1 update.patch -o mod2
 Backup avec rsync (local/distant) :
 ```bash
 rsync --delete -avu --exclude dossier /home/user/dossier remote@192.168.1.2:/home/remote/dossier
+```
+
+## Git
+
+Pour annuler le dernier commit :
+```bash
+git reset --soft HEAD~1
 ```
 
 ## SSH
