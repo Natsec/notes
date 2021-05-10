@@ -1,6 +1,7 @@
 # Linux
 
 - [Clavier](#clavier)
+- [Couleurs](#couleurs)
 - [Root](#root)
 - [GPG](#gpg)
 - [Aléatoire](#aléatoire)
@@ -38,6 +39,14 @@ reset
 ```
 
 Pour désactiver le 🔔 : décommenter `# set bell-style none` dans `/etc/inputrc`.
+
+## Couleurs
+
+Afficher la palette de couleurs :
+```bash
+# apt install colortest
+colortest-16b
+```
 
 ## Root
 
