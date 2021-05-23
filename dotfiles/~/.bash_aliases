@@ -12,3 +12,5 @@ alias vmshare='vmhgfs-fuse .host:partage ./share'
 
 # prompt cyberpunk
 export PS1="\[$(tput setaf 5)\]\u\[$(tput setaf 4)\]@\[$(tput setaf 5)\]\H\[$(tput setaf 4)\]:\w \\$ \[$(tput sgr0)\]"
+# couleur de fond noire pour les Other Writable directory quand on fait ls
+export LS_COLORS="${LS_COLORS}:ow=34;40"

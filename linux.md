@@ -69,11 +69,22 @@ gpg --armor --export 3AA5C34371567BD2 | tee key.asc
 
 ## Aléatoire
 
-Pour générer de l'aléatoire (pas pour de la crypto) :
+Générer de l'aléatoire (pas pour de la crypto) :
 ```bash
-head /dev/urandom | sha1sum
+head /dev/urandom | sha256sum
 head /dev/urandom | tr -dc a-zA-Z0-9 | head -c32; echo
 head /dev/urandom -c32 | base64
+```
+
+Générer de l'aléatoire [cryptographiquement sûr](https://man.cx/rand) :
+```bash
+openssl rand -hex 32
+openssl rand -base64 32
+```
+
+Afficher l'entropie du système :
+```bash
+cat /proc/sys/kernel/random/entropy_avail
 ```
 
 ## Bash

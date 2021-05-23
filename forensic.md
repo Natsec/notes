@@ -1,5 +1,11 @@
 # Forensic (Investigation Numérique)
 
+L'objectif est d'obtenir la timeline des actions qui ont menées à l'incident.
+
+Principes :
+- on travail jamais sur les preuves, on travail sur leur clone
+- on fait l'empreinte des éléments pour respecter la [chain of custody](https://en.wikipedia.org/wiki/Chain_of_custody)
+
 ## Investigation : Autopsy
 
 > Autopsy c'est la vie !
@@ -44,9 +50,9 @@ cd ../../../
 zip $(lsb_release -i -s)_$(uname -r)_profile.zip ./volatility/tools/linux/module.dwarf /boot/System.map-$(uname -r)
 ``` -->
 
-### Plugins
+### Commandes
 
-Plugins intéréssants :
+Commandes intéréssantes :
 ```bash
 # linux_mount
 ramfs		/mnt/confidential		ramfs		rw,relatime
@@ -58,3 +64,16 @@ ramfs		/mnt/confidential		ramfs		rw,relatime
 # cat flag.txt
 C0D3N4M34P011011
 ```
+
+- pstree
+- malfind : indique les injections DLL et les shellcodes, c'est à l'humain d'interpréter ce qui est anormal
+- netscan
+- screenshot
+
+### Sur Windows
+
+Sur Windows, le fichier `hiberfil.sys` contient la mémoire vive de l'ordinateur.
+
+L'outil [winpmem](https://winpmem.velocidex.com/) permet de faire un dump de la mémoire.
+
+Regarder la mft
