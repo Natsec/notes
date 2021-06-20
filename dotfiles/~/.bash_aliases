@@ -7,6 +7,8 @@ alias tree='tree -FC'
 alias nano='nano -Pl'
 alias ncdu='ncdu --si'
 
+alias f='sudo $(history -p !!)'
+
 alias maj='clear; apt update && apt upgrade'
 alias vmshare='vmhgfs-fuse .host:partage ./share'
 
