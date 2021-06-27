@@ -19,7 +19,6 @@ get(){
 get /~/.bash_aliases && source ~/.bash_aliases
 get /~/.config/xfce4/terminal/terminalrc
 get /etc/tmux.conf
-get /~/.config/autostart/compton.desktop
 
 # --------------------
 # Paquets

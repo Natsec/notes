@@ -1,4 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=Compton Blur
-Exec=compton --blur-background --blur-method kawase --blur-strength 7 --resize-damage 7 --backend glx

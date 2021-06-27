@@ -200,7 +200,7 @@ ssh-copy-id -i ~/.ssh/id_projet2a.pub natsec@172.16.22.1
 
 Editer le fichier `~/.ssh/config` :
 ```
-Host s serveur_de_calcul
+Host alias1 alias2 serveur_de_calcul
     HostName 172.16.22.1
     IdentityFile ~/.ssh/id_projet2a
     User natsec
@@ -208,7 +208,7 @@ Host s serveur_de_calcul
     #ProxyJump jumphost
 ```
 
-Pour éviter de retaper trop souvent la passphrase de la clé privée, on peut utiliser `ssh-agent` qui va la stocker en mémoire temporairement :
+Si on a chiffré la clé privée avec une passphrase, pour éviter de retaper trop souvent la passphrase, on peut utiliser `ssh-agent` qui va la stocker en mémoire temporairement :
 ```bash
 # lancer l'agent de gestion des clés
 eval `ssh-agent`

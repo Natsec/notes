@@ -8,6 +8,8 @@ alias nano='nano -Pl'
 alias ncdu='ncdu --si'
 
 alias f='sudo $(history -p !!)'
+alias c='column -t'
+alias dodo='sleep $(($RANDOM % 10 + 1)).$(($RANDOM % 5))'
 
 alias maj='clear; apt update && apt upgrade'
 alias vmshare='vmhgfs-fuse .host:partage ./share'
