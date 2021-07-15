@@ -77,7 +77,7 @@ Il existe 4 principales options de paramétrage d'auditd :
 
 ### Surveillance du système de fichier
 
-> Contrairement aux règles d'appel système, les watch n'impactent par les performances en fonction du nombre de règles. Pour surveiller un fichier/dossier, c'est la méthode à privilégier. Si on a besoin d'une règle plus expressive (les accès par root, les utilisateurs humains, etc) on transformera le watch en appel système.
+> Même s'il n'existent que par retro compatibilité, contrairement aux règles d'appel système, les watch n'impactent par les performances en fonction du nombre de règles. Pour surveiller un fichier/dossier, c'est la méthode à privilégier. Si on a besoin d'une règle plus expressive (les accès par root, les utilisateurs humains, etc) on transformera le watch en appel système.
 
 Les règles de surveillance du système de fichier (ou watch) sont de la forme suivante :
 ```bash
@@ -97,7 +97,9 @@ Les règles de surveillance du système de fichier (ou watch) sont de la forme s
 
 - `-k` keyname : Mot-clé servant à identifier l'évènement. On peut répéter plusieurs fois l'options pour associer plusieurs mot-clés à l'évènement.
 
-> Le fichier doit exister avant qu'un watch soit ajouté, TODO à vérifier
+> L'ajout d'un slash de fin dans le chemin ne différencie pas un fichier d'un dossier. Si l'element final du chemin existe, -w met l'equivalent d'un `-a -F path=...` si c'est un fichier, et `-a -F dir=...` si c'est un dossier.
+
+> Si l'element final du chemin n'existe pas, la règle sera ajoutée avec l'équivalent d'un `-a -F path=...`. Si le fichier est créé plus tard, il sera surveillé. Si le dossier est créé plus tard, il sera surveillé, mais pas récursivement.
 
 ### Surveillance des appels système
 
@@ -117,22 +119,24 @@ Les règles de surveillance du système de fichier (ou watch) sont de la forme s
 - `-a action,filter` OU `-a filter,action`: Ajoute une surveillance sur des appels système.
   - `action` : Détermine si on doit créer un évènement ou pas.
     - `always` : on crée toujours un évènement
-    - `never` : on ne crée jamais un évènement, souvent utilisé pour filtrer les événements très fréquents tôt dans la chaîne
+    - `never` : on ne crée jamais un évènement, utilisé pour filtrer les événements fréquents tôt dans la chaîne
   - `filter` : Type d'appel système à intercepter.
     - `entry` : vérifié à l'entrée d'un appel système, certaines infos comme la valeur de sortie ne sont pas encore disponibles à ce moment, sera déprécié dans le futur, il vaut mieux utiliser le filtre exit
-    - `exit` : vérifié à la sortie d'un appel système
+    - `exit` : **vérifié à la sortie d'un appel système**
     - `user` : vérifié pour certains évènements initiés en espace utilisateur
     - `task` : vérifié seulement pendant les appels système fork/clone, rarement utilisé en pratique
     - `exclude` : pour exclure certains évènements d'être émis. On préférera utiliser l'action `never` pour une meilleur lisibilité
 
-- `-S` syscall : Nom ou numéro de l'appel système à intercepter. Pour gagner en performance, on peut en mettre plusieurs dans une règle en répétant l'option `-S`. Si la machine à superviser comporte des programmes en 32 bit et 64 bit, il faut dupliquer la règle en mettant les filtres `-F arch=b32` et `-F arch=b64` AVANT le -S. Pour optimiser les performances, c'est mieux de mettre la règle 64 bit avant 32 bit.
+- `-S` syscall : Nom ou numéro de l'appel système à intercepter. Pour gagner en performance, on peut en mettre plusieurs en les séparant par une virgule. Si la machine à superviser comporte des programmes en 32 bit et 64 bit, il faut dupliquer la règle en mettant les filtres `-F arch=b32` et `-F arch=b64` AVANT le `-S`. Pour optimiser les performances, c'est mieux de mettre la règle 64 bit avant 32 bit.
 
 - `-F` field : Permet d'affiner la recherche. On peut en mettre plusieurs, la règle matchera si tous les champs matchent (ET logique). Il faut mettre le champs `-F arch=` avant les `-S`, et les autres `-F` après. La documentation des champs possible se trouve dans la page de manuel de [auditctl](https://man.cx/auditctl).
 
 Les valeurs de champ `-F` importantes à comprendre sont :
-- `auid`: permet de suivre l'uid original d'un utilisateur lorsqu'il lance un processus en changant d'identité. Lors de la connexion initiale d'un utilisateur, auditd enregistre l'uid de celui, si au cours de la session, l'utilisateur change d'identité pour faire une action, l'`auid` permet d'attribuer l'auteur initial. Un `auid` avec la valeur `-1` ou [4294967295](https://en.wikipedia.org/wiki/4,294,967,295#In_computing) indique un utilisateur pour lequel l'`auid` n'est pas défini.
-- `euid`: l'uid de l'utilisateur
-- `success`: code de retour de l'appel système, `0` pour un échec, `1` pour un succès.
+- `path` : désigne un fichier
+- `dir` : désigne un dossier, est appliqué recursivement
+- `auid`: permet de suivre l'uid original d'un utilisateur lorsqu'il lance un processus en changant d'identité. Lors de la connexion initiale d'un utilisateur, auditd enregistre l'uid de celui, si au cours de la session, l'utilisateur change d'identité pour faire une action, l'`auid` permet d'attribuer l'auteur initial. Un `auid` avec la valeur `-1`, [4294967295](https://en.wikipedia.org/wiki/4,294,967,295#In_computing), ou `unset` indique un utilisateur pour lequel l'`auid` n'est pas défini.
+- `euid`: l'uid effectif de l'utilisateur
+- `success`: code de retour de l'appel système, `0` pour un échec, `1` pour un succès
 
 ## Sources
 
@@ -141,3 +145,5 @@ Les valeurs de champ `-F` importantes à comprendre sont :
 - [Documentation de SUSE Linux Enterprise](https://documentation.suse.com/sles/15-SP2/html/SLES-all/cha-audit-comp.html#sec-audit-rules)
 - [Documentation de Red Hat](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/security_guide/sec-understanding_audit_log_files)
 - [Article du MISC](https://connect.ed-diamond.com/GNU-Linux-Magazine/GLMFHS-093/Journalisez-les-actions-de-vos-utilisateurs-avec-Auditd)
+- Catastrophe aérienne à cause de [4294967295](https://en.wikipedia.org/wiki/4,294,967,295#In_computing)
+- Expérimentations

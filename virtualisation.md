@@ -11,10 +11,8 @@ qm start|shutdown|stop 101
 
 # les backup sont dans /var/lib/vz/dump
 
-# si il y a un lock
-rm /run/lock/101
-# ou ?
-rm /run/lock/qemu-server/lock-100.conf
+# pour enlever un lock
+qm unlock 101
 ```
 
 ## Docker
