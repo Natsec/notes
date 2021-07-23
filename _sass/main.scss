@@ -1,0 +1,31 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.page-header{
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+}
+
+//h1 + ul{
+//    position: relative;
+//    left: 30%;
+//}
+
+.menu, footer{
+    text-align: center;
+}
+
+.menu > a{
+    display: block;
+    font-size: 1.4em;
+}
+
+.menu > a:hover{
+    text-decoration: none;
+    background-image: radial-gradient(circle, rgba(170,187,238,0.4) 0%, rgba(255,255,255,0) 100%);
+}
