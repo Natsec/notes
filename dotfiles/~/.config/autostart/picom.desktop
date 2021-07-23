@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=Picom Kawase Blur
+Exec=picom --experimental-backend --backend glx --fading --fade-in-step 0.1 --fade-out-step 0.1 --blur-background --blur-method dual_kawase --blur-strength 3
+#Exec=picom --experimental-backend --backend glx --fading --fade-in-step 0.1 --fade-out-step 0.1

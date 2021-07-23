@@ -24,3 +24,5 @@ get /etc/tmux.conf
 # Paquets
 # --------------------
 sudo apt install tmux htop tree ncdu neofetch
+
+neofetch
