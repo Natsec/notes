@@ -220,7 +220,7 @@ ssh-add ~/.ssh/id_projet2a
 
 ## Fichier ISO
 
-Pour rendre une clé bootable :
+Pour rendre une clé bootable au `dd` :
 ```bash
 lsblk
 dd if=file.iso of=/dev/sdb bs=16M conv=fsync status=progress
