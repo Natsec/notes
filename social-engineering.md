@@ -50,7 +50,7 @@ L'ingénierie sociale tire aussi partie d'une propriété de l'être humain : **
 
 Cette représentation permet de comprendre l'ordre et l'importance des différentes étape de la réalisation d'une attaque, sous l'angle d'un professionel dont le but est de faire comprendre au client ses vulnérabilités, et lui permettre de s'améliorer, pour mieux se protéger.
 
-![The SE Pyramid](assets/se-pyramid.jpg)
+![The SE Pyramid](assets/images/se-pyramid.jpg)
 
 1. OSINT (Open Source Intelligence)
 2. Développement du prétexte
@@ -148,7 +148,7 @@ Pour connaître ton profil de communication, il suffit de se poser deux question
 
 En fonction de ces deux réponses, on peut se placer sur le modèle DISC, qui nous permet de connaître notre profil de communication :
 
-![The DISC model](assets/se-disc.jpg)
+![The DISC model](assets/images/se-disc.jpg)
 
 Ainsi, en fonction de notre profil de communication, l'attaquant va adapter sa manière de communiquer pour mieux nous convaincre.
 
