@@ -1,5 +1,5 @@
-sass:
-  sass_dir: _sass
+# sass:
+#   sass_dir: _sass
 
 theme: jekyll-theme-cayman
 
