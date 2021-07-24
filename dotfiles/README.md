@@ -1,5 +1,7 @@
 # Dotfiles
 
+![Before the raptor](https://i.redd.it/dzkvwj7ltzy51.png)
+
 ## Config files
 
 alias : [~/.bash_aliases](https://raw.githubusercontent.com/Natsec/notes/master/dotfiles/~/.bash_aliases)
