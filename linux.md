@@ -15,6 +15,7 @@
 - [Network](#network)
   - [DNS](#dns)
   - [LDAP](#ldap)
+- [paquets](#paquets)
 - [Services](#services)
 - [Logging](#logging)
 - [User](#user)
@@ -255,6 +256,10 @@ nameserver 192.168.1.254
 ```bash
 ldapsearch -x -H ldap://192.168.43.231:390 -b "ou=employees,ou=company,dc=nasa,dc=com" "(&(|(title=Dir*)(title=Ing*)(title=Resp*))(description=F))"
 ```
+
+## paquets
+
+Lister les fichers installés par un paquet : `dpkg -L`
 
 ## Services
 

@@ -1,6 +1,6 @@
 # Dotfiles
 
-![Before the raptor](https://i.redd.it/dzkvwj7ltzy51.png)
+[![Before the raptor](https://i.redd.it/dzkvwj7ltzy51.png)](https://i.redd.it/dzkvwj7ltzy51.png)
 
 ## Config files
 

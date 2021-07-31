@@ -3,6 +3,7 @@
     <a href="dotfiles"          >⚙️ Dotfiles</a>
     <br>
     <a href="ctf"               >🏁 Capture The Flag</a>
+    <a href="pentest"           >🏴‍☠️ Pentest</a>
     <a href="firewall"          >🔥 Firewall</a>
     <a href="forensic"          >🔎 Forensic</a>
     <a href="linux"             >🐧 Linux</a>
