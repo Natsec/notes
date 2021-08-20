@@ -7,7 +7,7 @@
 ## Bettercap
 
 ```bash
-apt install bettercap bettercap-ui
+apt install bettercap
 ```
 
 Pour lancer un caplet :

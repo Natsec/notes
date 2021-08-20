@@ -16,13 +16,15 @@ get(){
 # --------------------
 # Dotfiles
 # --------------------
-get /~/.bash_aliases && source ~/.bash_aliases
-get /~/.config/xfce4/terminal/terminalrc
 get /etc/tmux.conf
+get /~/.bash_aliases && source ~/.bash_aliases
+get /~/.config/autostart/picom.desktop
+get /~/.config/xfce4/terminal/terminalrc
 
 # --------------------
 # Paquets
 # --------------------
-sudo apt install tmux htop tree ncdu neofetch
+sudo apt update
+sudo apt install htop tmux tree ncdu neofetch
 
 neofetch
