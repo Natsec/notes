@@ -51,10 +51,10 @@ colortest-16b
 
 ## Root
 
-Pour reset un mot de passe root oublié :
-1. faire `e` dans le menu grub
+Pour reset un mot de passe root "oublié" :
+1. faire <kbd>e</kbd> dans le menu grub
 2. ajouter `rw init=/bin/bash` à la fin de la ligne `linux`
-3. faire `^x` ou `F10` pour démarrer l'image
+3. faire <kbd>Ctrl</kbd>+<kbd>x</kbd> ou <kbd>F10</kbd> pour démarrer l'image
 
 ## GPG
 
@@ -217,6 +217,12 @@ eval `ssh-agent`
 ssh-add -l
 # ajouter la clé aux identités
 ssh-add ~/.ssh/id_projet2a
+```
+
+Pour lire le contenu d'une clé publique :
+```bash
+ssh-keygen -f key.pub -e -m pkcs8 > pubkey.pem
+openssl rsa -inform PEM -pubin -in pubkey.pem -noout -text
 ```
 
 ## Fichier ISO

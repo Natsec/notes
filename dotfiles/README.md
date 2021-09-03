@@ -1,6 +1,6 @@
 # Dotfiles
 
-[![Before the raptor](https://i.redd.it/dzkvwj7ltzy51.png)](https://i.redd.it/dzkvwj7ltzy51.png)
+[![Screenshot Bullseye 1](https://raw.githubusercontent.com/Natsec/notes/master/dotfiles/bullseye1_min.png)](https://raw.githubusercontent.com/Natsec/notes/master/dotfiles/bullseye1.png)
 
 ## Config files
 
@@ -14,9 +14,11 @@ tmux : [/etc/tmux.conf](https://raw.githubusercontent.com/Natsec/notes/master/do
 
 ## A E S T H E T I C
 
-Date format : `%T %A %-d %B (week %V) %Y` : 13:37:42 Friday 16 July (week 28) 2021
+Date format : `%T %A %-d %B (week %V) %Y`
 
 Icons : [Papirus Dark](https://www.xfce-look.org/p/1166289)
+
+System font : Noto Sans Regular (`apt install fonts-noto-core`)
 
 ## All Systems Are Go, and Lift Off 🚀
 

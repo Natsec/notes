@@ -17,6 +17,7 @@
     <a href="windows"           >🪟 Windows</a>
     <a href="wireless"          >📡 Wireless</a>
     <a href="auditd"            >📜 Auditd</a>
+    <a href="pki"               >🔑 PKI</a>
     <br>
     <a href="https://natsec.fr" >natsec.fr</a>
 </div>
