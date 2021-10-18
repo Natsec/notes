@@ -187,7 +187,7 @@ h=192.168.1.2; until nc -z -w1 $h 22; do sleep 1; echo waiting $h; done; ssh $h
 
 Générer une paire de clé sur la machine cliente :
 ```bash
-h=projet2a ; ssh-keygen -f "~/.ssh/id_$h" -C "$h" -t ed25519
+h=projet2a ; ssh-keygen -f ~/.ssh/id_$h -C $h -t ed25519
 # afficher l'empreinte d'une clé
 ssh-keygen -lv -f ~/.ssh/id_projet2a
 ```
@@ -246,6 +246,9 @@ alias ipl='ip -br a; echo; ip r'
 
 # changer l'adresse ip
 nano /etc/network/interfaces; systemctl restart networking && ip -br a; echo; ip r
+
+# obtenir son IP publique :
+curl ifconfig.me
 ```
 
 ### DNS

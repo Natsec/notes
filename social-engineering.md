@@ -76,30 +76,7 @@ Par l'**observation**, un attaquant peut obtenir des informations utiles :
 
 ### Technical OSINT
 
-Outils :
-- Moteur de recherche de l'Internet des objets : https://www.shodan.io/
-- Moteur de recherche des fuites d'information : https://intelx.io/about
-- Pour s'entraîner au GEOINT : https://www.geoguessr.com/
-- Google Dork : https://www.sans.org/security-resources/GoogleCheatSheet.pdf
-- Maltego
-- Recon-ng
-- theHarvester
-- SpiderFoot
-- `robot.txt` des sites
-- Métadonnées des fichiers
-
-Trafic en temps réel :
-- Transport aérien : https://www.flightradar24.com/
-- Transport maritime : https://www.vesselfinder.com/
-
-Acronymes :
-- https://www.acronymfinder.com/
-- https://acronyms.thefreedictionary.com/
-
-Base de connaissances :
-- https://www.social-engineer.org/framework/
-- https://osintframework.com/
-- https://github.com/jivoi/awesome-osint
+Voir https://natsec.github.io/notes/tools#osint
 
 ## 2. Développement du prétexte
 
