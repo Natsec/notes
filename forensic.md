@@ -1,5 +1,11 @@
 # Forensic (Investigation Numérique)
 
+> *Nul ne peut agir avec l’intensité que suppose l’action criminelle sans laisser des marques multiples de son passage*, Principe d'échange d'Edmond Locard
+
+> https://www.unodc.org/documents/organized-crime/Law-Enforcement/Criminal_Intelligence_for_Analysts.pdf
+
+## Intro
+
 L'objectif est d'obtenir la timeline des actions qui ont menées à l'incident.
 
 Principes :
