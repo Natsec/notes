@@ -20,11 +20,15 @@ Bases de connaissances :
 - https://github.com/jivoi/awesome-osint
 
 Informations légales et financières :
+- world : https://opencorporates.com/
+- world : https://www.crunchbase.com/
+- world : https://www.theofficialboard.fr/
+- UK : https://find-and-update.company-information.service.gov.uk/
 - FR : https://societe.ninja/
 - FR : https://www.pappers.fr/
 
 Marques déposées :
-- FR : INPI
+- FR : [INPI](https://data.inpi.fr/)
 - Mondiale : https://www3.wipo.int/branddb/fr/
 
 Noms de domaine (recherche passive) :
@@ -36,10 +40,24 @@ Noms de domaine (recherche passive) :
 Certificats :
 - https://cert.sh
 
+Adresses mail :
+- https://github.com/megadose/holehe
+- https://phonebook.cz/
+- https://maildb.io/
+
+Numero de telephone :
+- https://github.com/megadose/ignorant
+
+Nom d'employés :
+- https://github.com/m8r0wn/crosslinked
+
 Services exposés :
 - https://www.shodan.io/
 - https://leakix.net/
 - https://search.censys.io/
+- chinois : https://fofa.so/
+- chinois : https://www.zoomeye.org/
+- chinois : https://binaryedge.io/
 
 Vulnérabilités :
 - https://www.openbugbounty.org/
@@ -50,10 +68,10 @@ Fuite d'information :
 Metadonnées :
 - Image : https://www.exif.online/
 
-Cartographie (graphes):
-- https://networkx.org/
-- https://gephi.org/
-- yEd
+Représentaiton en graphe:
+- Création en python : https://networkx.org/
+- Mise en forme : [yEd](https://www.yworks.com/downloads#yEd)
+- Mise en forme : [Gephi](https://gephi.org/)
 
 Outils :
 - Pour s'entraîner au GEOINT : https://www.geoguessr.com/
@@ -69,6 +87,10 @@ Trafic en temps réel :
 - Transport aérien : https://www.flightradar24.com/
 - Transport maritime : https://www.vesselfinder.com/
 
+Automobile :
+- infos plaque d'immatriculation : https://siv-auto.fr/
+- avis sur plaque d'immatriculation : https://evaluer-chauffeur.fr/
+
 Acronymes :
 - https://www.acronymfinder.com/
 - https://acronyms.thefreedictionary.com/
@@ -76,6 +98,7 @@ Acronymes :
 Pour aller plus loin :
 - https://osintframework.com/
 - https://technisette.com/p/search-engines
+- https://one-plus.github.io/
 
 ## Traitement d'image
 

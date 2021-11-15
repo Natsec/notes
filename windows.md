@@ -10,7 +10,7 @@
 
 ---
 
-> *Dans le doute reboot*, Rowan Atkinson
+> *In case of doubt, reboot*, Rowan Atkinson
 
 ## PowerShell
 
@@ -88,4 +88,4 @@ https://www.hackingarticles.in/a-little-guide-to-smb-enumeration/
 
 https://m0chan.github.io/2019/07/31/How-To-Attack-Kerberos-101.html
 
-https://medium.com/@riccardo.ancarani94/exploiting-unconstrained-delegation-a81eabbd6976
+Pentesting Active Directory mindmap : https://www.xmind.net/m/5dypm8/

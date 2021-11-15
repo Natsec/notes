@@ -29,3 +29,4 @@ Participations :
 - CTF [Brigitte Friang](https://www.challengecybersec.fr) 2020 de la DGSE
 - CTF [DG'hAck](https://www.dghack.fr) 2020 de la DGA : 343/2082
 - Exercice [DEFNET](https://www.defense.gouv.fr/fre/salle-de-presse/communiques/communique_defnet-2021-s-entrainer-au-cyber-combat) 2021 du COMCYBER (physique)
+- CTF d'OSINT du [UYBHYS](https://www.unlockyourbrain.bzh/) 2021
