@@ -36,6 +36,8 @@ Noms de domaine (recherche passive) :
 - https://dndumpster.com
 - sous-domaines : https://www.virustotal.com/gui/home/search
 - domaines déposés par la même entitée : https://domainbigdata.com/
+- [Sublist3r](https://github.com/aboul3la/Sublist3r)
+- [Sub-Drill](https://github.com/Fadavvi/Sub-Drill)
 
 Certificats :
 - https://cert.sh
@@ -68,7 +70,7 @@ Fuite d'information :
 Metadonnées :
 - Image : https://www.exif.online/
 
-Représentaiton en graphe:
+Représentaiton de graphe:
 - Création en python : https://networkx.org/
 - Mise en forme : [yEd](https://www.yworks.com/downloads#yEd)
 - Mise en forme : [Gephi](https://gephi.org/)
@@ -76,9 +78,6 @@ Représentaiton en graphe:
 Outils :
 - Pour s'entraîner au GEOINT : https://www.geoguessr.com/
 - Google Dork : https://www.sans.org/security-resources/GoogleCheatSheet.pdf
-- Maltego
-- Recon-ng
-- theHarvester
 - SpiderFoot
 - `robot.txt` des sites
 - Métadonnées des fichiers

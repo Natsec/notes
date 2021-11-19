@@ -57,15 +57,15 @@ route
 # pinguer tout les hôtes d'un réseau (port 80 + ICMP echo-request)
 nmap -T4 -sP 192.168.0.0/24
 
-# scan discret (n'envoi que des TCP SYN, moins de chance que les connexions soient loggés)
+# scan discret (n'envoi que des TCP SYN, connexion remonte pas à la couche 7, moins de log)
 nmap -T4 -sS <ip>
 
 # OS + info sur les services
-nmap -T4 -A -oN scan1.txt <ip>
+nmap -T4 -A -oA scan1 <ip>
 # scan de vuln
-nmap -T4 -sV --script vulners -oN scan1.txt <ip>
+nmap -T4 -sV --script vulners -oA scan1 <ip>
 # sur une plage de port
-nmap -T4 -sV --script vulners -oN scan1.txt <ip> -p 1023-10000
+nmap -T4 -sV --script vulners -oA scan1 <ip> -p 1023-10000
 ```
 
 ### TODO Enumération SMB
@@ -96,7 +96,7 @@ Mapper un domaine : https://dnsdumpster.com
 
 Pour faire un transfert de zone :
 ```bash
-dig @<?> AXFR <fqdn ?>
+dig AXFR domain.name @192.168.1.53
 ```
 
 ## Vulnérabilités
