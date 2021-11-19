@@ -15,9 +15,12 @@ Cassage de hash : https://hashes.org
 ## OSINT
 
 Bases de connaissances :
-- https://www.social-engineer.org/framework/
 - https://osintframework.com/
 - https://github.com/jivoi/awesome-osint
+- https://ohshint.gitbook.io
+- https://github.com/simsieg/awesome-maps
+- https://technisette.com/p/search-engines
+- https://one-plus.github.io/
 
 Informations légales et financières :
 - world : https://opencorporates.com/
@@ -35,7 +38,7 @@ Noms de domaine (recherche passive) :
 - https://host.io/nasa.gov
 - https://dndumpster.com
 - sous-domaines : https://www.virustotal.com/gui/home/search
-- domaines déposés par la même entitée : https://domainbigdata.com/
+- domaines déposés par la même personne/société/mail : https://domainbigdata.com/
 - [Sublist3r](https://github.com/aboul3la/Sublist3r)
 - [Sub-Drill](https://github.com/Fadavvi/Sub-Drill)
 
@@ -94,10 +97,11 @@ Acronymes :
 - https://www.acronymfinder.com/
 - https://acronyms.thefreedictionary.com/
 
-Pour aller plus loin :
-- https://osintframework.com/
-- https://technisette.com/p/search-engines
-- https://one-plus.github.io/
+## Forensic
+
+Images :
+- http://fotoforensics.com/
+- https://29a.ch/photo-forensics
 
 ## Traitement d'image
 
