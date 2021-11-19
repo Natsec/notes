@@ -43,15 +43,15 @@ Certificats :
 - https://cert.sh
 
 Adresses mail :
-- https://github.com/megadose/holehe
+- [Holehe](https://github.com/megadose/holehe)
 - https://phonebook.cz/
 - https://maildb.io/
 
 Numero de telephone :
-- https://github.com/megadose/ignorant
+- [Ignorant](https://github.com/megadose/ignorant)
 
 Nom d'employés :
-- https://github.com/m8r0wn/crosslinked
+- [CrossLinked](https://github.com/m8r0wn/crosslinked)
 
 Services exposés :
 - https://www.shodan.io/
@@ -107,8 +107,7 @@ Recadrement : https://iloveimg.com/crop-image
 
 Nuances de couleur : https://mdigi.tools/color-shades/#ddeeaa
 
-### Steganographie
-
+Steganographie :
 - LSB en ligne : https://stylesuxx.github.io/steganography/
 - LSB dans image/son et détection : https://github.com/ragibson/Steganography
 
