@@ -13,6 +13,7 @@ alias dodo='sleep $(($RANDOM % 10 + 1)).$(($RANDOM % 5))'
 
 alias maj='clear; apt update && apt upgrade'
 alias vmshare='vmhgfs-fuse .host:partage ./share'
+alias screenkey='pkill screenkey; screenkey --show-settings --ignore Return --ignore BackSpace --ignore Delete --ignore Tab &'
 
 # prompt cyberpunk
 export PS1="\[$(tput setaf 5)\]\u\[$(tput setaf 4)\]@\[$(tput setaf 5)\]\H\[$(tput setaf 4)\]:\w \\$ \[$(tput sgr0)\]"
