@@ -8,7 +8,7 @@ alias : [~/.bash_aliases](https://raw.githubusercontent.com/Natsec/notes/master/
 
 xfce4-terminal : [~/.config/xfce4/terminal/terminalrc](https://raw.githubusercontent.com/Natsec/notes/master/dotfiles/~/.config/xfce4/terminal/terminalrc)
 
-tmux : [/etc/tmux.conf](https://raw.githubusercontent.com/Natsec/notes/master/dotfiles/etc/tmux.conf)
+tmux : [/etc/tmux.conf](https://raw.githubusercontent.com/Natsec/notes/master/dotfiles/etc/tmux.conf) and [script example](tmux-demo.sh)
 
 [Picom](https://github.com/yshui/picom) Kawase Blur : [~/.config/autostart/picom.desktop](https://raw.githubusercontent.com/Natsec/notes/master/dotfiles/~/.config/autostart/picom.desktop)
 
