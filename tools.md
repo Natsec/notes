@@ -117,6 +117,8 @@ Steganographie :
 
 ## Divers
 
+Apprendre à taper sans regarder le clavier : https://www.keybr.com/
+
 Adresse mail temporaire : https://temp-mail.org
 
 Générateur de qrcode : https://q-r-code.fr/
