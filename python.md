@@ -75,6 +75,8 @@ def print(*args):
 
 ## Distance de Levenshtein
 
+Pour choisir le bon algo, voir https://www.baeldung.com/cs/string-similarity-edit-distance.
+
 Sur [rosettacode](https://rosettacode.org/wiki/Levenshtein_distance#Python) (aussi dispo dans le module [jellyfish](https://pypi.org/project/jellyfish/)) :
 ```python
 def levenshtein(s1,s2):
