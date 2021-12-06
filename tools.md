@@ -118,11 +118,11 @@ Images :
 
 ## Traitement d'image
 
-Compression de PNG/JPG : https://tinypng.com
-
-Recadrement : https://iloveimg.com/crop-image
-
-Nuances de couleur : https://mdigi.tools/color-shades/#ddeeaa
+Graphisme :
+- compression de PNG/JPG : https://tinypng.com
+- recadrement : https://iloveimg.com/crop-image
+- nuances de couleur : https://mdigi.tools/color-shades/#ddeeaa
+- textures : https://www.transparenttextures.com
 
 Steganographie :
 - LSB en ligne : https://stylesuxx.github.io/steganography

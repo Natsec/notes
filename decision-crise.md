@@ -58,7 +58,7 @@ Les défaillances qui peuvent porter sur les processus de coordination :
 - différences d’expérience professionnelle
 - malentendu
 
-L'**étanchéité**. L'équipe de décision pourrait bénéficier d'un apport/avis/point de vue extérieur lui permettant d'éclairer sa décision, mais ne le fait pas ou ne le prend pas en compte, par inconsidération ou par rigidité de l'organisation. Un exemple exagéré serait un passager qui signale au personnel navigant une défaillance moteur, mais l'info n'est pas remontée car c'est juste un passager, ou parce qu'il n'est pas prévu qu'un passager puisse remonter une info au pilote.
+L'**étanchéité**. L'équipe de décision pourrait bénéficier d'un apport/avis/point de vue extérieur lui permettant d'éclairer sa décision, mais ne le fait pas, ou ne le prend pas en compte, par inconsidération ou par rigidité de l'organisation. Un exemple exagéré serait un passager qui signale au personnel navigant une défaillance moteur, mais l'info n'est pas remontée car c'est juste un passager, ou parce qu'il n'est pas prévu qu'un passager puisse remonter une info au pilote.
 
 Raisons de l'étanchéité :
 - équipe narcissique et fermée sur l'extérieur
@@ -79,8 +79,8 @@ Deux types d'effet peuvent miner les décisions collectives.
 
 **Les effets de groupe** :
 - primauté de la cohésion (par le taisement des opinions divergentes)
-- soumission à l'autorité (expérience de Milgram)
-- communication silencieus excessive (positionnement en fonction des opinions prêtées à autrui)
+- soumission à l'autorité ([expérience de Milgram](https://fr.wikipedia.org/wiki/Exp%C3%A9rience_de_Milgram))
+- communication silencieus excessive ([effet de Halo](https://fr.wikipedia.org/wiki/Effet_de_halo) ou le positionnement en fonction des opinions prêtées à autrui)
 - polarisation sur les opinions extrêmes
 
 Pour contrer ces biais, on peut :
@@ -112,7 +112,7 @@ Pour contrer ce bazar :
 
 Décrire et analyser les événements vécus par l’organisation pour en tirer des **enseignements** et les **diffuser**.
 
-Pour cela les **RETEX** sont un bon outil, faire attention à :
+Pour cela les [**RETEX**](https://fr.wikipedia.org/wiki/Retour_d%27exp%C3%A9rience) sont un bon outil, faire attention à :
 - **selectionner** les cas traités pour ne pas faire de RETEX sur tout ce qu'il se passe
 - choisir une **forme** parlante (storytelling)
 - ne pas faire de RETEX que sur des événements techniques, mais aussi **humains** et **organisationnelles**
@@ -120,7 +120,7 @@ Pour cela les **RETEX** sont un bon outil, faire attention à :
 #### Comprendre
 
 Il est important de comprendre que les systèmes de décision sont des systèmes socio-techniques, qui doivent aussi prendre en compte le facteur **humain** et organisationnel.
-La seule solution technique ne suffit pas. Par exemple la règle selon laquelle un mot de passe doit contenir des majuscules, des chiffres et des caractères spéciaux les rend plus difficile à retenir, et ils finissent écris sur un post-it, ce qui est contre-productif.
+La seule solution technique ne suffit pas. Par exemple la règle selon laquelle un mot de passe doit contenir des majuscules, des chiffres et des caractères spéciaux les rend **plus difficile à retenir**, et ils finissent écris sur un post-it, ce qui est contre-productif.
 
 D'ailleurs, même au niveau technique, cette règle est éclatée au sol :
 1. un mot de passe compliqué de 10 caractère restera moins sûr qu'un mot de passe simple de 14 caractères
