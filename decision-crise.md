@@ -1,4 +1,4 @@
-# Prise de décision en situation de crise
+# Décision en situation de crise
 
 > Cours de M. Didier Danet, Saint-Cyr Coëtquidan
 

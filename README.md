@@ -12,6 +12,7 @@
     <a href="social-engineering">🕵 Social Engineering</a>
     <a href="python"            >🐍 Python</a>
     <a href="firewall"          >🔥 Firewall</a>
+    <a href="cloudsec"          >🌩️ Sécurité des nuages</a>
     <a href="wireless"          >📡 Wireless</a>
     <a href="virtualisation"    >🎮 Virtualisation</a>
     <a href="reverse"           >🙃 Reverse</a>
@@ -31,4 +32,5 @@ Participations :
 - Exercice [DEFNET](https://www.defense.gouv.fr/fre/salle-de-presse/communiques/communique_defnet-2021-s-entrainer-au-cyber-combat) 2021 du COMCYBER (physique)
 - CTF d'OSINT du [UYBHYS](https://www.unlockyourbrain.bzh/) 2021 : team [11/61](https://github.com/diateam/UYBHYS2020-OSINT-CTF/blob/master/Classement.md)
 - CTF [DG'hAck](https://www.dghack.fr) 2021 de la DGA : 195/1047
-- Hexa OSINT CTF 2021 de la Fabrique de défense : team [15/61](https://hexactf.ctfd.io/scoreboard)
+- Hexa OSINT CTF 2021 de La Fabrique Défense : team [15/61](https://hexactf.ctfd.io/scoreboard)
+- Rejeu de l'edition 2017 du [Cyber 9/12 Strategy Challenge](https://www.atlanticcouncil.org/programs/scowcroft-center-for-strategy-and-security/cyber-statecraft-initiative/cyber-912/) organisé par le [Geneva Centre for Security Policy](https://www.gcsp.ch/gcsp-activities#topics) (aide à la décision de dirigeants européens suite à une attaque simultanée et coordonnée sur les hôpitaux des Etats membres)
