@@ -26,6 +26,10 @@ Bases de connaissances :
 - https://technisette.com/p/search-engines
 - https://one-plus.github.io
 
+Reconnaissance d'image :
+- https://yandex.com/
+- identification de plante : https://identify.plantnet.org/fr
+
 Informations légales et financières :
 - world : https://opencorporates.com
 - world : https://www.crunchbase.com
@@ -45,6 +49,7 @@ Noms de domaine (recherche passive) :
 - domaines déposés par la même personne/société/mail : https://domainbigdata.com
 - [Sublist3r](https://github.com/aboul3la/Sublist3r)
 - [Sub-Drill](https://github.com/Fadavvi/Sub-Drill)
+- https://viewdns.info/
 
 Certificats :
 - https://cert.sh

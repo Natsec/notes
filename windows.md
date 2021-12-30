@@ -1,11 +1,12 @@
 # Windows
 
 - [Tenets](#tenets)
+  - [Permissions](#permissions)
+  - [GPO](#gpo)
   - [Privileges](#privileges)
   - [Windows Privilege Escalation Vectors](#windows-privilege-escalation-vectors)
   - [Initial Information Gathering](#initial-information-gathering)
 - [PowerShell](#powershell)
-- [Enumération](#enumération)
 - [Mots de passe](#mots-de-passe)
   - [Mot de passe dans SYSVOL](#mot-de-passe-dans-sysvol)
   - [Kerberoast](#kerberoast)
@@ -17,6 +18,29 @@
 > *In case of doubt, reboot*, Rowan Atkinson
 
 ## Tenets
+
+### Permissions
+
+Pour check/set les permissions :
+```bash
+icacls <dossier>
+# I  - permission inherited from the parent container
+# F  - full access (full control)
+# M  - modify right/access
+# OI - object inherit
+# IO - inherit only
+# CI - container inherit
+# RX - read and execute
+# AD - append data (add subdirectories)
+# WD - write data and add files
+```
+
+### GPO
+
+Mettre à jour les GPO :
+```bash
+gpupdate /force
+```
 
 ### Privileges
 
@@ -53,18 +77,6 @@ tree /f
 
 # lien symbolique
 new-item -itemtype symboliclink -path . -name settings.json -value "C:\Users\Kamil\OneDrive\Windows Terminal\settings.json"
-```
-
-## Enumération
-
-Pour obtenir des informations sur un domaine :
-```bash
-# null session
-enum4linux -a 192.168.10.1 > enum1.txt
-# énumérer les utilisateurs avec un RID cycling sur un intervalle plus grand
-enum4linux -U -R 500-2000 192.168.10.1 | grep -v unknown > enum2.txt
-# avec des credentials
-enum4linux -u test -p test -a 192.168.10.1 > enum_as_test.txt
 ```
 
 ## Mots de passe

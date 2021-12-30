@@ -67,9 +67,11 @@ document.body.appendChild(script);
 
 ## Scan d'URL web
 
->Attention ! Ne pas utiliser en CTF réaliste
+> Attention ! Ne pas utiliser en CTF réaliste
+
 ```bash
 dirb http://10.10.10.215 -r -o academy.dirb.txt -H host:academy.htb
+ffuf -c -w /usr/share/wordlists/dirb/common.txt -o ffuf.md -of md -u http://10.10.123.36/FUZZ
 ```
 
 ## Injection SQL

