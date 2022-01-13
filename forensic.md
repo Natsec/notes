@@ -12,6 +12,12 @@ Principes :
 - on travail jamais sur les preuves, on travail sur leur clone
 - on fait l'empreinte des éléments pour respecter la [chain of custody](https://en.wikipedia.org/wiki/Chain_of_custody)
 
+## Acquisition
+
+`mmls` de sleuthkit : lister les partitions d'une image disque
+
+`mmcat` de sleuthkit : extraire une partition d'une image disque
+
 ## Investigation : Autopsy
 
 > Autopsy c'est la vie !
@@ -28,7 +34,69 @@ testdisk found_in_server_room.img
 # Advanced > List
 ```
 
+`extundelete`.
+
+## Carving de fichier
+
+`binwalk`, ``
+
+## Timeline
+
+### Timeline rapide
+
+`fls` de sleuthkit.
+
+### Super timeline
+
+plaso
+
+Timesketch
+
+## Exemple d'une investigation
+
+Pour chaque étape, noter ce qui est fait, par qui, quand dans la chaîne of custody :
+1. vérifier les hash des images disque (SHA256)
+   - faire les hash d'un directory : https://worklifenotes.com/2020/03/05/get-sha256-hash-on-a-directory/
+2. faire les timelines avec `fls`
+   1. mactime -z
+3. récupérer les logs (.evtx, .log)
+4. récupérer les hives utilisateurs (Windows only)
+
+### Convertir les images disque
+
+```bash
+# vmdk to raw
+qemu-img convert -f vmdk -O raw BROCELIANDE_CI_Camelot-disk1.vmdk gitlab_camelot.raw
+
+# afficher les partitions de l'image
+mmls gitlab_camelot.raw -B
+
+# vérifier manuellement le type de partition
+hexdump -C -s $((512*2101248)) gitlab_camelot.raw | head
+
+# dumper une partition lvm2
+mmcat gitlab_camelot.raw 6 > dump.lvm2
+
+# mapper et activer la partition lvm
+sudo kpartx -a -v gitlab_camelot.lvm2
+sudo lvscan
+sudo lvchange -a y /dev/ubuntu-vg/ubuntu-lv
+sudo lvscan
+
+# monter la partition
+sudo mkdir /ubuntu
+sudo mount /dev/ubuntu-vg/ubuntu-lv /ubuntu
+```
+
 ## Memory analysis : Volatility
+
+> *Volatility n'est qu'un parser, il ne fait pas l'analyse à votre place*, Maki, 2022
+
+- savoir et ne pas oublier ce qu'on cherche
+- ne pas trop se fier aux outils
+- ne pas hésiter à tester
+
+Comparaison entre la version 2 et 3 : https://blog.onfvp.com/post/volatility-cheatsheet/
 
 ### Profil de mémoire
 
@@ -55,6 +123,8 @@ cd volatility/tools/linux/ && make
 cd ../../../
 zip $(lsb_release -i -s)_$(uname -r)_profile.zip ./volatility/tools/linux/module.dwarf /boot/System.map-$(uname -r)
 ``` -->
+
+Tips : vagrant pour récupérer l'OS déjà installé
 
 ### Commandes
 
