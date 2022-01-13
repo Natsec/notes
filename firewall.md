@@ -90,6 +90,9 @@ La CLI a le même principe de fonctionnement que Cisco :
 ```shell
 ? # afficher les suggestions
 
+# afficher les interfaces
+
+
 # configurer l'adresse ip
 config system interface
     edit port1
@@ -97,6 +100,7 @@ config system interface
         set allowaccess ping ssh http https
         next # equivalent de exit
         end  # pour sauver et sortir
+
 ```
 
 ## VPN IPsec
