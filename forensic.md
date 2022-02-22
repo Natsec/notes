@@ -74,8 +74,9 @@ mmls gitlab_camelot.raw -B
 # vérifier manuellement le type de partition
 hexdump -C -s $((512*2101248)) gitlab_camelot.raw | head
 
-# dumper une partition lvm2
+# dumper la partition lvm2 et vérifier
 mmcat gitlab_camelot.raw 6 > dump.lvm2
+file dump.lvm2
 
 # mapper et activer la partition lvm
 sudo kpartx -a -v gitlab_camelot.lvm2
@@ -83,9 +84,10 @@ sudo lvscan
 sudo lvchange -a y /dev/ubuntu-vg/ubuntu-lv
 sudo lvscan
 
-# monter la partition
+# monter la partition en lecture seule
 sudo mkdir /ubuntu
-sudo mount /dev/ubuntu-vg/ubuntu-lv /ubuntu
+sudo mount -o ro /dev/ubuntu-vg/ubuntu-lv /ubuntu
+ls /ubuntu
 ```
 
 ## Memory analysis : Volatility

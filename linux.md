@@ -121,8 +121,13 @@ cd /tmp/archives
 
 ncdu (ncurses disk usage) :
 ```bash
+# pour trier par taille de fichier
 ncdu --si
-    gg t ss c
+  ggtssc
+
+# pour trier par date de modification
+ncdu --si -e
+  ggtMmc
 ```
 
 ## Intégrité, diff et patch

@@ -1,3 +1,5 @@
+alias woman='man'
+
 alias ls='ls --color=auto --file-type'
 alias ll='ls -hAlt'
 
@@ -5,7 +7,7 @@ alias grep='grep --color'
 alias diff='diff --color'
 alias tree='tree -FC'
 alias nano='nano -Pl'
-alias ncdu='ncdu --si'
+alias ncdu='ncdu --si -e'
 
 alias f='sudo $(history -p !!)'
 alias c='column -t'
