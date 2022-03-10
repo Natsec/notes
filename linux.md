@@ -39,7 +39,7 @@ setxkbmap fr
 reset
 ```
 
-Pour désactiver le 🔔 : décommenter `# set bell-style none` dans `/etc/inputrc`.
+Pour désactiver le bell : décommenter `# set bell-style none` dans `/etc/inputrc`, puis reboot.
 
 ## Couleurs
 

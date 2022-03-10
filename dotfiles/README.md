@@ -16,7 +16,7 @@ tmux : [/etc/tmux.conf](https://raw.githubusercontent.com/Natsec/notes/master/do
 
 Date format : `%T %A %-d %B (week %V) %Y`
 
-Icons : [Papirus Dark](https://www.xfce-look.org/p/1166289)
+Icons : [Papirus Dark](https://git.io/papirus-icon-theme)
 
 System font : Noto Sans Regular (`apt install fonts-noto-core`)
 
