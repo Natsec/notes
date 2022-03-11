@@ -25,4 +25,4 @@ get /~/.config/xfce4/terminal/terminalrc
 # Paquets
 # --------------------
 sudo apt update
-sudo apt install htop tmux tree ncdu neofetch & clear & neofetch
+sudo apt install htop tmux tree ncdu neofetch && clear && neofetch
