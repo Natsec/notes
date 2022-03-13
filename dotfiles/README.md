@@ -16,9 +16,13 @@ tmux : [/etc/tmux.conf](https://raw.githubusercontent.com/Natsec/notes/master/do
 
 Date format : `%T %A %-d %B (week %V) %Y`
 
+System font : [Noto Sans](https://fonts.google.com/noto/specimen/Noto+Sans) Regular
+
+Monospace font : [Fira Code](https://github.com/tonsky/FiraCode) Regular
+
 Icons : [Papirus Dark](https://git.io/papirus-icon-theme)
 
-System font : Noto Sans Regular (`apt install fonts-noto-core`)
+> `sudo apt install fonts-noto-core fonts-firacode papirus-icon-theme`
 
 ## All Systems Are Go, and Lift Off 🚀
 
