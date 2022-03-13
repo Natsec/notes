@@ -22,8 +22,6 @@ Monospace font : [Fira Code](https://github.com/tonsky/FiraCode) Regular
 
 Icons : [Papirus Dark](https://git.io/papirus-icon-theme)
 
-> `sudo apt install fonts-noto-core fonts-firacode papirus-icon-theme`
-
 ## All Systems Are Go, and Lift Off 🚀
 
 rm -f dotfiles.sh ; wget https://raw.githubusercontent.com/Natsec/notes/master/dotfiles/dotfiles.sh && bash dotfiles.sh
