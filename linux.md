@@ -12,10 +12,12 @@
 - [SSH](#ssh)
   - [Key Based Authentication](#key-based-authentication)
 - [Fichier ISO](#fichier-iso)
+- [Système](#système)
+  - [Etendre une partition LVM](#etendre-une-partition-lvm)
 - [Network](#network)
   - [DNS](#dns)
   - [LDAP](#ldap)
-- [paquets](#paquets)
+- [Paquets](#paquets)
 - [Services](#services)
 - [Logging](#logging)
 - [User](#user)
@@ -243,6 +245,51 @@ Pour monter une image ISO :
 mount -o loop debian-10.9.0-amd64-DVD-1.iso /media/cdrom
 ```
 
+## Système
+
+### Etendre une partition LVM
+
+Sur l'hyperviseur : augmenter la taille du disque ou en ajouter un à la VM.
+
+Dans la VM :
+```bash
+# créer une partition avec cfdisk
+cfdisk /dev/sdX
+    [ New ]
+        prendre tout espace disponible
+    [ Type ]
+        Linux LVM
+    [ Write ]
+        q pour quitter
+
+# faire prendre en compte les changement par l'OS
+partprobe
+
+# créer un Physical Volume (PV) sur la nouvelle partition (ex : /dev/sda4)
+pvcreate [nouvelle partition]
+
+# afficher les PV (et noter le Volume Group (VG) aux-quels ils sont associés)
+pvs OU pvdisplay
+
+# étendre le Volume Group (VG) au PV nouvellement créé
+vgextend [nom du VG] [nouvelle partition]
+
+# le VG s'étend maintenant sur la nouvelle partition
+pvs OU pvdisplay
+
+# afficher la taille du VG et l'espace disponible
+vgs OU vgdisplay
+
+# étendre le Logical Volume (LV ou autrement dit la partition à agrandir) avec l'espace disponible du VG
+lvextend -l +100%FREE /dev/mapper/[nom du LV]
+
+# faire prendre en compte la nouvelle taille de la partition par le système
+resize2fs /dev/mapper/[nom du LV]
+
+# super nickel !
+df -h
+```
+
 ## Network
 
 ```bash
@@ -271,7 +318,7 @@ nameserver 192.168.1.254
 ldapsearch -x -H ldap://192.168.43.231:390 -b "ou=employees,ou=company,dc=nasa,dc=com" "(&(|(title=Dir*)(title=Ing*)(title=Resp*))(description=F))"
 ```
 
-## paquets
+## Paquets
 
 Lister les fichers installés par un paquet : `dpkg -L`
 
