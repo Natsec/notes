@@ -51,6 +51,11 @@ Afficher la palette de couleurs :
 colortest-16b
 ```
 
+Affichage en [technicolor](https://en.wikipedia.org/wiki/Technicolor) :
+```
+function print { tput setaf 4; echo "[INFO] $1"; tput sgr0; }
+```
+
 ## Root
 
 Pour reset un mot de passe root "oublié" :
