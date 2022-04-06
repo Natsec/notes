@@ -63,6 +63,6 @@ tree
 Pour monter un partage dans VMware :
 ```bash
 # pour un partage nommé partage
-mkdir share
-vmhgfs-fuse .host:partage ./share
+sudo mkdir -p /partage
+sudo vmhgfs-fuse -o allow_other .host:partage /partage
 ```

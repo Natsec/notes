@@ -111,6 +111,12 @@ Pseudonymes :
 Geolocalisation :
 - Post Twitter : https://www.i-resilience.fr/app/easygeotweets/
 
+Cartographie :
+- https://demo.f4map.com/
+
+Cryptomonnaies :
+- https://live.blockcypher.com/
+
 Acronymes :
 - https://www.acronymfinder.com
 - https://acronyms.thefreedictionary.com

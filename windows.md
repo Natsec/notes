@@ -1,11 +1,14 @@
 # Windows
 
-- [Tenets](#tenets)
+- [Principes](#principes)
   - [Permissions](#permissions)
   - [GPO](#gpo)
   - [Privileges](#privileges)
   - [Windows Privilege Escalation Vectors](#windows-privilege-escalation-vectors)
   - [Initial Information Gathering](#initial-information-gathering)
+- [Forensic](#forensic)
+  - [Ruches de registre](#ruches-de-registre)
+  - [MFT](#mft)
 - [PowerShell](#powershell)
 - [Mots de passe](#mots-de-passe)
   - [Mot de passe dans SYSVOL](#mot-de-passe-dans-sysvol)
@@ -17,7 +20,7 @@
 
 > *In case of doubt, reboot*, Rowan Atkinson
 
-## Tenets
+## Principes
 
 ### Permissions
 
@@ -69,6 +72,83 @@ A few key points in enumeration :
 - **OS version** : The `systeminfo | findstr /B /C: "OS Name"/C: "OS Version"` command will output information about the operating system. This should be used to do further research on whether a privilege escalation vulnerability exists for this version.
 - **Installed services** : the `wmic service list` command will list services installed on the target system.
 
+## Forensic
+
+### Ruches de registre
+
+https://tryhackme.com/room/windowsforensics1
+
+Les fichiers intéréssants sont :
+```
+C
+├── Users
+│   ├── Administrator
+│   │   ├── AppData
+│   │   │   └── Local
+│   │   │       └── Microsoft
+│   │   │           └── Windows
+│   │   │               ├── UsrClass.dat
+│   │   │               ├── UsrClass.dat.LOG1
+│   │   │               └── UsrClass.dat.LOG2
+│   │   ├── NTUSER.DAT
+│   │   ├── ntuser.dat.LOG1
+│   │   └── ntuser.dat.LOG2
+│   └── arthur
+│       ├── AppData
+│       │   └── Local
+│       │       └── Microsoft
+│       │           └── Windows
+│       │               ├── UsrClass.dat
+│       │               ├── UsrClass.dat.LOG1
+│       │               └── UsrClass.dat.LOG2
+│       ├── NTUSER.DAT
+│       ├── ntuser.dat.LOG1
+│       └── ntuser.dat.LOG2
+└── Windows
+    ├── appcompat
+    │   └── Programs
+    │       ├── Amcache.hve
+    │       ├── Amcache.hve.LOG1
+    │       └── Amcache.hve.LOG2
+    └── System32
+        └── config
+            ├── RegBack
+            │   ├── DEFAULT
+            │   ├── SAM
+            │   ├── SECURITY
+            │   ├── SOFTWARE
+            │   └── SYSTEM
+            ├── DEFAULT
+            ├── DEFAULT.LOG1
+            ├── DEFAULT.LOG2
+            ├── SAM
+            ├── SAM.LOG1
+            ├── SAM.LOG2
+            ├── SECURITY
+            ├── SECURITY.LOG1
+            ├── SECURITY.LOG2
+            ├── SOFTWARE
+            ├── SOFTWARE.LOG1
+            ├── SOFTWARE.LOG2
+            ├── SYSTEM
+            ├── SYSTEM.LOG1
+            └── SYSTEM.LOG2
+
+17 directories, 35 files
+```
+
+Les fichiers `.LOG` sont les journaux de modification des ruches de registre. Il contiennent des données plus récentes et sont donc à considérer. [Zimmerman's Registry Explorer](https://ericzimmerman.github.io/) permet de les prendre en compte lors de la lecture.
+
+### MFT
+
+Parser une MFT et la lire :
+```ps1
+.\MFTECmd.exe -f 'C:\users\THM-4n6\Desktop\triage\C\$MFT' --csv parsed-mft.csv
+.\MFTECmd.exe -f 'C:\users\THM-4n6\Desktop\triage\C\$BOOT' --csv parsed-mft.csv
+```
+
+EZviewer pour regarder les csv.
+
 ## PowerShell
 
 ```powershell
@@ -77,6 +157,10 @@ tree /f
 
 # lien symbolique
 new-item -itemtype symboliclink -path . -name settings.json -value "C:\Users\Kamil\OneDrive\Windows Terminal\settings.json"
+
+# Hash
+Get-FileHash filename -Algorithm MD5|SHA256|SHA512
+CertUtil -hashfile filename MD5|SHA256|SHA512
 ```
 
 ## Mots de passe

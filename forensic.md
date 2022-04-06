@@ -9,61 +9,29 @@
 L'objectif est d'obtenir la timeline des actions qui ont menées à l'incident.
 
 Principes :
-- on travail jamais sur les preuves, on travail sur leur clone
+- on travail jamais sur les preuves, on travail sur leurs copie
 - on fait l'empreinte des éléments pour respecter la [chain of custody](https://en.wikipedia.org/wiki/Chain_of_custody)
 
 ## Acquisition
 
-`mmls` de sleuthkit : lister les partitions d'une image disque
-
-`mmcat` de sleuthkit : extraire une partition d'une image disque
-
-## Investigation : Autopsy
-
-> Autopsy c'est la vie !
-
-## Data recovery
-
-`file` permet d'identifier le type d'un fichier.
-
-`photorec` est un outil de récupération de fichiers.
-
-`testdisk` est un outil de récupération de partition, il permet entre autre de parcourir des partitions sans avoir à les monter :
+Convertir une image disque vmdk en raw, et monter sa partition NTFS :
 ```bash
-testdisk found_in_server_room.img
-# Advanced > List
+# vmdk to raw
+qemu-img convert -f vmdk -O raw BROCELIANDE_DC_Graal-disk1.vmdk dc_graal.raw
+
+# afficher les partitions de l'image
+mmls dc_graal.raw -B
+
+# vérifier manuellement le type de partition
+hexdump -C -s $((512*1259520)) dc_graal.raw | head
+
+# monter la partition en lecture seule
+sudo mkdir /dc_graal
+sudo mount -o ro,offset=$((512*1259520)) dc_graal.raw /dc_graal/
+ncdu /dc_graal
 ```
 
-`extundelete`.
-
-## Carving de fichier
-
-`binwalk`, ``
-
-## Timeline
-
-### Timeline rapide
-
-`fls` de sleuthkit.
-
-### Super timeline
-
-plaso
-
-Timesketch
-
-## Exemple d'une investigation
-
-Pour chaque étape, noter ce qui est fait, par qui, quand dans la chaîne of custody :
-1. vérifier les hash des images disque (SHA256)
-   - faire les hash d'un directory : https://worklifenotes.com/2020/03/05/get-sha256-hash-on-a-directory/
-2. faire les timelines avec `fls`
-   1. mactime -z
-3. récupérer les logs (.evtx, .log)
-4. récupérer les hives utilisateurs (Windows only)
-
-### Convertir les images disque
-
+Convertir une image disque vmdk en raw, et monter sa partition LVM :
 ```bash
 # vmdk to raw
 qemu-img convert -f vmdk -O raw BROCELIANDE_CI_Camelot-disk1.vmdk gitlab_camelot.raw
@@ -86,9 +54,53 @@ sudo lvscan
 
 # monter la partition en lecture seule
 sudo mkdir /ubuntu
-sudo mount -o ro /dev/ubuntu-vg/ubuntu-lv /ubuntu
-ls /ubuntu
+sudo mount -o ro /dev/ubuntu-vg/ubuntu-lv /ubuntu/
+ncdu /ubuntu
 ```
+
+## Investigation : Autopsy
+
+> Autopsy c'est la vie !
+
+## Data recovery
+
+`file` permet d'identifier le type d'un fichier.
+
+`photorec` est un outil de récupération de fichiers.
+
+`testdisk` est un outil de récupération de partition, il permet entre autre de parcourir des partitions sans avoir à les monter :
+```bash
+testdisk found_in_server_room.img
+# Advanced > List
+```
+
+`extundelete`.
+
+## Carving
+
+`binwalk`
+
+## Timeline
+
+### Timeline rapide
+
+`fls` de sleuthkit.
+
+### Super timeline
+
+plaso
+
+Timesketch
+
+## Exemple d'une investigation
+
+Pour chaque étape, noter ce qui est fait, par qui, quand dans la chaîne of custody :
+1. vérifier les hash des images disque (SHA256)
+   - faire les hash d'un directory : https://worklifenotes.com/2020/03/05/get-sha256-hash-on-a-directory/
+2. faire les timelines avec `fls`
+   1. mactime -z
+3. récupérer les logs (.evtx, .log)
+4. récupérer les hives utilisateurs (Windows only)
 
 ## Memory analysis : Volatility
 
