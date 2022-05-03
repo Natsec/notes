@@ -2,12 +2,17 @@
     <a href="tools"             >🔨 Tools</a>
     <a href="dotfiles"          >⚙️ Dotfiles</a>
     <br>
+    Technical knowledge
     <a href="linux"             >🐧 Linux</a>
     <a href="network"           >🌍 Network</a>
+    <a href="automation"        >🦾 Infrastructure automation</a>
+    Offensive knowledge
     <a href="pentest"           >🏴‍☠️ Pentest</a>
     <a href="web"               >🕸 Web</a>
+    Defensive knowledge
     <a href="hardening"         >⚔️ Hardening</a>
     <a href="forensic"          >🔎 Forensic</a>
+    Human knowledge
     <a href="decision-crise"    >🤔 Décision en situation de crise</a>
     <a href="social-engineering">🕵 Social Engineering</a>
     <a href="python"            >🐍 Python</a>
@@ -15,7 +20,7 @@
     <a href="cloudsec"          >🌩️ Sécurité des nuages</a>
     <a href="wireless"          >📡 Wireless</a>
     <a href="virtualisation"    >🎮 Virtualisation</a>
-    <a href="reverse"           >🙃 Reverse</a>
+    <a href="reverse"           >🙃 Reverse and malware analysis</a>
     <a href="windows"           >🪟 Windows</a>
     <a href="auditd"            >📜 Auditd</a>
     <a href="pki"               >🔑 PKI</a>
