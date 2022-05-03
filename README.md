@@ -20,7 +20,7 @@
     <a href="cloudsec"          >🌩️ Sécurité des nuages</a>
     <a href="wireless"          >📡 Wireless</a>
     <a href="virtualisation"    >🎮 Virtualisation</a>
-    <a href="reverse"           >🙃 Reverse and malware analysis</a>
+    <a href="reverse"           >🙃 Reverse Engineering and Malware Analysis</a>
     <a href="windows"           >🪟 Windows</a>
     <a href="auditd"            >📜 Auditd</a>
     <a href="pki"               >🔑 PKI</a>
