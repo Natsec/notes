@@ -1,4 +1,8 @@
-# Reverse
+# Reverse Engineering and Malware Analysis
+
+## Dynamic analysis
+
+> *[CAPE](https://github.com/kevoreilly/CAPEv2) is the captain now*, [Captain Jack Sparrot](https://www.reddit.com/r/AnimalsBeingDerps/comments/thfshg/what_an_epic_gamer/) circa 1588
 
 ## Android
 
