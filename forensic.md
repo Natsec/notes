@@ -92,6 +92,25 @@ plaso
 
 Timesketch
 
+## Windows Prefetch
+
+When a program is run in Windows, it stores its information for future use. This stored information is used to load the program quickly in case of frequent use. This information is stored in prefetch files which are located in the `C:\Windows\Prefetch` directory.
+Prefetch files have an extension of `pf`. Prefetch files contain the last run times of the application, the number of times the application was run, and any files and device handles used by the file.
+
+For parsing a whole directory, we can use the following command :
+```bash
+PECmd.exe -d <path-to-Prefetch-directory> --csv <path-to-save-csv>
+```
+
+## Windows 10 Timeline
+
+Windows 10 stores recently used applications and files in an SQLite database called the Windows 10 Timeline. It contains the application that was executed and the focus time of the application. The Windows 10 timeline is at `C:\Users\<username>\AppData\Local\ConnectedDevicesPlatform\{randomfolder}\ActivitiesCache.db` :
+```bash
+WxTCmd.exe -f <path-to-timeline-file> --csv <path-to-save-csv>
+```
+
+## Windows Jump Lists
+
 ## Exemple d'une investigation
 
 Pour chaque étape, noter ce qui est fait, par qui, quand dans la chaîne of custody :

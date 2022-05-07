@@ -7,7 +7,7 @@
 [defaults]
 inventory = ./hosts
 
-callback_whitelist = timer
+callback_enabled = timer
 stdout_callback = debug
 
 # cache facts locally for 1 hour

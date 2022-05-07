@@ -4,7 +4,7 @@ session="Demo"
 # kill session if exist
 tmux kill-session -t $session
 # create new session and stay detached
-tmux new-session -s $session -d
+tmux new-session -s $session -d -x - -y -
 
 window="Monitor"
 tmux rename-window -t $session:1 $window

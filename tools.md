@@ -43,6 +43,7 @@ Marques déposées :
 - Mondiale : https://www3.wipo.int/branddb/fr
 
 Noms de domaine (recherche passive) :
+- whois : https://lookup.icann.org/
 - https://host.io/nasa.gov
 - https://dndumpster.com
 - sous-domaines : https://www.virustotal.com/gui/home/search

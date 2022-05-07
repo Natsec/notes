@@ -1,29 +1,28 @@
 <div class="menu">
+    <h2>Technical</h2>
     <a href="tools"             >🔨 Tools</a>
     <a href="dotfiles"          >⚙️ Dotfiles</a>
-    <br>
-    Technical knowledge
     <a href="linux"             >🐧 Linux</a>
     <a href="network"           >🌍 Network</a>
+    <a href="python"            >🐍 Python</a>
     <a href="automation"        >🦾 Infrastructure automation</a>
-    Offensive knowledge
+    <a href="virtualisation"    >🎮 Virtualisation</a>
+    <a href="windows"           >🪟 Windows</a>
+    <a href="pki"               >🔑 PKI</a>
+    <h2>Offensive</h2>
     <a href="pentest"           >🏴‍☠️ Pentest</a>
     <a href="web"               >🕸 Web</a>
-    Defensive knowledge
-    <a href="hardening"         >⚔️ Hardening</a>
-    <a href="forensic"          >🔎 Forensic</a>
-    Human knowledge
-    <a href="decision-crise"    >🤔 Décision en situation de crise</a>
-    <a href="social-engineering">🕵 Social Engineering</a>
-    <a href="python"            >🐍 Python</a>
-    <a href="firewall"          >🔥 Firewall</a>
     <a href="cloudsec"          >🌩️ Sécurité des nuages</a>
     <a href="wireless"          >📡 Wireless</a>
-    <a href="virtualisation"    >🎮 Virtualisation</a>
+    <h2>Defensive</h2>
+    <a href="forensic"          >🔎 Forensic</a>
+    <a href="firewall"          >🔥 Firewall</a>
+    <a href="hardening"         >⚔️ Hardening</a>
     <a href="reverse"           >🙃 Reverse Engineering and Malware Analysis</a>
-    <a href="windows"           >🪟 Windows</a>
     <a href="auditd"            >📜 Auditd</a>
-    <a href="pki"               >🔑 PKI</a>
+    <h2>Human</h2>
+    <a href="social-engineering">🕵 Social Engineering</a>
+    <a href="decision-crise"    >🤔 Décision en situation de crise</a>
     <br>
     <a href="https://natsec.fr" >natsec.fr</a>
 </div>
