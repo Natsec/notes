@@ -58,6 +58,10 @@ sudo mount -o ro /dev/ubuntu-vg/ubuntu-lv /ubuntu/
 ncdu /ubuntu
 ```
 
+## Trouver la date d'installation
+
+`head /var/log/installer/syslog`
+
 ## Investigation : Autopsy
 
 > Autopsy c'est la vie !
