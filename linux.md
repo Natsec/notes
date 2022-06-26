@@ -30,7 +30,8 @@
 ---
 
 Cheatsheet :
-- https://devhints.io/bash
+- https://quickref.me/
+- https://devhints.io/
 
 ## Clavier
 
