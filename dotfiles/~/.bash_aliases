@@ -18,8 +18,12 @@ alias vmshare='sudo mkdir -p /partage; sudo vmhgfs-fuse -o allow_other .host:par
 alias screenkey='pkill screenkey; screenkey --show-settings --ignore Return --ignore BackSpace --ignore Delete --ignore Tab &'
 
 # prompt cyberpunk
-alias b='tput setaf 4'
-alias m='tput setaf 5'
-export PS1="\[$(m)\]\u\[$(b)\]@\[$(m)\]\H\[$(b)\]:\W \\$ \[$(tput sgr0)\]"
+grep -qi kali /etc/*release
+if [ "$?" == 1 ]; then
+    alias b='tput setaf 4'
+    alias m='tput setaf 5'
+    export PS1="\[$(m)\]\u\[$(b)\]@\[$(m)\]\H\[$(b)\]:\W \\$ \[$(tput sgr0)\]"
+fi
+
 # couleur de fond noire pour les Other Writable directory quand on fait ls
 export LS_COLORS="${LS_COLORS}:ow=34;40"
