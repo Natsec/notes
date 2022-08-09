@@ -14,6 +14,8 @@ tmux : [/etc/tmux.conf](https://raw.githubusercontent.com/Natsec/notes/master/do
 
 ## A E S T H E T I C
 
+xfce4-terminal theme : [Dark Pulsar](https://raw.githubusercontent.com/Natsec/notes/master/dotfiles/~/.local/share/xfce4/terminal/colorschemes/dark-pulsar.theme)
+
 Date format : `%T %A %-d %B (week %V) %Y`
 
 System font : [Noto Sans](https://fonts.google.com/noto/specimen/Noto+Sans) Regular

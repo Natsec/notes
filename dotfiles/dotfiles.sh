@@ -20,6 +20,7 @@ get /etc/tmux.conf
 get /~/.bash_aliases && source ~/.bash_aliases
 get /~/.config/autostart/picom.desktop
 get /~/.config/xfce4/terminal/terminalrc
+get /~/.local/share/xfce4/terminal/colorschemes/dark-pulsar.theme
 
 # --------------------
 # Paquets

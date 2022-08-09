@@ -1,0 +1,10 @@
+[Scheme]
+Name=Dark Pulsar
+ColorForeground=#EEE
+ColorBackground=#333
+TabActivityColor=#D8C
+ColorCursorUseDefault=FALSE
+ColorCursor=#D8C
+ColorSelectionUseDefault=TRUE
+ColorPalette=#444;#E25;#6B8;#DA8;#9BD;#D8C;#ADE;#DDD;#444;#E25;#6B8;#DA8;#9BD;#D8C;#ADE;#DDD
+ColorBoldIsBright=FALSE

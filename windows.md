@@ -152,6 +152,9 @@ EZviewer pour regarder les csv.
 ## PowerShell
 
 ```powershell
+# chronométrer une commande
+Measure-Command {cmd}
+
 # afficher en arborescence
 tree /f
 
