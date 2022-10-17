@@ -49,6 +49,7 @@ Pour désactiver le bell : décommenter `# set bell-style none` dans `/etc/input
 Afficher la palette de couleurs :
 ```bash
 # apt install colortest
+colortest-8
 colortest-16b
 ```
 
@@ -357,7 +358,8 @@ sudo useradd --system wiki -s /sbin/nologin
 
 Pour ajouter un utilisateur au groupe `sudo` :
 ```bash
-usermod -a -G sudo utilisateur
+usermod -a user -G sudo
+# deco reco
 ```
 
 ## SELinux

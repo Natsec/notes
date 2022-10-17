@@ -17,6 +17,15 @@ qm unlock 101
 
 ## Docker
 
+Docker compose:
+```bash
+mkdir test
+cd test
+nano docker-compose.yml
+docker compose up
+```
+
+Docker :
 ```bash
 # télécharger/lancer une image et rediriger le port 8080 du host vers le 80 du guest
 docker run -p 8080:80 debian

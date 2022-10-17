@@ -1,12 +1,13 @@
 alias woman='man'
+alias l='ls -Allah'
 
+alias lt='ls -hAlt'
 alias ls='ls --color=auto --file-type'
-alias ll='ls -hAlt'
 
 alias grep='grep --color'
 alias diff='diff --color'
 alias tree='tree -FC'
-alias nano='nano -Pl'
+alias nano='nano -P'
 alias ncdu='ncdu --si -e'
 
 alias f='sudo $(history -p !!)'
