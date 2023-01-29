@@ -99,6 +99,11 @@ cat /proc/sys/kernel/random/entropy_avail
 
 ## Bash
 
+Afficher la taille des fichiers ET des repertoires :
+```bash
+du -sh *
+```
+
 Trouver les fichiers contenants des motifs :
 ```bash
 grep -Pil "mot1|mot2" *

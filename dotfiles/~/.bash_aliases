@@ -28,3 +28,8 @@ fi
 
 # couleur de fond noire pour les Other Writable directory quand on fait ls
 export LS_COLORS="${LS_COLORS}:ow=34;40"
+
+# attach to tmux session on login
+if [ -z "$TMUX" ]; then
+    tmux attach
+fi
