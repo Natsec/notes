@@ -104,6 +104,11 @@ Afficher la taille des fichiers ET des repertoires :
 du -sh *
 ```
 
+Read multiple files and jump at their end :
+```bash
+less ++G log/*
+```
+
 Trouver les fichiers contenants des motifs :
 ```bash
 grep -Pil "mot1|mot2" *
