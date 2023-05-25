@@ -43,3 +43,4 @@ Participations :
 - Edition 2022 de [leHack](https://lehack.org/fr) : [Lockpicking](http://www.lockwiki.com/index.php/Lockpicking) et Wargame
 - Hexa OSINT CTF v2 (2023)
 - [Hack-A-Sat](https://hackasat.com/) 4 (102/381)
+- [CYSAT](https://cysat.eu/) 2023
