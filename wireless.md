@@ -2,7 +2,15 @@
 
 ## RFID
 
+Tag RFID :
+```bash
+# apt install nfclib-bin
+nfc-scan-device -v
+nfc-list -v
 
+# crack and dump mifare tag data to file
+mfoc -O tag.mfd
+```
 
 ## Bettercap
 
