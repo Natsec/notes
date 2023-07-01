@@ -40,7 +40,8 @@ Participations :
 - Hexa OSINT CTF v1 (2021) : team [15/61](https://hexactf.ctfd.io/scoreboard)
 - Rejeu de l'edition 2017 du [Cyber 9/12 Strategy Challenge](https://www.atlanticcouncil.org/programs/scowcroft-center-for-strategy-and-security/cyber-statecraft-initiative/cyber-912/) organisé par le [Geneva Centre for Security Policy](https://www.gcsp.ch/gcsp-activities#topics) (aide à la décision de dirigeants européens suite à une attaque simultanée et coordonnée sur les hôpitaux des Etats membres)
 - Exercice de gestion de crise de l'[ENSIBS](https://www-ensibs.univ-ubs.fr/fr/formations/formations/diplome-d-ingenieur-DI/sciences-technologies-sante-STS/diplome-d-ingenieur-cyberdefense-ICYB00_213.html)
-- Edition 2022 de [leHack](https://lehack.org/fr) : [Lockpicking](http://www.lockwiki.com/index.php/Lockpicking) et Wargame
+- [leHACK](https://lehack.org/fr) 2022 : [Lockpicking](http://www.lockwiki.com/index.php/Lockpicking) et Wargame
 - Hexa OSINT CTF v2 (2023)
 - [Hack-A-Sat](https://hackasat.com/) 4 (102/381)
 - [CYSAT](https://cysat.eu/) 2023
+- [leHACK](https://lehack.org/fr) 2023
