@@ -45,4 +45,4 @@ Participations :
 - [Hack-A-Sat](https://hackasat.com/) 4 (102/381)
 - [CYSAT](https://cysat.eu/) 2023
 - [leHACK](https://lehack.org/fr) 2023
-- Disparue(s) CTF par [Oscar Zulu](https://osint.oscarzulu.org/)
+- Disparue(s) OSINT CTF par [Oscar Zulu](https://osint.oscarzulu.org/)
